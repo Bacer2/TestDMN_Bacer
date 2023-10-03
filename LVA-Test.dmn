@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_63449574-72DF-42D4-8A11-B80A538DEDC9" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_C518AA74-4781-4904-B8C2-F051160DD818" name="LVA-Test" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_63449574-72DF-42D4-8A11-B80A538DEDC9">
+  <dmn:extensionElements/>
+  <dmn:itemDefinition id="_6D970C10-35B4-48E4-B7C8-2212C1EEDCEE" name="LVA" isCollection="false">
+    <dmn:itemComponent id="_804D3866-832E-478B-BAF4-CB8504E36DE1" name="Name" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_14EADE9A-EF62-4BA8-A07E-D3B458B631A9" name="Nummer" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
+  <dmn:inputData id="_DC284746-E777-42B5-8894-05A12682975E" name="LVAs">
+    <dmn:extensionElements/>
+    <dmn:variable id="_7FF8C27D-2EC9-4A16-B50E-6682F849897C" name="LVAs" typeRef="LVA"/>
+  </dmn:inputData>
+  <dmn:decision id="_4A42CBB0-24E7-4CB1-95FD-C05C47E29DB8" name="Bestanden oder nicht?">
+    <dmn:extensionElements/>
+    <dmn:variable id="_1244320E-EAF3-4D96-BDB1-CEBA490CD9A6" name="Bestanden oder nicht?" typeRef="boolean"/>
+    <dmn:informationRequirement id="_7A89085E-D83A-493F-9F83-992DB84479F7">
+      <dmn:requiredInput href="#_DC284746-E777-42B5-8894-05A12682975E"/>
+    </dmn:informationRequirement>
+    <dmn:decisionTable id="_D760642A-09D2-48EE-BC4A-1E7F163612EA" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_92CAFA69-78A7-4B74-A958-EBFF9563E467">
+        <dmn:inputExpression id="_87854522-50B6-4E7D-9A6C-2E5A2F756159" typeRef="string">
+          <dmn:text>LVAs.Name</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="_C3F61BCB-E338-4F1D-A429-EA9DCED07486">
+        <dmn:inputExpression id="_F5F2563E-665A-4921-8BC7-3ED2C099CDD5" typeRef="string">
+          <dmn:text>LVAs.Nummer</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_8E77B118-CD3C-433E-B702-0243F216A9B2"/>
+      <dmn:annotation name="annotation-1"/>
+      <dmn:rule id="_497C1D96-FDCD-488B-9927-AD0E9AD0A690">
+        <dmn:inputEntry id="_172B7FBB-A0D7-4941-B665-BAF05C9C9A93">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_F6E7BACD-A175-4207-A54C-3A1B5DCD784F">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_98F0258B-11AE-4636-A14B-29A4D624BC2B">
+          <dmn:text/>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
+  </dmn:decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram id="_9F9362A1-AA1C-45C4-9F03-84D9541C24DA" name="DRG">
+      <di:extension>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_D760642A-09D2-48EE-BC4A-1E7F163612EA">
+            <kie:width>50</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+          </kie:ComponentWidths>
+        </kie:ComponentsWidthsExtension>
+      </di:extension>
+      <dmndi:DMNShape id="dmnshape-drg-_DC284746-E777-42B5-8894-05A12682975E" dmnElementRef="_DC284746-E777-42B5-8894-05A12682975E" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="358" y="251" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-drg-_4A42CBB0-24E7-4CB1-95FD-C05C47E29DB8" dmnElementRef="_4A42CBB0-24E7-4CB1-95FD-C05C47E29DB8" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="358" y="121" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="dmnedge-drg-_7A89085E-D83A-493F-9F83-992DB84479F7-AUTO-SOURCE-AUTO-TARGET" dmnElementRef="_7A89085E-D83A-493F-9F83-992DB84479F7">
+        <di:waypoint x="408" y="251"/>
+        <di:waypoint x="408" y="171"/>
+      </dmndi:DMNEdge>
+    </dmndi:DMNDiagram>
+    <dmndi:DMNDiagram id="_59E7015C-1BE4-4921-B7C7-733090896FC0" name="new-diagram">
+      <di:extension>
+        <kie:ComponentsWidthsExtension/>
+      </di:extension>
+      <dmndi:DMNShape id="dmnshape-new-diagram-_DC284746-E777-42B5-8894-05A12682975E" dmnElementRef="_DC284746-E777-42B5-8894-05A12682975E" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="358" y="251" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</dmn:definitions>

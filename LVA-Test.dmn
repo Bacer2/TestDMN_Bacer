@@ -20,17 +20,8 @@
   </dmn:itemDefinition>
   <dmn:inputData id="_1834D908-4388-4AF1-94B8-C3465C75C892" name="Test">
     <dmn:extensionElements/>
-    <dmn:variable id="_66B6E2A5-C1E1-47FF-B4EB-6EA8844DA572" name="Test" typeRef="TestEnum"/>
+    <dmn:variable id="_66B6E2A5-C1E1-47FF-B4EB-6EA8844DA572" name="Test" typeRef="string"/>
   </dmn:inputData>
-  <dmn:businessKnowledgeModel id="_949C70E0-6AF0-4246-A5D1-CF4044893568" name="show">
-    <dmn:extensionElements/>
-    <dmn:variable id="_F088B766-6A47-453A-83A3-F4E5E44DAD5A" name="show"/>
-    <dmn:encapsulatedLogic id="_B298620E-6FE1-4BF3-AD4E-75FCE30EF4E8" kind="FEEL">
-      <dmn:literalExpression id="_A1CC7896-87AA-4AD1-AAF4-A06F7EB8D5F3">
-        <dmn:text/>
-      </dmn:literalExpression>
-    </dmn:encapsulatedLogic>
-  </dmn:businessKnowledgeModel>
   <dmn:decision id="_FE3AD641-1192-462A-9A3C-07951C4CF856" name="Zwischenentscheidung">
     <dmn:extensionElements/>
     <dmn:variable id="_DAD4FA38-BD98-40FC-8333-28A212554F0A" name="Zwischenentscheidung" typeRef="boolean"/>
@@ -39,7 +30,7 @@
     </dmn:informationRequirement>
     <dmn:decisionTable id="_9DD7F1F0-D21B-4DAD-993F-319266537023" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
       <dmn:input id="_1D6FC89A-8EBE-470E-9DCA-85487711C064">
-        <dmn:inputExpression id="_56E6625C-0901-4D44-A3DA-5443263C25B9" typeRef="TestEnum">
+        <dmn:inputExpression id="_56E6625C-0901-4D44-A3DA-5443263C25B9" typeRef="string">
           <dmn:text>Eingang</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
@@ -47,7 +38,7 @@
       <dmn:annotation name="annotation-1"/>
       <dmn:rule id="_439B41F9-9729-4680-BAC3-0533019FA0F2">
         <dmn:inputEntry id="_91F0F53A-5956-4B5C-8B26-79639DFEFFF1">
-          <dmn:text>Helloboss</dmn:text>
+          <dmn:text>"Helloboss"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_21F3C9BD-E256-46C3-B8CD-313050E84DD5">
           <dmn:text>true</dmn:text>
@@ -71,7 +62,7 @@
   </dmn:decision>
   <dmn:decision id="_F84AA8F0-C080-42D1-A62E-D1E087F49198" name="Ausgang">
     <dmn:extensionElements/>
-    <dmn:variable id="_039B27B7-1FF3-4C1F-80E5-90F3AFD4394C" name="Ausgang"/>
+    <dmn:variable id="_039B27B7-1FF3-4C1F-80E5-90F3AFD4394C" name="Ausgang" typeRef="boolean"/>
     <dmn:informationRequirement id="_61B058D0-5694-4464-A961-F5F518FC8523">
       <dmn:requiredDecision href="#_FE3AD641-1192-462A-9A3C-07951C4CF856"/>
     </dmn:informationRequirement>
@@ -100,13 +91,6 @@
     <dmndi:DMNDiagram id="_9F9362A1-AA1C-45C4-9F03-84D9541C24DA" name="DRG">
       <di:extension>
         <kie:ComponentsWidthsExtension>
-          <kie:ComponentWidths dmnElementRef="_A1CC7896-87AA-4AD1-AAF4-A06F7EB8D5F3">
-            <kie:width>150</kie:width>
-          </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_B298620E-6FE1-4BF3-AD4E-75FCE30EF4E8">
-            <kie:width>50</kie:width>
-            <kie:width>150</kie:width>
-          </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_9DD7F1F0-D21B-4DAD-993F-319266537023">
             <kie:width>50</kie:width>
             <kie:width>100</kie:width>
@@ -128,15 +112,6 @@
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
         <dc:Bounds x="533" y="256" width="100" height="50"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-drg-_949C70E0-6AF0-4246-A5D1-CF4044893568" dmnElementRef="_949C70E0-6AF0-4246-A5D1-CF4044893568" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="930" y="241.89454699429598" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-drg-_FE3AD641-1192-462A-9A3C-07951C4CF856" dmnElementRef="_FE3AD641-1192-462A-9A3C-07951C4CF856" isCollapsed="false">

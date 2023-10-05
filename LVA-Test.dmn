@@ -18,40 +18,128 @@
       <dmn:text>"Helloboss", "aka"</dmn:text>
     </dmn:allowedValues>
   </dmn:itemDefinition>
-  <dmn:inputData id="_1834D908-4388-4AF1-94B8-C3465C75C892" name="Test">
+  <dmn:itemDefinition id="_84A3382E-18AE-4E97-AF4A-48B287259D22" name="Wetter" isCollection="false">
+    <dmn:itemComponent id="_8A726C72-1EE3-4A5D-93B4-74DC45C661A9" name="Wahrscheinlichkeit" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_7C6ED4A4-3375-472D-80E1-20D04DCAD63F" name="Zustand" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+      <dmn:allowedValues kie:constraintType="enumeration" id="_99E942B9-05B7-49DB-9941-CFAC9DFABFA5">
+        <dmn:text>"Regen", "Sonne"</dmn:text>
+      </dmn:allowedValues>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_3717180B-75C5-4FCB-BFF3-104F6E825420" name="Name eingeben" isCollection="false">
+      <dmn:typeRef>Any</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_5B896A22-DF3D-4B53-8992-C08A25AD5456" name="Name eingeben" isCollection="false">
+      <dmn:typeRef>Any</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_5AFD34C0-8110-417B-8B63-022683E9494E" name="Name eingeben" isCollection="false">
+      <dmn:typeRef>Any</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_8F645627-4D3A-4242-8B91-AA2F476A62B3" name="Name eingeben" isCollection="false">
+      <dmn:typeRef>Any</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_D0EB77DD-45AD-49BF-A9A5-40DFBA627746" name="Name eingeben" isCollection="false">
+      <dmn:typeRef>Any</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
+  <dmn:inputData id="_1834D908-4388-4AF1-94B8-C3465C75C892" name="Wetter">
     <dmn:extensionElements/>
-    <dmn:variable id="_66B6E2A5-C1E1-47FF-B4EB-6EA8844DA572" name="Test" typeRef="string"/>
+    <dmn:variable id="_66B6E2A5-C1E1-47FF-B4EB-6EA8844DA572" name="Wetter" typeRef="Wetter"/>
   </dmn:inputData>
-  <dmn:decision id="_FE3AD641-1192-462A-9A3C-07951C4CF856" name="Zwischenentscheidung">
+  <dmn:decision id="_FE3AD641-1192-462A-9A3C-07951C4CF856" name="Regenschirm potentiell verwendet ?">
     <dmn:extensionElements/>
-    <dmn:variable id="_DAD4FA38-BD98-40FC-8333-28A212554F0A" name="Zwischenentscheidung" typeRef="boolean"/>
+    <dmn:variable id="_DAD4FA38-BD98-40FC-8333-28A212554F0A" name="Regenschirm potentiell verwendet ?" typeRef="boolean"/>
     <dmn:informationRequirement id="_40DB11ED-9DF4-4BF4-B4E6-A9D1F5F16852">
       <dmn:requiredInput href="#_1834D908-4388-4AF1-94B8-C3465C75C892"/>
     </dmn:informationRequirement>
+    <dmn:informationRequirement id="_63BD0DE7-B6FC-4438-B7DC-2959C86DACF7">
+      <dmn:requiredInput href="#_14E9835E-9321-445E-AE59-1F79108184CA"/>
+    </dmn:informationRequirement>
     <dmn:decisionTable id="_9DD7F1F0-D21B-4DAD-993F-319266537023" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
-      <dmn:input id="_1D6FC89A-8EBE-470E-9DCA-85487711C064">
-        <dmn:inputExpression id="_56E6625C-0901-4D44-A3DA-5443263C25B9" typeRef="string">
-          <dmn:text>Eingang</dmn:text>
+      <dmn:input id="_16FAFDC2-9A09-450C-8B75-D8E47739FDF1">
+        <dmn:inputExpression id="_37FC93DA-7A09-4A26-8755-B9A19BA7ADE0" typeRef="boolean">
+          <dmn:text>Regenschirm verfügbar</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:output id="_4D501D0F-DCAD-4707-A028-851888699F9C"/>
+      <dmn:input id="_221E573D-4E59-41A7-A21D-34B229CE37B1">
+        <dmn:inputExpression id="_ED785D98-D36F-45FF-A029-E32772F5EE55" typeRef="number">
+          <dmn:text>Wetter.Wahrscheinlichkeit</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="_3CDBD787-D4C9-4298-9287-D348E14817B8">
+        <dmn:inputExpression id="_83DC3EFA-B67F-4CBF-9730-CF467232D644" typeRef="string">
+          <dmn:text>Wetter.Zustand</dmn:text>
+        </dmn:inputExpression>
+        <dmn:inputValues kie:constraintType="enumeration" id="_FDFC961E-B26E-4842-BF68-B6407D0718BE">
+          <dmn:text>"Regen", "Sonne"</dmn:text>
+        </dmn:inputValues>
+      </dmn:input>
+      <dmn:output id="_39C99703-86E7-48E2-BED2-41A1CA7B97A6"/>
       <dmn:annotation name="annotation-1"/>
-      <dmn:rule id="_439B41F9-9729-4680-BAC3-0533019FA0F2">
-        <dmn:inputEntry id="_91F0F53A-5956-4B5C-8B26-79639DFEFFF1">
-          <dmn:text>"Helloboss"</dmn:text>
+      <dmn:rule id="_08C63DF8-2777-4BDA-BEDC-82B908F1738D">
+        <dmn:inputEntry id="_F4823BED-77FC-4E16-BC6F-AE0868AE0D16">
+          <dmn:text>true</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry id="_21F3C9BD-E256-46C3-B8CD-313050E84DD5">
+        <dmn:inputEntry id="_CA986F79-41D4-4A3F-AC46-D667C57A173C">
+          <dmn:text>&gt;0.5</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_80FADEBC-FDF1-4D62-9572-CF57FD2CB29E">
+          <dmn:text>"Regen"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_40D0FBF0-A759-48B9-917F-728E276AEE53">
           <dmn:text>true</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
         </dmn:annotationEntry>
       </dmn:rule>
-      <dmn:rule id="_CE0526F5-7B6C-4694-AEA8-E0157C862C82">
-        <dmn:inputEntry id="_989082A9-D705-4C37-9025-1F7A14F0A120">
-          <dmn:text>"aka"</dmn:text>
+      <dmn:rule id="_22731F9E-65B5-40EC-9495-30517C3FC6F6">
+        <dmn:inputEntry id="_7951CB3E-F9DB-48E3-9BA7-BEA38053463A">
+          <dmn:text>false</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry id="_6BBAC96A-843E-4521-AB2E-710389AD2A46">
+        <dmn:inputEntry id="_F097FC12-A3FD-4AEE-9CEF-31ECA95A5409">
+          <dmn:text>&lt;=0.5</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_8B61BAD0-EAA1-4385-B76F-7BC53FD83388">
+          <dmn:text>"Regen"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_DACD3767-2160-4D6D-99C9-EEE3DCE327BF">
+          <dmn:text>false</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="_0D65B19E-2829-4420-B303-62930BA2C827">
+        <dmn:inputEntry id="_EF8A9441-F7E5-4F74-849E-8D6323E262C2">
+          <dmn:text>true</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_8C0A4F18-0A37-4F3A-B245-E7DD2F402806">
+          <dmn:text>&gt;0.5</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_5262C3C6-8841-4199-99A6-995CCF72697D">
+          <dmn:text>"Sonne"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_7C9A9164-5870-49A7-ACEF-D78110D5FE31">
+          <dmn:text>false</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="_5A5D3A9C-846A-4243-A2FF-6F15DFD3876A">
+        <dmn:inputEntry id="_A58545AB-50AD-4608-9FD1-45F1AFA3D2FE">
+          <dmn:text>false</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_7C7FFCDC-BD06-45C7-9DA4-3C8624FE7444">
+          <dmn:text>&lt;=0.5</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_1B8A2F3A-1993-4E5E-9E15-FD85CE4AC87C">
+          <dmn:text>"Sonne"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_581EEA21-C796-4A79-A14A-F24FDFB6AE74">
           <dmn:text>false</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
@@ -60,25 +148,78 @@
       </dmn:rule>
     </dmn:decisionTable>
   </dmn:decision>
-  <dmn:decision id="_F84AA8F0-C080-42D1-A62E-D1E087F49198" name="Ausgang">
+  <dmn:decision id="_F84AA8F0-C080-42D1-A62E-D1E087F49198" name="Regenschirm verwendet?">
     <dmn:extensionElements/>
-    <dmn:variable id="_039B27B7-1FF3-4C1F-80E5-90F3AFD4394C" name="Ausgang" typeRef="boolean"/>
+    <dmn:variable id="_039B27B7-1FF3-4C1F-80E5-90F3AFD4394C" name="Regenschirm verwendet?" typeRef="boolean"/>
     <dmn:informationRequirement id="_61B058D0-5694-4464-A961-F5F518FC8523">
       <dmn:requiredDecision href="#_FE3AD641-1192-462A-9A3C-07951C4CF856"/>
     </dmn:informationRequirement>
+    <dmn:informationRequirement id="_80881185-A22A-4988-82FA-89106CC2E34C">
+      <dmn:requiredInput href="#_876E35D5-FD10-43E0-A34E-3FEBE81E9FC5"/>
+    </dmn:informationRequirement>
     <dmn:decisionTable id="_74C06637-B49D-4720-AF96-964A54C3E23F" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
-      <dmn:input id="_ADF82DEF-FE06-4D66-8EB5-BEDD15EEF4CD">
-        <dmn:inputExpression id="_619E389C-C64A-4515-BC96-A6B8CBFFE0AD" typeRef="boolean">
-          <dmn:text>Decision-2</dmn:text>
+      <dmn:input id="_EC57055C-FDE4-4295-AF61-0D58EF17CDC2">
+        <dmn:inputExpression id="_8E5753AA-CF6A-4E1B-ABB3-C99B02939E3A" typeRef="boolean">
+          <dmn:text>Benutzer</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:output id="_0E29CD80-9F26-4082-9FAA-4C1982770B62"/>
+      <dmn:input id="_C9F0D32C-0B0B-4A56-A3B4-79BC6E9C4BA8">
+        <dmn:inputExpression id="_AE1BDB15-C5B6-42C0-BB4B-7B8B488C5CDC" typeRef="boolean">
+          <dmn:text>Regenschirm potentiell verwendet ?</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_89E277D5-F8C5-464C-9B1F-67CA0EF0DF26"/>
       <dmn:annotation name="annotation-1"/>
-      <dmn:rule id="_B2B6762C-304F-4907-838D-425AB47E672B">
-        <dmn:inputEntry id="_F59DF411-F2C2-439F-A1AC-F16445981A37">
+      <dmn:rule id="_6CF07A88-88E5-47BD-97F4-3A106C1097BB">
+        <dmn:inputEntry id="_A81DA8A2-E2AA-4348-9A9D-CAA33A3947A8">
           <dmn:text>true</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry id="_19164B1F-46D8-4C39-AC24-14FED7E085CB">
+        <dmn:inputEntry id="_79717A71-CCA3-4E1D-A7B5-D79407977C44">
+          <dmn:text>true</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_1182E9A8-ABF1-4539-B55E-5172A09B52E5">
+          <dmn:text>true</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="_EEAC9ECB-DF0D-4B4F-98E3-29565F1C9D68">
+        <dmn:inputEntry id="_61D0D6B0-ABBF-432B-ABDD-323ABE6FEED5">
+          <dmn:text>false</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_DD197E3A-17A7-4CDF-ADE1-19E56988FECD">
+          <dmn:text>false</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_8202AC4E-C24A-4334-810D-83DBC184EC74">
+          <dmn:text>false</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="_223820B9-B840-4561-8434-23F8E2AB5359">
+        <dmn:inputEntry id="_B81A0533-859F-49AA-8DC9-F5D9EFF0635C">
+          <dmn:text>true</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_5CDC4F30-8C31-4E41-9C13-C2BC1AA61E2D">
+          <dmn:text>false</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_18A1B8D6-F030-4DD1-B1DE-A50E6C8B2198">
+          <dmn:text>false</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="_E495EFA8-58E0-4FED-9EFD-128E783C0471">
+        <dmn:inputEntry id="_E2C81858-A4FE-4A30-98DD-7FD04A0CAFDD">
+          <dmn:text>false</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_578A2DAB-57D8-453F-A6E4-7285B5AA3998">
+          <dmn:text>true</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_498ABCED-53F8-446A-ADBD-31AED26C1E70">
           <dmn:text>false</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
@@ -87,6 +228,14 @@
       </dmn:rule>
     </dmn:decisionTable>
   </dmn:decision>
+  <dmn:inputData id="_14E9835E-9321-445E-AE59-1F79108184CA" name="Regenschirm verfügbar">
+    <dmn:extensionElements/>
+    <dmn:variable id="_0B5D6FE8-E977-4A42-8B63-9937A8AB099A" name="Regenschirm verfügbar" typeRef="boolean"/>
+  </dmn:inputData>
+  <dmn:inputData id="_876E35D5-FD10-43E0-A34E-3FEBE81E9FC5" name="Benutzer">
+    <dmn:extensionElements/>
+    <dmn:variable id="_A8EB0B67-7EA6-43C4-B176-0C3F312839C0" name="Benutzer" typeRef="boolean"/>
+  </dmn:inputData>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram id="_9F9362A1-AA1C-45C4-9F03-84D9541C24DA" name="DRG">
       <di:extension>
@@ -96,9 +245,12 @@
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_74C06637-B49D-4720-AF96-964A54C3E23F">
             <kie:width>50</kie:width>
+            <kie:width>100</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
@@ -111,7 +263,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="533" y="256" width="100" height="50"/>
+        <dc:Bounds x="302" y="293" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-drg-_FE3AD641-1192-462A-9A3C-07951C4CF856" dmnElementRef="_FE3AD641-1192-462A-9A3C-07951C4CF856" isCollapsed="false">
@@ -120,7 +272,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="579" y="85" width="100" height="50"/>
+        <dc:Bounds x="364" y="160" width="111" height="76"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-drg-_F84AA8F0-C080-42D1-A62E-D1E087F49198" dmnElementRef="_F84AA8F0-C080-42D1-A62E-D1E087F49198" isCollapsed="false">
@@ -129,16 +281,42 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="579" y="-45" width="100" height="50"/>
+        <dc:Bounds x="395" y="5" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-drg-_14E9835E-9321-445E-AE59-1F79108184CA" dmnElementRef="_14E9835E-9321-445E-AE59-1F79108184CA" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="502" y="293" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-drg-_876E35D5-FD10-43E0-A34E-3FEBE81E9FC5" dmnElementRef="_876E35D5-FD10-43E0-A34E-3FEBE81E9FC5" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="588" y="107" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-drg-_40DB11ED-9DF4-4BF4-B4E6-A9D1F5F16852-AUTO-SOURCE-AUTO-TARGET" dmnElementRef="_40DB11ED-9DF4-4BF4-B4E6-A9D1F5F16852">
-        <di:waypoint x="583" y="256"/>
-        <di:waypoint x="629" y="135"/>
+        <di:waypoint x="352" y="293"/>
+        <di:waypoint x="419.5" y="236"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_63BD0DE7-B6FC-4438-B7DC-2959C86DACF7" dmnElementRef="_63BD0DE7-B6FC-4438-B7DC-2959C86DACF7">
+        <di:waypoint x="552" y="318"/>
+        <di:waypoint x="419.5" y="236"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_61B058D0-5694-4464-A961-F5F518FC8523-AUTO-SOURCE-AUTO-TARGET" dmnElementRef="_61B058D0-5694-4464-A961-F5F518FC8523">
-        <di:waypoint x="629" y="85"/>
-        <di:waypoint x="629" y="5"/>
+        <di:waypoint x="419.5" y="160"/>
+        <di:waypoint x="445" y="55"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_80881185-A22A-4988-82FA-89106CC2E34C" dmnElementRef="_80881185-A22A-4988-82FA-89106CC2E34C">
+        <di:waypoint x="638" y="132"/>
+        <di:waypoint x="445" y="55"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
     <dmndi:DMNDiagram id="_59E7015C-1BE4-4921-B7C7-733090896FC0" name="new-diagram">

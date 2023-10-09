@@ -8,39 +8,60 @@
     <dmn:itemComponent id="_7F1F85D8-8AE6-4093-832D-A368A5051F0D" name="Nummer" isCollection="false">
       <dmn:typeRef>string</dmn:typeRef>
     </dmn:itemComponent>
+    <dmn:itemComponent id="_DC4E991E-79BC-4FB2-AF1F-3249D8E1CF2F" name="Ects" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
   </dmn:itemDefinition>
-  <dmn:inputData id="_7A39E075-081B-4C76-AE5A-4DF4574C09D5" name="Liste_1">
+  <dmn:inputData id="_7A39E075-081B-4C76-AE5A-4DF4574C09D5" name="Zahl1">
     <dmn:extensionElements/>
-    <dmn:variable id="_CB011B21-2022-48C2-BBFD-1340C5A4FF54" name="Liste_1" typeRef="LVA"/>
+    <dmn:variable id="_CB011B21-2022-48C2-BBFD-1340C5A4FF54" name="Zahl1" typeRef="number"/>
   </dmn:inputData>
-  <dmn:inputData id="_21D0D55E-CF17-48D5-80C8-25153090B01E" name="Liste_2">
+  <dmn:inputData id="_21D0D55E-CF17-48D5-80C8-25153090B01E" name="Zahl2">
     <dmn:extensionElements/>
-    <dmn:variable id="_06B18C24-AEC2-40FA-8124-F3302F0F3562" name="Liste_2" typeRef="LVA"/>
+    <dmn:variable id="_06B18C24-AEC2-40FA-8124-F3302F0F3562" name="Zahl2" typeRef="number"/>
   </dmn:inputData>
   <dmn:decision id="_881EDE36-7D25-4FA2-B3A3-B8D6471B8393" name="2in1enthalten">
     <dmn:extensionElements/>
-    <dmn:variable id="_93366659-55CD-44FF-B6D8-169116B44333" name="2in1enthalten"/>
+    <dmn:variable id="_93366659-55CD-44FF-B6D8-169116B44333" name="2in1enthalten" typeRef="number"/>
     <dmn:informationRequirement id="_7BCBA330-FD52-4925-B28A-725944AB66D2">
       <dmn:requiredInput href="#_21D0D55E-CF17-48D5-80C8-25153090B01E"/>
     </dmn:informationRequirement>
     <dmn:informationRequirement id="_3D8EEC54-23C7-4563-8A25-022F51A72A3D">
       <dmn:requiredInput href="#_7A39E075-081B-4C76-AE5A-4DF4574C09D5"/>
     </dmn:informationRequirement>
+    <dmn:informationRequirement id="_B0E62C23-803B-4F0E-8BDF-3A8F1F102520">
+      <dmn:requiredInput href="#_693E4265-8462-4D09-8B33-25966F71F462"/>
+    </dmn:informationRequirement>
     <dmn:context id="_2403D03D-068F-4BFC-AE6F-C3F7BF91A8D1">
       <dmn:contextEntry>
-        <dmn:variable id="_0F09DFA3-5987-4268-BDC6-EF543346E52A" name="ContextEntry-1"/>
-        <dmn:list id="_DB4C9DAC-184B-484C-AC72-EA7DB501F40E">
-          <dmn:literalExpression id="_4B0B5B75-E4FA-40E0-A2D9-BCDBAFCF44D4">
-            <dmn:text/>
-          </dmn:literalExpression>
-          <dmn:expression/>
-        </dmn:list>
+        <dmn:variable id="_0F09DFA3-5987-4268-BDC6-EF543346E52A" name="Number1" typeRef="number"/>
+        <dmn:literalExpression id="_DB4C9DAC-184B-484C-AC72-EA7DB501F40E">
+          <dmn:text>Zahl1</dmn:text>
+        </dmn:literalExpression>
       </dmn:contextEntry>
       <dmn:contextEntry>
-        <dmn:variable id="_96B6DF93-672A-4218-BB61-A2688F8320E3" name="ContextEntry-2"/>
+        <dmn:variable id="_96B6DF93-672A-4218-BB61-A2688F8320E3" name="Number2" typeRef="number"/>
+        <dmn:literalExpression id="_657C2B00-4904-42B7-98D3-1862679D422B">
+          <dmn:text>Zahl2</dmn:text>
+        </dmn:literalExpression>
+      </dmn:contextEntry>
+      <dmn:contextEntry>
+        <dmn:variable id="_B77BF973-087D-4BF7-9708-18EA613939A6" name="MengeLVAs" typeRef="number"/>
+        <dmn:literalExpression id="_4DA203DD-E28D-45AB-881C-36B638A2C7DF">
+          <dmn:text>count(LVAS)</dmn:text>
+        </dmn:literalExpression>
+      </dmn:contextEntry>
+      <dmn:contextEntry>
+        <dmn:literalExpression id="_BDDFF3F7-3BF1-484A-B262-90C56B9208F0">
+          <dmn:text>Number1+Number2+MengeLVAs</dmn:text>
+        </dmn:literalExpression>
       </dmn:contextEntry>
     </dmn:context>
   </dmn:decision>
+  <dmn:inputData id="_693E4265-8462-4D09-8B33-25966F71F462" name="LVAS">
+    <dmn:extensionElements/>
+    <dmn:variable id="_4D7265A3-C588-4193-8E13-D67DDFDD9443" name="LVAS" typeRef="LVA"/>
+  </dmn:inputData>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram id="_0BBE0EBE-83CA-4940-8CBC-1D2E8D30D8A6" name="DRG">
       <di:extension>
@@ -48,14 +69,19 @@
           <kie:ComponentWidths dmnElementRef="_2403D03D-068F-4BFC-AE6F-C3F7BF91A8D1">
             <kie:width>50</kie:width>
             <kie:width>120</kie:width>
-            <kie:width>240</kie:width>
+            <kie:width>190</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_DB4C9DAC-184B-484C-AC72-EA7DB501F40E">
-            <kie:width>50</kie:width>
-            <kie:width>170</kie:width>
+            <kie:width>190</kie:width>
           </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_4B0B5B75-E4FA-40E0-A2D9-BCDBAFCF44D4">
-            <kie:width>170</kie:width>
+          <kie:ComponentWidths dmnElementRef="_657C2B00-4904-42B7-98D3-1862679D422B">
+            <kie:width>190</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_4DA203DD-E28D-45AB-881C-36B638A2C7DF">
+            <kie:width>190</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_BDDFF3F7-3BF1-484A-B262-90C56B9208F0">
+            <kie:width>190</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
@@ -86,12 +112,25 @@
         <dc:Bounds x="367" y="10" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-drg-_693E4265-8462-4D09-8B33-25966F71F462" dmnElementRef="_693E4265-8462-4D09-8B33-25966F71F462" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="562" y="167" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-drg-_7BCBA330-FD52-4925-B28A-725944AB66D2-AUTO-TARGET" dmnElementRef="_7BCBA330-FD52-4925-B28A-725944AB66D2">
         <di:waypoint x="477" y="192"/>
         <di:waypoint x="417" y="60"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_3D8EEC54-23C7-4563-8A25-022F51A72A3D" dmnElementRef="_3D8EEC54-23C7-4563-8A25-022F51A72A3D">
         <di:waypoint x="342" y="192"/>
+        <di:waypoint x="417" y="35"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_B0E62C23-803B-4F0E-8BDF-3A8F1F102520" dmnElementRef="_B0E62C23-803B-4F0E-8BDF-3A8F1F102520">
+        <di:waypoint x="612" y="192"/>
         <di:waypoint x="417" y="35"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>

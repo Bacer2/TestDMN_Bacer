@@ -97,7 +97,7 @@
       <dmn:contextEntry>
         <dmn:variable id="_13583242-322E-4E38-8176-0B15294A21E4" name="Prüfmenge"/>
         <dmn:literalExpression id="_CCBB7F49-4E03-48CD-93BE-B63D9CD50C7B">
-          <dmn:text>count(LVAS)-count(Erforderliche LVAs)</dmn:text>
+          <dmn:text>count(LVAS)-count(ErforderlicheLVAs)</dmn:text>
         </dmn:literalExpression>
       </dmn:contextEntry>
       <dmn:contextEntry>
@@ -109,7 +109,7 @@
       <dmn:contextEntry>
         <dmn:variable id="_A5884AE5-E13A-4EBB-BEE9-8E28EFD86AF1" name="Prüfklassen"/>
         <dmn:literalExpression id="_FE5C53A8-F480-4D23-B890-B664343DBAA7">
-          <dmn:text>for x in Erforderliche LVAs return x.Nummer</dmn:text>
+          <dmn:text>for x in ErforderlicheLVAs return x.Nummer</dmn:text>
         </dmn:literalExpression>
       </dmn:contextEntry>
       <dmn:contextEntry>
@@ -156,9 +156,9 @@
       </dmn:contextEntry>
     </dmn:context>
   </dmn:decision>
-  <dmn:inputData id="_4A0A30B1-E42E-44F0-B413-62CE8DA80557" name="Erforderliche LVAs">
+  <dmn:inputData id="_4A0A30B1-E42E-44F0-B413-62CE8DA80557" name="ErforderlicheLVAs">
     <dmn:extensionElements/>
-    <dmn:variable id="_0880F1FB-AEBD-4615-9B59-A2B292DBEFAC" name="Erforderliche LVAs"/>
+    <dmn:variable id="_0880F1FB-AEBD-4615-9B59-A2B292DBEFAC" name="ErforderlicheLVAs" typeRef="LVA"/>
   </dmn:inputData>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram id="_0BBE0EBE-83CA-4940-8CBC-1D2E8D30D8A6" name="DRG">

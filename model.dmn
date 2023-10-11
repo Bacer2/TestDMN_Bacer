@@ -28,21 +28,6 @@
         <dmn:text>"Regen", "Sonne"</dmn:text>
       </dmn:allowedValues>
     </dmn:itemComponent>
-    <dmn:itemComponent id="_3717180B-75C5-4FCB-BFF3-104F6E825420" name="Name eingeben" isCollection="false">
-      <dmn:typeRef>Any</dmn:typeRef>
-    </dmn:itemComponent>
-    <dmn:itemComponent id="_5B896A22-DF3D-4B53-8992-C08A25AD5456" name="Name eingeben" isCollection="false">
-      <dmn:typeRef>Any</dmn:typeRef>
-    </dmn:itemComponent>
-    <dmn:itemComponent id="_5AFD34C0-8110-417B-8B63-022683E9494E" name="Name eingeben" isCollection="false">
-      <dmn:typeRef>Any</dmn:typeRef>
-    </dmn:itemComponent>
-    <dmn:itemComponent id="_8F645627-4D3A-4242-8B91-AA2F476A62B3" name="Name eingeben" isCollection="false">
-      <dmn:typeRef>Any</dmn:typeRef>
-    </dmn:itemComponent>
-    <dmn:itemComponent id="_D0EB77DD-45AD-49BF-A9A5-40DFBA627746" name="Name eingeben" isCollection="false">
-      <dmn:typeRef>Any</dmn:typeRef>
-    </dmn:itemComponent>
   </dmn:itemDefinition>
   <dmn:inputData id="_1834D908-4388-4AF1-94B8-C3465C75C892" name="Wetter">
     <dmn:extensionElements/>
@@ -253,6 +238,18 @@
     <dmn:extensionElements/>
     <dmn:variable id="_A8EB0B67-7EA6-43C4-B176-0C3F312839C0" name="Benutzer" typeRef="boolean"/>
   </dmn:inputData>
+  <dmn:decision id="_BB1AA4B8-457B-4784-B2D3-76B082A2A9F2" name="Decision-1">
+    <dmn:extensionElements/>
+    <dmn:variable id="_546B20C5-366A-41DF-A46D-7481C9DDBF6C" name="Decision-1"/>
+    <dmn:relation id="_FF355991-0149-4EEA-9E3A-E063788EC152">
+      <dmn:column id="_AB071C8B-E356-4216-ACEB-AA856089F9DA" name="column-1"/>
+      <dmn:row id="_A2AE88B2-F309-40C6-B55A-99947D4297A8">
+        <dmn:literalExpression id="_F8871205-8379-42E5-96FD-CEE284B374AA">
+          <dmn:text/>
+        </dmn:literalExpression>
+      </dmn:row>
+    </dmn:relation>
+  </dmn:decision>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram id="_9F9362A1-AA1C-45C4-9F03-84D9541C24DA" name="DRG">
       <di:extension>
@@ -272,6 +269,11 @@
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_FF355991-0149-4EEA-9E3A-E063788EC152">
+            <kie:width>50</kie:width>
+            <kie:width>100</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_F8871205-8379-42E5-96FD-CEE284B374AA"/>
         </kie:ComponentsWidthsExtension>
       </di:extension>
       <dmndi:DMNShape id="dmnshape-drg-_1834D908-4388-4AF1-94B8-C3465C75C892" dmnElementRef="_1834D908-4388-4AF1-94B8-C3465C75C892" isCollapsed="false">
@@ -317,6 +319,15 @@
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
         <dc:Bounds x="588" y="107" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-drg-_BB1AA4B8-457B-4784-B2D3-76B082A2A9F2" dmnElementRef="_BB1AA4B8-457B-4784-B2D3-76B082A2A9F2" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="150" y="131" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-drg-_40DB11ED-9DF4-4BF4-B4E6-A9D1F5F16852-AUTO-SOURCE-AUTO-TARGET" dmnElementRef="_40DB11ED-9DF4-4BF4-B4E6-A9D1F5F16852">

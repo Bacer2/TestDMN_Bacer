@@ -140,13 +140,27 @@
           <dmn:annotation name="annotation-1"/>
           <dmn:rule id="_CB4486FA-78EF-4A44-ACB6-C0D8227669B7">
             <dmn:inputEntry id="_482C2CD7-9587-4856-B600-CC7D3111DAB8">
-              <dmn:text>true</dmn:text>
+              <dmn:text>"true"</dmn:text>
             </dmn:inputEntry>
             <dmn:inputEntry id="_40B63A12-72D5-4CBA-AB81-ACB475288F27">
               <dmn:text>"richtige Anzahl an Ects"</dmn:text>
             </dmn:inputEntry>
             <dmn:outputEntry id="_955949ED-AD41-4DF2-807B-64805254AA3E">
               <dmn:text>true</dmn:text>
+            </dmn:outputEntry>
+            <dmn:annotationEntry>
+              <dmn:text/>
+            </dmn:annotationEntry>
+          </dmn:rule>
+          <dmn:rule id="_E81215D8-D296-49A4-BFEB-77A5A6E90A8F">
+            <dmn:inputEntry id="_B69CEF54-B188-4E0E-AA4B-BA89FA9D977C">
+              <dmn:text>"false"</dmn:text>
+            </dmn:inputEntry>
+            <dmn:inputEntry id="_7EAD8B24-E2F6-4080-95B5-C3CD10C25A73">
+              <dmn:text>"richtige Anzahl an Ects"</dmn:text>
+            </dmn:inputEntry>
+            <dmn:outputEntry id="_3C397319-DE01-43A7-873C-60E425505ED8">
+              <dmn:text>false</dmn:text>
             </dmn:outputEntry>
             <dmn:annotationEntry>
               <dmn:text/>

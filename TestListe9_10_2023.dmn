@@ -34,7 +34,7 @@
       <dmn:contextEntry>
         <dmn:decisionTable id="_E38F09CC-59E4-47B9-AB7D-A940C817435F" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
           <dmn:input id="_C962A13C-379E-46CE-BF17-FAB988417EBD">
-            <dmn:inputExpression>
+            <dmn:inputExpression id="_4C529534-6D0D-4CEA-BEA5-F466681DFE67">
               <dmn:text>SumEcts</dmn:text>
             </dmn:inputExpression>
           </dmn:input>
@@ -125,14 +125,14 @@
         </dmn:literalExpression>
       </dmn:contextEntry>
       <dmn:contextEntry>
-        <dmn:decisionTable id="_E660AA28-A1CF-47BD-99B3-04F815B5524F" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+        <dmn:decisionTable id="_E660AA28-A1CF-47BD-99B3-04F815B5524F" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
           <dmn:input id="_7F84A8DB-EA2D-4E68-AD1B-D11303755521">
             <dmn:inputExpression id="_84304474-DAB0-4656-82BD-F4664FA694D2">
               <dmn:text>Prüfung</dmn:text>
             </dmn:inputExpression>
           </dmn:input>
           <dmn:input id="_A0C0A5FD-8C51-4B22-AA67-A2C0538FB905">
-            <dmn:inputExpression typeRef="string">
+            <dmn:inputExpression id="_99300F4E-66AF-478E-9120-6EDEBC04DE72" typeRef="string">
               <dmn:text>Richtige Anzahl an Ects</dmn:text>
             </dmn:inputExpression>
           </dmn:input>
@@ -152,14 +152,14 @@
               <dmn:text/>
             </dmn:annotationEntry>
           </dmn:rule>
-          <dmn:rule id="_E81215D8-D296-49A4-BFEB-77A5A6E90A8F">
-            <dmn:inputEntry id="_B69CEF54-B188-4E0E-AA4B-BA89FA9D977C">
-              <dmn:text>"false"</dmn:text>
+          <dmn:rule id="_4AA689D1-A021-4034-BBDB-D1A2A0B41709">
+            <dmn:inputEntry id="_18C7B18A-3F75-40BD-8B04-2343F50B99E0">
+              <dmn:text>-</dmn:text>
             </dmn:inputEntry>
-            <dmn:inputEntry id="_7EAD8B24-E2F6-4080-95B5-C3CD10C25A73">
-              <dmn:text>"richtige Anzahl an Ects"</dmn:text>
+            <dmn:inputEntry id="_8BD1BF02-E48E-40FA-B423-733F1A52E37F">
+              <dmn:text>-</dmn:text>
             </dmn:inputEntry>
-            <dmn:outputEntry id="_3C397319-DE01-43A7-873C-60E425505ED8">
+            <dmn:outputEntry id="_58BAEB2E-F8D8-4022-BEAC-2497B799CDF7">
               <dmn:text>false</dmn:text>
             </dmn:outputEntry>
             <dmn:annotationEntry>
@@ -282,7 +282,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="649" y="389.7140840337761" width="100" height="50"/>
+        <dc:Bounds x="602" y="366.7140840337761" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-drg-_B0E62C23-803B-4F0E-8BDF-3A8F1F102520" dmnElementRef="_B0E62C23-803B-4F0E-8BDF-3A8F1F102520">

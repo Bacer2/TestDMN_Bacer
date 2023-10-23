@@ -14,16 +14,117 @@
   </dmn:itemDefinition>
   <dmn:inputData id="_B8CEC671-AFFE-4321-B667-1BE52A81DD2C" name="Input Lvas">
     <dmn:extensionElements/>
-    <dmn:variable id="_DF9BFDB3-C5E5-4CC6-8588-80393BA57AD4" name="Input Lvas"/>
+    <dmn:variable id="_DF9BFDB3-C5E5-4CC6-8588-80393BA57AD4" name="Input Lvas" typeRef="LVA"/>
   </dmn:inputData>
-  <dmn:decision id="_4B9332B5-2BE1-40A9-8290-D65C8ED25DE9" name="">
+  <dmn:decision id="_4B9332B5-2BE1-40A9-8290-D65C8ED25DE9" name="Proseminare korrekt">
     <dmn:extensionElements/>
-    <dmn:variable id="_57B94B32-E94E-492B-96BE-5DD24016A3E0" name=""/>
+    <dmn:variable id="_57B94B32-E94E-492B-96BE-5DD24016A3E0" name="Proseminare korrekt"/>
+    <dmn:informationRequirement id="_9E67DB8F-A229-4C0B-89D4-0276742B6389">
+      <dmn:requiredInput href="#_384FE0B9-4ADA-4286-947F-0E880E127071"/>
+    </dmn:informationRequirement>
+    <dmn:informationRequirement id="_3D4E3BBF-610E-4AF3-96A8-82664F373EC6">
+      <dmn:requiredInput href="#_B8CEC671-AFFE-4321-B667-1BE52A81DD2C"/>
+    </dmn:informationRequirement>
+    <dmn:knowledgeRequirement id="_9E2972EA-F2C8-47EC-96E3-28323B4C6C08">
+      <dmn:requiredKnowledge href="#_F0ACFEA7-9474-461F-9987-654FE27BA9A9"/>
+    </dmn:knowledgeRequirement>
+    <dmn:context id="_02125F02-2F23-423B-A46F-9B88B9D1C9A1">
+      <dmn:contextEntry>
+        <dmn:variable id="_0936A2D5-3411-4C97-BB4E-30314627420E" name="Richtige Lvas"/>
+        <dmn:literalExpression id="_B284B17C-D825-4B53-912E-3F95C8711DEE">
+          <dmn:text>ProsSeminar_Überpruefung(Input Lvas, Proseminare)</dmn:text>
+        </dmn:literalExpression>
+      </dmn:contextEntry>
+      <dmn:contextEntry>
+        <dmn:variable id="_690FE06F-956F-4040-89C6-EF8B0CD38C2B" name="Richtige Anzahl"/>
+        <dmn:literalExpression id="_418424B4-8C23-49A6-8FA6-025C5D41AAA2">
+          <dmn:text>count(Input Lvas)=2</dmn:text>
+        </dmn:literalExpression>
+      </dmn:contextEntry>
+      <dmn:contextEntry>
+        <dmn:literalExpression id="_DB2C9D55-2E5A-432B-B665-3ACE41F97C76">
+          <dmn:text>if Richtige Lvas and Richtige Anzahl then true else false</dmn:text>
+        </dmn:literalExpression>
+      </dmn:contextEntry>
+    </dmn:context>
   </dmn:decision>
+  <dmn:businessKnowledgeModel id="_F0ACFEA7-9474-461F-9987-654FE27BA9A9" name="ProsSeminar_Überpruefung">
+    <dmn:extensionElements/>
+    <dmn:variable id="_0E3A0698-77E2-447C-A3C8-F4C5D94A244C" name="ProsSeminar_Überpruefung" typeRef="boolean"/>
+    <dmn:encapsulatedLogic id="_8DFB40D1-2787-4872-9140-C66F5DC2D370" kind="FEEL">
+      <dmn:formalParameter id="_8314A11F-B072-4AE0-9F90-43DD8AF8151E" name="Input" typeRef="LVA"/>
+      <dmn:formalParameter id="_B94A2BDA-8846-46FB-A6E2-7A4F403C4531" name="PruefLvas" typeRef="LVA"/>
+      <dmn:context id="_5A152851-7590-4453-A1C1-D6D23963C19B">
+        <dmn:contextEntry>
+          <dmn:variable id="_D6CFE8DF-2F35-4D48-87DE-F5ECB1F123A0" name="Eingabeklassen"/>
+          <dmn:literalExpression id="_12B58A87-8BBF-40C1-A4F7-D96A6E78999C">
+            <dmn:text>for x in Input return x.Nummer</dmn:text>
+          </dmn:literalExpression>
+        </dmn:contextEntry>
+        <dmn:contextEntry>
+          <dmn:variable id="_9FF7B366-85D0-4F80-8677-7B79DC378622" name="Pruefklassen"/>
+          <dmn:literalExpression id="_1F1417D7-86DC-41BD-9537-49AB92BB561B">
+            <dmn:text>for x in PruefLvas return x.Nummer</dmn:text>
+          </dmn:literalExpression>
+        </dmn:contextEntry>
+        <dmn:contextEntry>
+          <dmn:variable id="_5955AE75-3A8C-441B-A619-246B5761EA24" name="SumList"/>
+          <dmn:literalExpression id="_72F458B6-CCCE-4ADB-A038-167940F7DA7A">
+            <dmn:text>union(Eingabeklassen,Pruefklassen)</dmn:text>
+          </dmn:literalExpression>
+        </dmn:contextEntry>
+        <dmn:contextEntry>
+          <dmn:literalExpression id="_BBC4A51C-4FF3-400E-B784-E392804CAA83">
+            <dmn:text>if (count(SumList)=(count(Input)+2)) then true else false</dmn:text>
+          </dmn:literalExpression>
+        </dmn:contextEntry>
+      </dmn:context>
+    </dmn:encapsulatedLogic>
+  </dmn:businessKnowledgeModel>
+  <dmn:inputData id="_384FE0B9-4ADA-4286-947F-0E880E127071" name="Proseminare">
+    <dmn:extensionElements/>
+    <dmn:variable id="_6F9E2B7A-DB5E-4157-ADEA-F9EC1A9DE3C3" name="Proseminare" typeRef="LVA"/>
+  </dmn:inputData>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram id="_0BBE0EBE-83CA-4940-8CBC-1D2E8D30D8A6" name="DRG">
       <di:extension>
-        <kie:ComponentsWidthsExtension/>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_02125F02-2F23-423B-A46F-9B88B9D1C9A1">
+            <kie:width>50</kie:width>
+            <kie:width>120</kie:width>
+            <kie:width>295</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_B284B17C-D825-4B53-912E-3F95C8711DEE">
+            <kie:width>295</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_418424B4-8C23-49A6-8FA6-025C5D41AAA2">
+            <kie:width>295</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_DB2C9D55-2E5A-432B-B665-3ACE41F97C76">
+            <kie:width>295</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_5A152851-7590-4453-A1C1-D6D23963C19B">
+            <kie:width>50</kie:width>
+            <kie:width>120</kie:width>
+            <kie:width>130</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_12B58A87-8BBF-40C1-A4F7-D96A6E78999C">
+            <kie:width>130</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_1F1417D7-86DC-41BD-9537-49AB92BB561B">
+            <kie:width>130</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_72F458B6-CCCE-4ADB-A038-167940F7DA7A">
+            <kie:width>130</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_BBC4A51C-4FF3-400E-B784-E392804CAA83">
+            <kie:width>130</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_8DFB40D1-2787-4872-9140-C66F5DC2D370">
+            <kie:width>50</kie:width>
+            <kie:width>320</kie:width>
+          </kie:ComponentWidths>
+        </kie:ComponentsWidthsExtension>
       </di:extension>
       <dmndi:DMNShape id="dmnshape-drg-_B8CEC671-AFFE-4321-B667-1BE52A81DD2C" dmnElementRef="_B8CEC671-AFFE-4321-B667-1BE52A81DD2C" isCollapsed="false">
         <dmndi:DMNStyle>
@@ -31,7 +132,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="574" y="382" width="100" height="50"/>
+        <dc:Bounds x="488" y="379" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-drg-_4B9332B5-2BE1-40A9-8290-D65C8ED25DE9" dmnElementRef="_4B9332B5-2BE1-40A9-8290-D65C8ED25DE9" isCollapsed="false">
@@ -40,9 +141,39 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="586" y="237" width="100" height="50"/>
+        <dc:Bounds x="575" y="240" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-drg-_F0ACFEA7-9474-461F-9987-654FE27BA9A9" dmnElementRef="_F0ACFEA7-9474-461F-9987-654FE27BA9A9" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="824" y="239" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-drg-_384FE0B9-4ADA-4286-947F-0E880E127071" dmnElementRef="_384FE0B9-4ADA-4286-947F-0E880E127071" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="643" y="375" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="dmnedge-drg-_9E2972EA-F2C8-47EC-96E3-28323B4C6C08-AUTO-TARGET" dmnElementRef="_9E2972EA-F2C8-47EC-96E3-28323B4C6C08">
+        <di:waypoint x="874" y="264"/>
+        <di:waypoint x="675" y="265"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_9E67DB8F-A229-4C0B-89D4-0276742B6389-AUTO-TARGET" dmnElementRef="_9E67DB8F-A229-4C0B-89D4-0276742B6389">
+        <di:waypoint x="693" y="400"/>
+        <di:waypoint x="625" y="290"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_3D4E3BBF-610E-4AF3-96A8-82664F373EC6-AUTO-TARGET" dmnElementRef="_3D4E3BBF-610E-4AF3-96A8-82664F373EC6">
+        <di:waypoint x="538" y="404"/>
+        <di:waypoint x="625" y="290"/>
+      </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
 </dmn:definitions>

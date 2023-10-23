@@ -274,14 +274,20 @@
     </dmn:informationRequirement>
     <dmn:context id="_64983C2B-A374-4058-9D76-796835C9CF18">
       <dmn:contextEntry>
-        <dmn:variable id="_CA8BE88E-EEE2-49C8-8BE5-0298B244FBE9" name="Liste_Date"/>
+        <dmn:variable id="_CA8BE88E-EEE2-49C8-8BE5-0298B244FBE9" name="List_Date"/>
         <dmn:literalExpression id="_11E13BCB-B346-4D5F-9860-E3A6EC8E80B1">
-          <dmn:text>some x in InputLvas satisfies x.Prufdatum &lt; date("2020-10-01")</dmn:text>
+          <dmn:text>for x in InputLvas return </dmn:text>
+        </dmn:literalExpression>
+      </dmn:contextEntry>
+      <dmn:contextEntry>
+        <dmn:variable id="_C5802AB2-2FF7-46BE-A591-9C8B6ABF560E" name="List_Date1"/>
+        <dmn:literalExpression id="_B2AD5824-BCF1-4E1F-9EB2-4926AA04B2FD">
+          <dmn:text>some x in  x.Prufdatum &lt; date("2020-11-01")</dmn:text>
         </dmn:literalExpression>
       </dmn:contextEntry>
       <dmn:contextEntry>
         <dmn:literalExpression id="_CCC13381-46CA-45EC-8706-0B827FC83498">
-          <dmn:text>Liste_Date</dmn:text>
+          <dmn:text>date("2020-10-01") &lt; </dmn:text>
         </dmn:literalExpression>
       </dmn:contextEntry>
     </dmn:context>
@@ -354,6 +360,9 @@
             <kie:width>594</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_11E13BCB-B346-4D5F-9860-E3A6EC8E80B1">
+            <kie:width>594</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_B2AD5824-BCF1-4E1F-9EB2-4926AA04B2FD">
             <kie:width>594</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_CCC13381-46CA-45EC-8706-0B827FC83498">
@@ -527,13 +536,13 @@
         <di:waypoint x="1238.2990654205607" y="555.3421052631579"/>
         <di:waypoint x="1592" y="386"/>
       </dmndi:DMNEdge>
-      <dmndi:DMNEdge id="dmnedge-drg-_6E1038D3-FFDD-4451-8C08-E84127FA5DDE-AUTO-TARGET" dmnElementRef="_6E1038D3-FFDD-4451-8C08-E84127FA5DDE">
-        <di:waypoint x="1259.2990654205607" y="457.3421052631579"/>
-        <di:waypoint x="1592" y="386"/>
-      </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_6F3EB16E-6E5E-4581-B8AE-C81A7AFAAFBC" dmnElementRef="_6F3EB16E-6E5E-4581-B8AE-C81A7AFAAFBC">
         <di:waypoint x="1609.2990654205607" y="628.8399999999999"/>
         <di:waypoint x="1592" y="361"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_6E1038D3-FFDD-4451-8C08-E84127FA5DDE-AUTO-TARGET" dmnElementRef="_6E1038D3-FFDD-4451-8C08-E84127FA5DDE">
+        <di:waypoint x="1259.2990654205607" y="457.3421052631579"/>
+        <di:waypoint x="1592" y="386"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_BB4564F1-F274-442D-8F51-991C62E87301-AUTO-TARGET" dmnElementRef="_BB4564F1-F274-442D-8F51-991C62E87301">
         <di:waypoint x="1416" y="361"/>

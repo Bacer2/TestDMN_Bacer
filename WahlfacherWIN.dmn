@@ -89,7 +89,7 @@
       <dmn:requiredKnowledge href="#_7FD9643E-CEC3-42C3-8FE2-52706F49F2F2"/>
     </dmn:knowledgeRequirement>
     <dmn:literalExpression id="_E6583395-709C-49BB-B712-DDCFCC41C4D3">
-      <dmn:text>Modulüberprüfung(Data Mining1, InputLvas)</dmn:text>
+      <dmn:text>Modulüberprüfung(InputLvas, Data Mining1)</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
   <dmn:decision id="_7F14C55B-478F-4B95-A177-7913F7F673B1" name="Semantic Artifical Intelligence">
@@ -128,15 +128,9 @@
     <dmn:extensionElements/>
     <dmn:variable id="_81F130D8-9BC2-41B1-87FC-C3B0DCE1F17A" name="Modulüberprüfung" typeRef="boolean"/>
     <dmn:encapsulatedLogic id="_120C1EE4-5E69-44E5-9B64-BA5EAB4DDC86" kind="FEEL">
-      <dmn:formalParameter id="_D68A4358-0B62-4A21-95F0-8415E2D91200" name="PruefLvas" typeRef="LVA"/>
-      <dmn:formalParameter id="_9A246EA6-59E6-41B1-9CC9-193DE8391EE2" name="Input" typeRef="LVA"/>
+      <dmn:formalParameter id="_D68A4358-0B62-4A21-95F0-8415E2D91200" name="Input" typeRef="LVA"/>
+      <dmn:formalParameter id="_9A246EA6-59E6-41B1-9CC9-193DE8391EE2" name="PruefLvas" typeRef="LVA"/>
       <dmn:context id="_E5A7E211-25F1-46A4-88E9-9CFF76899633">
-        <dmn:contextEntry>
-          <dmn:variable id="_E15ECF0B-1E2F-436B-B093-C2E7DC4F4AB6" name="Pruefmenge"/>
-          <dmn:literalExpression id="_E8E1F324-1D2F-46E6-8918-242350187B91">
-            <dmn:text>count(Input)-count(PruefLvas)</dmn:text>
-          </dmn:literalExpression>
-        </dmn:contextEntry>
         <dmn:contextEntry>
           <dmn:variable id="_F82C622D-8EA6-487C-B214-18542486E731" name="Eingabeklassen"/>
           <dmn:literalExpression id="_3E5108F1-5456-4BD8-B43C-5F5FD042CCEF">
@@ -158,7 +152,7 @@
         <dmn:contextEntry>
           <dmn:variable id="_AC542012-6B64-4C66-A954-117434645403" name="Pruefung" typeRef="string"/>
           <dmn:literalExpression id="_3FF8572D-2E74-4EBF-970C-B2D4AB844D42">
-            <dmn:text>if (count(SumList)=Pruefmenge) then "true" else "false"</dmn:text>
+            <dmn:text>if (count(SumList)=count(Input)) then "true" else "false"</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
         <dmn:contextEntry>
@@ -193,29 +187,29 @@
     <dmn:informationRequirement id="_8D30DC29-84CF-4F26-9C7F-85E3DCEF29B0">
       <dmn:requiredDecision href="#_9D5B7AB2-C6B9-45F1-A702-07275CEC7D0B"/>
     </dmn:informationRequirement>
-    <dmn:decisionTable id="_D3484A3E-41AB-4C95-8393-E05E2C64FAA3" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+    <dmn:decisionTable id="_D3484A3E-41AB-4C95-8393-E05E2C64FAA3" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
       <dmn:input id="_3D998343-6C36-458F-A6C4-3F44DF7FC21D">
-        <dmn:inputExpression id="_3B851877-6511-4616-9729-E2B105FC124E">
+        <dmn:inputExpression id="_3B851877-6511-4616-9729-E2B105FC124E" typeRef="boolean">
           <dmn:text>Business Engineering</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_F47B36DB-AECA-4411-B829-882DD55E22B0">
-        <dmn:inputExpression id="_7A332F5C-5873-41CA-8B1E-85B3CBBEE575">
+        <dmn:inputExpression id="_7A332F5C-5873-41CA-8B1E-85B3CBBEE575" typeRef="boolean">
           <dmn:text>Data Mining</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_BE46387D-6F40-4A7A-A16D-584653F84D5B">
-        <dmn:inputExpression id="_FE1701B1-D5B6-4F74-9960-76BE982D5680">
+        <dmn:inputExpression id="_FE1701B1-D5B6-4F74-9960-76BE982D5680" typeRef="boolean">
           <dmn:text>Data Warehousing</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_61892D48-B27E-417F-9E5D-CBF2C3D9B921">
-        <dmn:inputExpression id="_DA666A41-6BE1-40D9-A42D-6DB573238186">
+        <dmn:inputExpression id="_DA666A41-6BE1-40D9-A42D-6DB573238186" typeRef="boolean">
           <dmn:text>Semantic Artifical Intelligence</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_47CC7CE0-FF2B-46A6-960D-D399DE21AD48">
-        <dmn:inputExpression id="_AD22C3D5-F96D-40FA-8FF7-B8FA9FF7B334">
+        <dmn:inputExpression id="_AD22C3D5-F96D-40FA-8FF7-B8FA9FF7B334" typeRef="boolean">
           <dmn:text>ServiceEngineering</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
@@ -225,7 +219,7 @@
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_55BC5352-C258-46C8-B788-EB2A4EA4B7C6">
-        <dmn:inputExpression id="_7650C6D5-C79D-4619-85C0-8835F9B642D9">
+        <dmn:inputExpression id="_7650C6D5-C79D-4619-85C0-8835F9B642D9" typeRef="boolean">
           <dmn:text>Strategische_IT-Planung</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
@@ -517,7 +511,7 @@
             <kie:width>696</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_E6583395-709C-49BB-B712-DDCFCC41C4D3">
-            <kie:width>539</kie:width>
+            <kie:width>190</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_12D3854A-EF6D-490E-BBFB-3C8E42673C36">
             <kie:width>963</kie:width>
@@ -528,29 +522,26 @@
           <kie:ComponentWidths dmnElementRef="_E5A7E211-25F1-46A4-88E9-9CFF76899633">
             <kie:width>50</kie:width>
             <kie:width>120</kie:width>
-            <kie:width>310</kie:width>
-          </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_E8E1F324-1D2F-46E6-8918-242350187B91">
-            <kie:width>310</kie:width>
+            <kie:width>250</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_3E5108F1-5456-4BD8-B43C-5F5FD042CCEF">
-            <kie:width>310</kie:width>
+            <kie:width>250</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_1C794A69-0F99-4AF8-AB6C-7AC48520131E">
-            <kie:width>310</kie:width>
+            <kie:width>250</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_ACFBBF77-FB86-4503-9D82-D6B04F583897">
-            <kie:width>310</kie:width>
+            <kie:width>250</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_3FF8572D-2E74-4EBF-970C-B2D4AB844D42">
-            <kie:width>310</kie:width>
+            <kie:width>250</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_65D65004-14C5-46BD-8F2D-795C3511EFD8">
-            <kie:width>310</kie:width>
+            <kie:width>250</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_120C1EE4-5E69-44E5-9B64-BA5EAB4DDC86">
             <kie:width>50</kie:width>
-            <kie:width>500</kie:width>
+            <kie:width>440</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_D3484A3E-41AB-4C95-8393-E05E2C64FAA3">
             <kie:width>50</kie:width>
@@ -644,7 +635,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="1232" y="103" width="100" height="50"/>
+        <dc:Bounds x="1234" y="103" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-drg-_1219E4AE-8047-4DD8-AF5E-D85E5B7556A0" dmnElementRef="_1219E4AE-8047-4DD8-AF5E-D85E5B7556A0" isCollapsed="false">
@@ -814,31 +805,31 @@
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_762151A6-DBD9-4412-A1ED-DABB6BFDFB4D" dmnElementRef="_762151A6-DBD9-4412-A1ED-DABB6BFDFB4D">
         <di:waypoint x="870" y="361"/>
-        <di:waypoint x="1282" y="128"/>
+        <di:waypoint x="1284" y="128"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_281BA6BF-4D46-4650-A016-7D91BDC403D9-AUTO-TARGET" dmnElementRef="_281BA6BF-4D46-4650-A016-7D91BDC403D9">
         <di:waypoint x="1022" y="354"/>
-        <di:waypoint x="1282" y="153"/>
+        <di:waypoint x="1284" y="153"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_AA7D6E16-BA6E-48AF-A6B0-AE6171955E54-AUTO-TARGET" dmnElementRef="_AA7D6E16-BA6E-48AF-A6B0-AE6171955E54">
         <di:waypoint x="1152" y="361"/>
-        <di:waypoint x="1282" y="153"/>
+        <di:waypoint x="1284" y="153"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_9B2E341F-0770-4119-9588-D43C35EEAABC-AUTO-TARGET" dmnElementRef="_9B2E341F-0770-4119-9588-D43C35EEAABC">
         <di:waypoint x="1325" y="361"/>
-        <di:waypoint x="1282" y="153"/>
+        <di:waypoint x="1284" y="153"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_F908206C-FBB8-49E0-89D9-E9849E26D25B-AUTO-TARGET" dmnElementRef="_F908206C-FBB8-49E0-89D9-E9849E26D25B">
         <di:waypoint x="1453" y="361"/>
-        <di:waypoint x="1282" y="153"/>
+        <di:waypoint x="1284" y="153"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_290738D2-0B83-43F6-B2E9-6730C1CC1FCB-AUTO-TARGET" dmnElementRef="_290738D2-0B83-43F6-B2E9-6730C1CC1FCB">
         <di:waypoint x="1590" y="361"/>
-        <di:waypoint x="1282" y="153"/>
+        <di:waypoint x="1284" y="153"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_8D30DC29-84CF-4F26-9C7F-85E3DCEF29B0-AUTO-TARGET" dmnElementRef="_8D30DC29-84CF-4F26-9C7F-85E3DCEF29B0">
         <di:waypoint x="1727" y="361"/>
-        <di:waypoint x="1282" y="153"/>
+        <di:waypoint x="1284" y="153"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>

@@ -81,9 +81,9 @@
     <dmn:extensionElements/>
     <dmn:variable id="_4D7265A3-C588-4193-8E13-D67DDFDD9443" name="LVAS" typeRef="LVA"/>
   </dmn:inputData>
-  <dmn:decision id="_B09DA417-608F-43DF-BD23-70F3E3B4EC5E" name="Fach erfüllt">
+  <dmn:decision id="_B09DA417-608F-43DF-BD23-70F3E3B4EC5E" name="Proseminar">
     <dmn:extensionElements/>
-    <dmn:variable id="_61CBE926-E390-4162-80BE-A9E90CE22FB4" name="Fach erfüllt"/>
+    <dmn:variable id="_61CBE926-E390-4162-80BE-A9E90CE22FB4" name="Proseminar"/>
     <dmn:informationRequirement id="_8EBCBFC2-ACC9-4122-82EC-1DF7ABCE7D68">
       <dmn:requiredDecision href="#_881EDE36-7D25-4FA2-B3A3-B8D6471B8393"/>
     </dmn:informationRequirement>
@@ -121,7 +121,7 @@
       <dmn:contextEntry>
         <dmn:variable id="_92D7143B-255F-4398-A7EB-7A7CA56456F9" name="Prüfung"/>
         <dmn:literalExpression id="_7FC18C90-F695-41AA-93BE-D632761D781C">
-          <dmn:text>if (count(SumList)=Prüfmenge) then "true" else "false"</dmn:text>
+          <dmn:text>if (count(SumList)=(Prüfmenge-2)) then "true" else "false"</dmn:text>
         </dmn:literalExpression>
       </dmn:contextEntry>
       <dmn:contextEntry>
@@ -170,9 +170,9 @@
       </dmn:contextEntry>
     </dmn:context>
   </dmn:decision>
-  <dmn:inputData id="_4A0A30B1-E42E-44F0-B413-62CE8DA80557" name="ErforderlicheLVAs">
+  <dmn:inputData id="_4A0A30B1-E42E-44F0-B413-62CE8DA80557" name="ErforderlicheLVAsProsem">
     <dmn:extensionElements/>
-    <dmn:variable id="_0880F1FB-AEBD-4615-9B59-A2B292DBEFAC" name="ErforderlicheLVAs" typeRef="LVA"/>
+    <dmn:variable id="_0880F1FB-AEBD-4615-9B59-A2B292DBEFAC" name="ErforderlicheLVAsProsem" typeRef="LVA"/>
   </dmn:inputData>
   <dmn:businessKnowledgeModel id="_C3920080-D143-4A10-B26E-92B35098573C" name="FachLVAs_überprüfen">
     <dmn:extensionElements/>

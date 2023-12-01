@@ -500,6 +500,9 @@
     <dmn:informationRequirement id="_EEC1220A-F348-4D48-A796-831955BD08EC">
       <dmn:requiredInput href="#_1219E4AE-8047-4DD8-AF5E-D85E5B7556A0"/>
     </dmn:informationRequirement>
+    <dmn:knowledgeRequirement id="_BC4E534C-D050-433C-8FD2-42142A52B481">
+      <dmn:requiredKnowledge href="#_463C0EF4-FC7B-4466-B738-35309877E81E"/>
+    </dmn:knowledgeRequirement>
   </dmn:decision>
   <dmn:decision id="_A56B3D94-B55F-42F3-AA09-02914B768CB7" name="OaSCM">
     <dmn:extensionElements/>
@@ -510,6 +513,9 @@
     <dmn:informationRequirement id="_56E442FD-13FF-45BA-9B11-9514D26A2390">
       <dmn:requiredInput href="#_1219E4AE-8047-4DD8-AF5E-D85E5B7556A0"/>
     </dmn:informationRequirement>
+    <dmn:knowledgeRequirement id="_1CC657E1-E317-4706-ABE7-3E1FE7F66B71">
+      <dmn:requiredKnowledge href="#_463C0EF4-FC7B-4466-B738-35309877E81E"/>
+    </dmn:knowledgeRequirement>
   </dmn:decision>
   <dmn:decision id="_AFC6A495-520B-4083-B76B-BBA3057C6AF5" name="OVuI">
     <dmn:extensionElements/>
@@ -520,6 +526,9 @@
     <dmn:informationRequirement id="_1336CF39-D619-4845-A16E-9D2783786931">
       <dmn:requiredInput href="#_1219E4AE-8047-4DD8-AF5E-D85E5B7556A0"/>
     </dmn:informationRequirement>
+    <dmn:knowledgeRequirement id="_836C9CDC-ECF4-4020-83A2-939DCC4CFBE7">
+      <dmn:requiredKnowledge href="#_463C0EF4-FC7B-4466-B738-35309877E81E"/>
+    </dmn:knowledgeRequirement>
   </dmn:decision>
   <dmn:decision id="_D632052D-5335-4067-8FAB-47AB40D9140E" name="GVWL">
     <dmn:extensionElements/>
@@ -530,6 +539,9 @@
     <dmn:informationRequirement id="_404BC18D-0DFF-42F6-97FC-35DBF56CDBF2">
       <dmn:requiredInput href="#_1219E4AE-8047-4DD8-AF5E-D85E5B7556A0"/>
     </dmn:informationRequirement>
+    <dmn:knowledgeRequirement id="_D6108C2D-7B4B-4539-B70E-199DDC3E7CEB">
+      <dmn:requiredKnowledge href="#_463C0EF4-FC7B-4466-B738-35309877E81E"/>
+    </dmn:knowledgeRequirement>
   </dmn:decision>
   <dmn:decision id="_5A1D5F51-0B44-4FE1-81C3-4EA4B8F3E173" name="ATdW">
     <dmn:extensionElements/>
@@ -540,6 +552,9 @@
     <dmn:informationRequirement id="_0E3EE0B3-DB07-407E-97A0-FBE06F32F42A">
       <dmn:requiredInput href="#_1219E4AE-8047-4DD8-AF5E-D85E5B7556A0"/>
     </dmn:informationRequirement>
+    <dmn:knowledgeRequirement id="_3BE3A721-4483-44A9-9993-D9933B243FC1">
+      <dmn:requiredKnowledge href="#_463C0EF4-FC7B-4466-B738-35309877E81E"/>
+    </dmn:knowledgeRequirement>
   </dmn:decision>
   <dmn:inputData id="_7DBB5E1E-73E1-43E5-9442-659A09C1FBF1" name="FuSME">
     <dmn:extensionElements/>
@@ -1091,6 +1106,10 @@
         <di:waypoint x="1231.5981308411215" y="815.3421052631579"/>
         <di:waypoint x="900" y="1033"/>
       </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_BC4E534C-D050-433C-8FD2-42142A52B481-AUTO-TARGET" dmnElementRef="_BC4E534C-D050-433C-8FD2-42142A52B481">
+        <di:waypoint x="1182.2990654205607" y="1175.5193523542407"/>
+        <di:waypoint x="900" y="1083"/>
+      </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_C8198C8A-B634-4451-B0B0-A6D9ACE7EA7E" dmnElementRef="_C8198C8A-B634-4451-B0B0-A6D9ACE7EA7E">
         <di:waypoint x="1065.5981308411215" y="1252.5841076624315"/>
         <di:waypoint x="1070" y="1058"/>
@@ -1098,6 +1117,10 @@
       <dmndi:DMNEdge id="dmnedge-drg-_56E442FD-13FF-45BA-9B11-9514D26A2390-AUTO-TARGET" dmnElementRef="_56E442FD-13FF-45BA-9B11-9514D26A2390">
         <di:waypoint x="1231.5981308411215" y="815.3421052631579"/>
         <di:waypoint x="1070" y="1033"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_1CC657E1-E317-4706-ABE7-3E1FE7F66B71-AUTO-TARGET" dmnElementRef="_1CC657E1-E317-4706-ABE7-3E1FE7F66B71">
+        <di:waypoint x="1182.2990654205607" y="1175.5193523542407"/>
+        <di:waypoint x="1070" y="1083"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_D498B129-F51F-4D02-B286-9B317321F694-AUTO-TARGET" dmnElementRef="_D498B129-F51F-4D02-B286-9B317321F694">
         <di:waypoint x="1231.5981308411215" y="1252.343938895137"/>
@@ -1107,6 +1130,10 @@
         <di:waypoint x="1231.5981308411215" y="815.3421052631579"/>
         <di:waypoint x="1240" y="1031"/>
       </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_836C9CDC-ECF4-4020-83A2-939DCC4CFBE7" dmnElementRef="_836C9CDC-ECF4-4020-83A2-939DCC4CFBE7">
+        <di:waypoint x="1182.2990654205607" y="1175.5193523542407"/>
+        <di:waypoint x="1240" y="1056"/>
+      </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_9D7379ED-5650-4878-A974-26690355B7D7" dmnElementRef="_9D7379ED-5650-4878-A974-26690355B7D7">
         <di:waypoint x="1413" y="1252.0105759504513"/>
         <di:waypoint x="1426" y="1058"/>
@@ -1115,6 +1142,10 @@
         <di:waypoint x="1231.5981308411215" y="815.3421052631579"/>
         <di:waypoint x="1426" y="1058"/>
       </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_D6108C2D-7B4B-4539-B70E-199DDC3E7CEB-AUTO-TARGET" dmnElementRef="_D6108C2D-7B4B-4539-B70E-199DDC3E7CEB">
+        <di:waypoint x="1182.2990654205607" y="1175.5193523542407"/>
+        <di:waypoint x="1426" y="1083"/>
+      </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_1D219E17-3917-4847-A2DD-A8D15402EB06-AUTO-TARGET" dmnElementRef="_1D219E17-3917-4847-A2DD-A8D15402EB06">
         <di:waypoint x="1619" y="1244.0976172575874"/>
         <di:waypoint x="1622" y="1081"/>
@@ -1122,6 +1153,10 @@
       <dmndi:DMNEdge id="dmnedge-drg-_0E3EE0B3-DB07-407E-97A0-FBE06F32F42A-AUTO-TARGET" dmnElementRef="_0E3EE0B3-DB07-407E-97A0-FBE06F32F42A">
         <di:waypoint x="1231.5981308411215" y="815.3421052631579"/>
         <di:waypoint x="1622" y="1031"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_3BE3A721-4483-44A9-9993-D9933B243FC1-AUTO-TARGET" dmnElementRef="_3BE3A721-4483-44A9-9993-D9933B243FC1">
+        <di:waypoint x="1182.2990654205607" y="1175.5193523542407"/>
+        <di:waypoint x="1622" y="1081"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_2877A123-1306-4BE5-A5A0-F7C483D38FD3-AUTO-TARGET" dmnElementRef="_2877A123-1306-4BE5-A5A0-F7C483D38FD3">
         <di:waypoint x="1622" y="1056"/>

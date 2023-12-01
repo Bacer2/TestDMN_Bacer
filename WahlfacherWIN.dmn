@@ -584,9 +584,34 @@
     <dmn:extensionElements/>
     <dmn:variable id="_7CF1C0AA-3D9C-4781-A1F4-5FA70DE6007B" name="Fach"/>
     <dmn:encapsulatedLogic id="_DD0465C6-BAFF-4DFC-B028-A97BB3B98FE2" kind="FEEL">
-      <dmn:literalExpression id="_8F68BEB1-1C0F-44C0-BEDF-92D7C825C7E1">
-        <dmn:text/>
-      </dmn:literalExpression>
+      <dmn:formalParameter id="_032D6E1F-1FDF-4BCF-8A9D-134BED4D87B1" name="Input" typeRef="LVA"/>
+      <dmn:formalParameter id="_B536F686-0AFE-44FC-A5D6-CD864D28D595" name="PruefLvas" typeRef="LVA"/>
+      <dmn:context id="_3C57A725-3D03-4CD1-9799-35BD7F3187DD">
+        <dmn:contextEntry>
+          <dmn:variable id="_A1EBA153-55D7-4C6F-8293-80ED930AC26F" name="Eingabeklassen"/>
+          <dmn:literalExpression id="_5B471738-1FBA-4BB8-A755-AAB97E4ECEAF">
+            <dmn:text>for x in Input return x.Nummer</dmn:text>
+          </dmn:literalExpression>
+        </dmn:contextEntry>
+        <dmn:contextEntry>
+          <dmn:variable id="_9963FAC4-6245-433E-AA68-DF58CD42FA36" name="Pruefklassen"/>
+          <dmn:literalExpression id="_97AB43B5-3284-4E90-BF05-586DC5B24707">
+            <dmn:text>for x in PruefLvas return x.Nummer</dmn:text>
+          </dmn:literalExpression>
+        </dmn:contextEntry>
+        <dmn:contextEntry>
+          <dmn:variable id="_33D3416C-3006-4FA4-8C8A-F921D47B5EEC" name="SumList"/>
+          <dmn:literalExpression id="_568DC36F-40F0-49D2-8005-28DC46E54CD9">
+            <dmn:text>union(Eingabeklassen,Pruefklassen)</dmn:text>
+          </dmn:literalExpression>
+        </dmn:contextEntry>
+        <dmn:contextEntry>
+          <dmn:variable id="_A7714951-B9B5-4F34-8097-63E8B668C828" name="Pruefung"/>
+          <dmn:literalExpression id="_51AC912E-4C75-40D9-9DC9-FE240C82739B">
+            <dmn:text>if (count(SumList)=count(Pruefklassen) then </dmn:text>
+          </dmn:literalExpression>
+        </dmn:contextEntry>
+      </dmn:context>
     </dmn:encapsulatedLogic>
   </dmn:businessKnowledgeModel>
   <dmn:textAnnotation id="_55E53D17-A763-4C6C-AC96-5EFE9D2DED08" textFormat="text/plain">
@@ -653,8 +678,27 @@
             <kie:width>100</kie:width>
             <kie:width>688</kie:width>
           </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_8F68BEB1-1C0F-44C0-BEDF-92D7C825C7E1"/>
-          <kie:ComponentWidths dmnElementRef="_DD0465C6-BAFF-4DFC-B028-A97BB3B98FE2"/>
+          <kie:ComponentWidths dmnElementRef="_3C57A725-3D03-4CD1-9799-35BD7F3187DD">
+            <kie:width>50</kie:width>
+            <kie:width>120</kie:width>
+            <kie:width>170</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_5B471738-1FBA-4BB8-A755-AAB97E4ECEAF">
+            <kie:width>170</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_97AB43B5-3284-4E90-BF05-586DC5B24707">
+            <kie:width>170</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_568DC36F-40F0-49D2-8005-28DC46E54CD9">
+            <kie:width>170</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_51AC912E-4C75-40D9-9DC9-FE240C82739B">
+            <kie:width>170</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_DD0465C6-BAFF-4DFC-B028-A97BB3B98FE2">
+            <kie:width>50</kie:width>
+            <kie:width>360</kie:width>
+          </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
       <dmndi:DMNShape id="dmnshape-drg-_219B9059-8FB7-4165-BB15-B9AFE6CF10F2" dmnElementRef="_219B9059-8FB7-4165-BB15-B9AFE6CF10F2" isCollapsed="false">

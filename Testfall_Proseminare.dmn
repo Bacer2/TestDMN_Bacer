@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_63473A78-3268-4E43-8473-168067AF20FC" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_6B7FC7A2-06DF-4ACC-9985-6D17DA8E5C00" name="Untitled" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_63473A78-3268-4E43-8473-168067AF20FC">
+<dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_63473A78-3268-4E43-8473-168067AF20FC" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_6B7FC7A2-06DF-4ACC-9985-6D17DA8E5C00" name="ProSeminare" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_63473A78-3268-4E43-8473-168067AF20FC">
   <dmn:extensionElements/>
   <dmn:itemDefinition id="_3826777C-C487-4F90-ACFA-91C84E7A6A7E" name="LVA" isCollection="true">
+    <dmn:itemComponent id="_1A6594F7-29EF-4E86-AE7B-734B953CC57E" name="PDatum" isCollection="false">
+      <dmn:typeRef>date</dmn:typeRef>
+    </dmn:itemComponent>
     <dmn:itemComponent id="_8507011E-3C8A-4000-90A0-A2E7B37AC044" name="Name" isCollection="false">
       <dmn:typeRef>string</dmn:typeRef>
     </dmn:itemComponent>
-    <dmn:itemComponent id="_7F1F85D8-8AE6-4093-832D-A368A5051F0D" name="Nummer" isCollection="false">
+    <dmn:itemComponent id="_7F1F85D8-8AE6-4093-832D-A368A5051F0D" name="Klasse" isCollection="false">
       <dmn:typeRef>string</dmn:typeRef>
     </dmn:itemComponent>
     <dmn:itemComponent id="_DC4E991E-79BC-4FB2-AF1F-3249D8E1CF2F" name="Ects" isCollection="false">
       <dmn:typeRef>number</dmn:typeRef>
     </dmn:itemComponent>
   </dmn:itemDefinition>
-  <dmn:inputData id="_B8CEC671-AFFE-4321-B667-1BE52A81DD2C" name="Input Lvas">
+  <dmn:inputData id="_B8CEC671-AFFE-4321-B667-1BE52A81DD2C" name="InputLvas">
     <dmn:extensionElements/>
-    <dmn:variable id="_DF9BFDB3-C5E5-4CC6-8588-80393BA57AD4" name="Input Lvas" typeRef="LVA"/>
+    <dmn:variable id="_DF9BFDB3-C5E5-4CC6-8588-80393BA57AD4" name="InputLvas"/>
   </dmn:inputData>
   <dmn:decision id="_4B9332B5-2BE1-40A9-8290-D65C8ED25DE9" name="Proseminare korrekt">
     <dmn:extensionElements/>
@@ -58,13 +61,13 @@
         <dmn:contextEntry>
           <dmn:variable id="_D6CFE8DF-2F35-4D48-87DE-F5ECB1F123A0" name="Eingabeklassen"/>
           <dmn:literalExpression id="_12B58A87-8BBF-40C1-A4F7-D96A6E78999C">
-            <dmn:text>for x in Input return x.Nummer</dmn:text>
+            <dmn:text>for x in Input return x.Klasse</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
         <dmn:contextEntry>
           <dmn:variable id="_9FF7B366-85D0-4F80-8677-7B79DC378622" name="Pruefklassen"/>
           <dmn:literalExpression id="_1F1417D7-86DC-41BD-9537-49AB92BB561B">
-            <dmn:text>for x in PruefLvas return x.Nummer</dmn:text>
+            <dmn:text>for x in PruefLvas return x.Klasse</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
         <dmn:contextEntry>
@@ -106,23 +109,23 @@
           <kie:ComponentWidths dmnElementRef="_5A152851-7590-4453-A1C1-D6D23963C19B">
             <kie:width>50</kie:width>
             <kie:width>120</kie:width>
-            <kie:width>130</kie:width>
+            <kie:width>609</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_12B58A87-8BBF-40C1-A4F7-D96A6E78999C">
-            <kie:width>130</kie:width>
+            <kie:width>609</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_1F1417D7-86DC-41BD-9537-49AB92BB561B">
-            <kie:width>130</kie:width>
+            <kie:width>609</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_72F458B6-CCCE-4ADB-A038-167940F7DA7A">
-            <kie:width>130</kie:width>
+            <kie:width>609</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_BBC4A51C-4FF3-400E-B784-E392804CAA83">
-            <kie:width>130</kie:width>
+            <kie:width>609</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_8DFB40D1-2787-4872-9140-C66F5DC2D370">
             <kie:width>50</kie:width>
-            <kie:width>320</kie:width>
+            <kie:width>799</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
@@ -132,7 +135,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="488" y="379" width="100" height="50"/>
+        <dc:Bounds x="488" y="375" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-drg-_4B9332B5-2BE1-40A9-8290-D65C8ED25DE9" dmnElementRef="_4B9332B5-2BE1-40A9-8290-D65C8ED25DE9" isCollapsed="false">
@@ -167,7 +170,7 @@
         <di:waypoint x="625" y="290"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_3D4E3BBF-610E-4AF3-96A8-82664F373EC6-AUTO-TARGET" dmnElementRef="_3D4E3BBF-610E-4AF3-96A8-82664F373EC6">
-        <di:waypoint x="538" y="404"/>
+        <di:waypoint x="538" y="400"/>
         <di:waypoint x="625" y="290"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_9E2972EA-F2C8-47EC-96E3-28323B4C6C08-AUTO-TARGET" dmnElementRef="_9E2972EA-F2C8-47EC-96E3-28323B4C6C08">

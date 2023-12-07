@@ -15,9 +15,9 @@
       <dmn:typeRef>number</dmn:typeRef>
     </dmn:itemComponent>
   </dmn:itemDefinition>
-  <dmn:inputData id="_B8CEC671-AFFE-4321-B667-1BE52A81DD2C" name="526AAWI13I">
+  <dmn:inputData id="_B8CEC671-AFFE-4321-B667-1BE52A81DD2C" name="S526AAWI13I">
     <dmn:extensionElements/>
-    <dmn:variable id="_DF9BFDB3-C5E5-4CC6-8588-80393BA57AD4" name="526AAWI13I"/>
+    <dmn:variable id="_DF9BFDB3-C5E5-4CC6-8588-80393BA57AD4" name="S526AAWI13I"/>
   </dmn:inputData>
   <dmn:decision id="_4B9332B5-2BE1-40A9-8290-D65C8ED25DE9" name="Proseminare korrekt">
     <dmn:extensionElements/>
@@ -35,13 +35,13 @@
       <dmn:contextEntry>
         <dmn:variable id="_0936A2D5-3411-4C97-BB4E-30314627420E" name="Richtige Lvas"/>
         <dmn:literalExpression id="_B284B17C-D825-4B53-912E-3F95C8711DEE">
-          <dmn:text>ProsSeminar_Überpruefung(Input Lvas, Proseminare)</dmn:text>
+          <dmn:text>ProsSeminar_Überpruefung(S526AAWI13I, S526AAWI13C)</dmn:text>
         </dmn:literalExpression>
       </dmn:contextEntry>
       <dmn:contextEntry>
         <dmn:variable id="_690FE06F-956F-4040-89C6-EF8B0CD38C2B" name="Richtige Anzahl"/>
         <dmn:literalExpression id="_418424B4-8C23-49A6-8FA6-025C5D41AAA2">
-          <dmn:text>count(Input Lvas)=2</dmn:text>
+          <dmn:text>count(S526AAWI13I)=2</dmn:text>
         </dmn:literalExpression>
       </dmn:contextEntry>
       <dmn:contextEntry>
@@ -84,9 +84,9 @@
       </dmn:context>
     </dmn:encapsulatedLogic>
   </dmn:businessKnowledgeModel>
-  <dmn:inputData id="_384FE0B9-4ADA-4286-947F-0E880E127071" name="526AAWI13C">
+  <dmn:inputData id="_384FE0B9-4ADA-4286-947F-0E880E127071" name="S526AAWI13C">
     <dmn:extensionElements/>
-    <dmn:variable id="_6F9E2B7A-DB5E-4157-ADEA-F9EC1A9DE3C3" name="526AAWI13C" typeRef="LVA"/>
+    <dmn:variable id="_6F9E2B7A-DB5E-4157-ADEA-F9EC1A9DE3C3" name="S526AAWI13C" typeRef="LVA"/>
   </dmn:inputData>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram id="_0BBE0EBE-83CA-4940-8CBC-1D2E8D30D8A6" name="DRG">

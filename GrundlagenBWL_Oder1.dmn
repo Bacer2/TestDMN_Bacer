@@ -1255,6 +1255,7 @@
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_F37C6657-1627-4444-BCCE-13A1661E53FA-AUTO-TARGET" dmnElementRef="_F37C6657-1627-4444-BCCE-13A1661E53FA">
         <di:waypoint x="3108" y="1031"/>
+        <di:waypoint x="2683.033946500292" y="505.1109031547161"/>
         <di:waypoint x="2411.9329964643275" y="176.6666115"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_22E6CF50-3DDE-4C4B-814F-B38B00214D40-AUTO-TARGET" dmnElementRef="_22E6CF50-3DDE-4C4B-814F-B38B00214D40">

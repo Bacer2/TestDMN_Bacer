@@ -36,7 +36,7 @@
       <dmn:contextEntry>
         <dmn:variable id="_0936A2D5-3411-4C97-BB4E-30314627420E" name="Richtige Lvas"/>
         <dmn:literalExpression id="_B284B17C-D825-4B53-912E-3F95C8711DEE">
-          <dmn:text>ProsSeminar_Überpruefung(S526AAWI13I, S526AAWI13C)</dmn:text>
+          <dmn:text>ProsSeminar_Überpruefung(S526AAWI13I, S526AAWI13C S526UREC20C S526GMSMMULK22O)</dmn:text>
         </dmn:literalExpression>
       </dmn:contextEntry>
       <dmn:contextEntry>
@@ -79,16 +79,16 @@
         </dmn:contextEntry>
         <dmn:contextEntry>
           <dmn:literalExpression id="_BBC4A51C-4FF3-400E-B784-E392804CAA83">
-            <dmn:text>if (count(SumList)=(count(Input)+2)) then true else false</dmn:text>
+            <dmn:text>if (count(SumList)=(count(Pruefklassen))) then true else false</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
       </dmn:context>
     </dmn:encapsulatedLogic>
   </dmn:businessKnowledgeModel>
-  <dmn:inputData id="_384FE0B9-4ADA-4286-947F-0E880E127071" name="S526AAWI13C S526UREC20C">
+  <dmn:inputData id="_384FE0B9-4ADA-4286-947F-0E880E127071" name="S526AAWI13C S526UREC20C S526GMSMMULK22O">
     <dmn:description>S526AAWI13C</dmn:description>
     <dmn:extensionElements/>
-    <dmn:variable id="_6F9E2B7A-DB5E-4157-ADEA-F9EC1A9DE3C3" name="S526AAWI13C S526UREC20C" typeRef="LVA"/>
+    <dmn:variable id="_6F9E2B7A-DB5E-4157-ADEA-F9EC1A9DE3C3" name="S526AAWI13C S526UREC20C S526GMSMMULK22O" typeRef="LVA"/>
   </dmn:inputData>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram id="_0BBE0EBE-83CA-4940-8CBC-1D2E8D30D8A6" name="DRG">
@@ -97,37 +97,37 @@
           <kie:ComponentWidths dmnElementRef="_02125F02-2F23-423B-A46F-9B88B9D1C9A1">
             <kie:width>50</kie:width>
             <kie:width>120</kie:width>
-            <kie:width>295</kie:width>
+            <kie:width>885</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_B284B17C-D825-4B53-912E-3F95C8711DEE">
-            <kie:width>295</kie:width>
+            <kie:width>885</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_418424B4-8C23-49A6-8FA6-025C5D41AAA2">
-            <kie:width>295</kie:width>
+            <kie:width>885</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_DB2C9D55-2E5A-432B-B665-3ACE41F97C76">
-            <kie:width>295</kie:width>
+            <kie:width>885</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_5A152851-7590-4453-A1C1-D6D23963C19B">
             <kie:width>50</kie:width>
             <kie:width>120</kie:width>
-            <kie:width>609</kie:width>
+            <kie:width>589</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_12B58A87-8BBF-40C1-A4F7-D96A6E78999C">
-            <kie:width>609</kie:width>
+            <kie:width>589</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_1F1417D7-86DC-41BD-9537-49AB92BB561B">
-            <kie:width>609</kie:width>
+            <kie:width>589</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_72F458B6-CCCE-4ADB-A038-167940F7DA7A">
-            <kie:width>609</kie:width>
+            <kie:width>589</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_BBC4A51C-4FF3-400E-B784-E392804CAA83">
-            <kie:width>609</kie:width>
+            <kie:width>589</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_8DFB40D1-2787-4872-9140-C66F5DC2D370">
             <kie:width>50</kie:width>
-            <kie:width>799</kie:width>
+            <kie:width>779</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
@@ -164,11 +164,11 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="643" y="375" width="100" height="50"/>
+        <dc:Bounds x="642" y="375" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-drg-_9E67DB8F-A229-4C0B-89D4-0276742B6389-AUTO-TARGET" dmnElementRef="_9E67DB8F-A229-4C0B-89D4-0276742B6389">
-        <di:waypoint x="693" y="400"/>
+        <di:waypoint x="692" y="400"/>
         <di:waypoint x="625" y="290"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_3D4E3BBF-610E-4AF3-96A8-82664F373EC6-AUTO-TARGET" dmnElementRef="_3D4E3BBF-610E-4AF3-96A8-82664F373EC6">

@@ -85,10 +85,10 @@
       </dmn:context>
     </dmn:encapsulatedLogic>
   </dmn:businessKnowledgeModel>
-  <dmn:inputData id="_384FE0B9-4ADA-4286-947F-0E880E127071" name="S526AAWI13C">
+  <dmn:inputData id="_384FE0B9-4ADA-4286-947F-0E880E127071" name="S526AAWI13C S526UREC20C">
     <dmn:description>S526AAWI13C</dmn:description>
     <dmn:extensionElements/>
-    <dmn:variable id="_6F9E2B7A-DB5E-4157-ADEA-F9EC1A9DE3C3" name="S526AAWI13C" typeRef="LVA"/>
+    <dmn:variable id="_6F9E2B7A-DB5E-4157-ADEA-F9EC1A9DE3C3" name="S526AAWI13C S526UREC20C" typeRef="LVA"/>
   </dmn:inputData>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram id="_0BBE0EBE-83CA-4940-8CBC-1D2E8D30D8A6" name="DRG">

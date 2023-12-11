@@ -710,25 +710,25 @@
       <dmn:text>WahlfachInformatik(S526WWIN13I,S526ATWA13C)</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
-  <dmn:decision id="_7B4B09C0-8B64-4D38-AB1D-FC1A58F242D2" name="Decision-9">
+  <dmn:decision id="_7B4B09C0-8B64-4D38-AB1D-FC1A58F242D2" name="Finanzierungs und Steuermanagement">
     <dmn:extensionElements/>
-    <dmn:variable id="_A33EFCE5-21E1-4973-B45A-28EFE1A91BC0" name="Decision-9"/>
+    <dmn:variable id="_A33EFCE5-21E1-4973-B45A-28EFE1A91BC0" name="Finanzierungs und Steuermanagement"/>
   </dmn:decision>
-  <dmn:decision id="_F8E9BC91-30A9-47A8-9A7A-C24DA91FC038" name="Decision-10">
+  <dmn:decision id="_F8E9BC91-30A9-47A8-9A7A-C24DA91FC038" name="Operations and Supply Chain Management">
     <dmn:extensionElements/>
-    <dmn:variable id="_99596866-05A5-4920-8F11-645059C71C41" name="Decision-10"/>
+    <dmn:variable id="_99596866-05A5-4920-8F11-645059C71C41" name="Operations and Supply Chain Management"/>
   </dmn:decision>
-  <dmn:decision id="_C3688607-A521-464F-8C37-7AFBF9195576" name="Decision-11">
+  <dmn:decision id="_C3688607-A521-464F-8C37-7AFBF9195576" name="OVI Management">
     <dmn:extensionElements/>
-    <dmn:variable id="_C77AA23A-ACA1-4FFA-B259-F1F4DEFD5789" name="Decision-11"/>
+    <dmn:variable id="_C77AA23A-ACA1-4FFA-B259-F1F4DEFD5789" name="OVI Management"/>
   </dmn:decision>
-  <dmn:decision id="_F29A370B-4D05-42A4-BFBA-1607A1E6727D" name="Decision-12">
+  <dmn:decision id="_F29A370B-4D05-42A4-BFBA-1607A1E6727D" name="Grundlagen der VWL">
     <dmn:extensionElements/>
-    <dmn:variable id="_A1A6555B-DF0E-44B5-903A-1968F165563C" name="Decision-12"/>
+    <dmn:variable id="_A1A6555B-DF0E-44B5-903A-1968F165563C" name="Grundlagen der VWL"/>
   </dmn:decision>
-  <dmn:decision id="_2DC643D8-069C-499C-90FD-B5F9DC5A2A7F" name="Decision-13">
+  <dmn:decision id="_2DC643D8-069C-499C-90FD-B5F9DC5A2A7F" name="WWIWIBacAusland">
     <dmn:extensionElements/>
-    <dmn:variable id="_0BA1BC66-7009-4D61-97C8-63FD89137463" name="Decision-13"/>
+    <dmn:variable id="_0BA1BC66-7009-4D61-97C8-63FD89137463" name="WWIWIBacAusland"/>
   </dmn:decision>
   <dmn:inputData id="_9230E43F-5959-4128-A157-5FDE387E9848" name="S526WWIN13I">
     <dmn:extensionElements/>
@@ -740,23 +740,23 @@
   </dmn:inputData>
   <dmn:inputData id="_EB5AA6D7-29F2-4B30-9F6A-739074DFA0AE" name="S926INEMSOB17C">
     <dmn:extensionElements/>
-    <dmn:variable id="_5D3B540E-4305-464D-888A-7A69D84919D2" name="S926INEMSOB17C"/>
+    <dmn:variable id="_5D3B540E-4305-464D-888A-7A69D84919D2" name="S926INEMSOB17C" typeRef="LVA"/>
   </dmn:inputData>
   <dmn:inputData id="_B902BCFF-7BC6-4847-AC99-500006F8D0F9" name="S926SERESEN13C">
     <dmn:extensionElements/>
-    <dmn:variable id="_38AFD07D-119E-46D9-8F55-F888F73AC2F1" name="S926SERESEN13C"/>
+    <dmn:variable id="_38AFD07D-119E-46D9-8F55-F888F73AC2F1" name="S926SERESEN13C" typeRef="LVA"/>
   </dmn:inputData>
   <dmn:inputData id="_46FE7E20-6988-4C30-9097-438D8052FC95" name="S926BUSIDAW13C">
     <dmn:extensionElements/>
-    <dmn:variable id="_C78D4B96-256F-4895-ACD8-547F34018429" name="S926BUSIDAW13C"/>
+    <dmn:variable id="_C78D4B96-256F-4895-ACD8-547F34018429" name="S926BUSIDAW13C" typeRef="LVA"/>
   </dmn:inputData>
   <dmn:inputData id="_735E0C7D-B951-4ECA-9D75-A919E7959DDE" name="S926BUSIDAM13C">
     <dmn:extensionElements/>
-    <dmn:variable id="_4696FA59-807D-4D44-8E1A-B8789F630A0F" name="S926BUSIDAM13C"/>
+    <dmn:variable id="_4696FA59-807D-4D44-8E1A-B8789F630A0F" name="S926BUSIDAM13C" typeRef="LVA"/>
   </dmn:inputData>
   <dmn:inputData id="_CB46E454-3939-47C7-8449-5D6524AA476A" name="S926BUSISAI20C">
     <dmn:extensionElements/>
-    <dmn:variable id="_FD40E52D-BF36-4298-8ACD-96F4F6692131" name="S926BUSISAI20C"/>
+    <dmn:variable id="_FD40E52D-BF36-4298-8ACD-96F4F6692131" name="S926BUSISAI20C" typeRef="LVA"/>
   </dmn:inputData>
   <dmn:inputData id="_5A663AFC-C52F-4CAA-A3C3-9DCFE7F609B5" name="S926BEMABEM13C">
     <dmn:extensionElements/>
@@ -1392,7 +1392,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="3849" y="1369" width="100" height="50"/>
+        <dc:Bounds x="3845" y="1369" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-drg-_9230E43F-5959-4128-A157-5FDE387E9848" dmnElementRef="_9230E43F-5959-4128-A157-5FDE387E9848" isCollapsed="false">

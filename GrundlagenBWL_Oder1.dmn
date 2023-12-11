@@ -594,6 +594,9 @@
     <dmn:knowledgeRequirement id="_BE84DE36-5EAE-46F1-AD35-8B6D7A090C3B">
       <dmn:requiredKnowledge href="#_2775EBC8-1393-4BBD-BFD9-4F9E5FBCF0C8"/>
     </dmn:knowledgeRequirement>
+    <dmn:literalExpression id="_B86C1E52-4FDB-42A6-B168-5F617F72A5DB">
+      <dmn:text>WahlfachInformatik(S526WWIN13I,S926INEMSIP13C)</dmn:text>
+    </dmn:literalExpression>
   </dmn:decision>
   <dmn:decision id="_A23869A3-2B52-4E9B-BD97-35323CC698A4" name="Software Business">
     <dmn:extensionElements/>
@@ -607,6 +610,9 @@
     <dmn:knowledgeRequirement id="_59AAD428-82D0-4DCB-B2F1-202AD89E14C2">
       <dmn:requiredKnowledge href="#_2775EBC8-1393-4BBD-BFD9-4F9E5FBCF0C8"/>
     </dmn:knowledgeRequirement>
+    <dmn:literalExpression id="_8FCEC12A-5EE1-4FB8-8234-E2A6D993BAE4">
+      <dmn:text>WahlfachInformatik(S526WWIN13I,S926INEMSOB17C)</dmn:text>
+    </dmn:literalExpression>
   </dmn:decision>
   <dmn:decision id="_E50F83F9-7E93-4B2D-9684-2F3D14F00CD4" name="Service Engineering">
     <dmn:extensionElements/>
@@ -620,6 +626,9 @@
     <dmn:knowledgeRequirement id="_027277F5-CCEB-4C61-9C4C-32D78E776D23">
       <dmn:requiredKnowledge href="#_2775EBC8-1393-4BBD-BFD9-4F9E5FBCF0C8"/>
     </dmn:knowledgeRequirement>
+    <dmn:literalExpression id="_784C45CF-9BC0-46C2-AFD8-52C7E230649F">
+      <dmn:text>WahlfachInformatik(S526WWIN13I,S926SERESEN13C)</dmn:text>
+    </dmn:literalExpression>
   </dmn:decision>
   <dmn:decision id="_C09B93FC-2360-4C98-8067-E996F0AB0190" name="Data Warehousing">
     <dmn:extensionElements/>
@@ -633,6 +642,9 @@
     <dmn:knowledgeRequirement id="_93AF3BCB-E022-4936-B74F-883CE352AF6A">
       <dmn:requiredKnowledge href="#_2775EBC8-1393-4BBD-BFD9-4F9E5FBCF0C8"/>
     </dmn:knowledgeRequirement>
+    <dmn:literalExpression id="_384C42CB-F356-4941-B789-1B9F51BE6244">
+      <dmn:text>WahlfachInformatik(S526WWIN13I,S926BUSIDAW13C)</dmn:text>
+    </dmn:literalExpression>
   </dmn:decision>
   <dmn:decision id="_C2758234-6E61-42B0-BE85-2A566588B6F1" name="Data Mining">
     <dmn:extensionElements/>
@@ -646,6 +658,9 @@
     <dmn:knowledgeRequirement id="_BAAD0D9F-4394-4135-9729-C2327548150F">
       <dmn:requiredKnowledge href="#_2775EBC8-1393-4BBD-BFD9-4F9E5FBCF0C8"/>
     </dmn:knowledgeRequirement>
+    <dmn:literalExpression id="_9B0D7E2B-3175-4A2E-9A34-C5F2D907938F">
+      <dmn:text>WahlfachInformatik(S526WWIN13I,S926BUSIDAM13C)</dmn:text>
+    </dmn:literalExpression>
   </dmn:decision>
   <dmn:decision id="_C7641967-A5DE-40DB-B3C7-3E8C094D9837" name="Semantic Artifficial Intelligence">
     <dmn:extensionElements/>
@@ -659,6 +674,9 @@
     <dmn:knowledgeRequirement id="_F38ABBD9-0B8E-4227-9C19-3B3B03281BD6">
       <dmn:requiredKnowledge href="#_2775EBC8-1393-4BBD-BFD9-4F9E5FBCF0C8"/>
     </dmn:knowledgeRequirement>
+    <dmn:literalExpression id="_21987436-B0A4-4673-AF8D-C995276B40A0">
+      <dmn:text>WahlfachInformatik(S526WWIN13I,S926BUSISAI20C)</dmn:text>
+    </dmn:literalExpression>
   </dmn:decision>
   <dmn:decision id="_3B8DEF9A-1720-4090-A77E-3C81D2C4E97F" name="Business Engineering und Management">
     <dmn:extensionElements/>
@@ -672,6 +690,9 @@
     <dmn:knowledgeRequirement id="_D4AA8441-3441-45F3-9CA9-93A826EFDE53">
       <dmn:requiredKnowledge href="#_2775EBC8-1393-4BBD-BFD9-4F9E5FBCF0C8"/>
     </dmn:knowledgeRequirement>
+    <dmn:literalExpression id="_227D8559-2BAB-466A-8AAC-68FA4CCAE9D0">
+      <dmn:text>WahlfachInformatik(S526WWIN13I,S926BEMABEM13C)</dmn:text>
+    </dmn:literalExpression>
   </dmn:decision>
   <dmn:decision id="_9DD6A710-D93A-4EC4-9633-6D00A1608477" name="WIBacAusland">
     <dmn:extensionElements/>
@@ -685,6 +706,9 @@
     <dmn:knowledgeRequirement id="_5FC4CF39-64B6-4B5D-83FA-237B9A3BA2C5">
       <dmn:requiredKnowledge href="#_2775EBC8-1393-4BBD-BFD9-4F9E5FBCF0C8"/>
     </dmn:knowledgeRequirement>
+    <dmn:literalExpression id="_749A5AFA-17AC-41CA-8AF6-E02956CEEEED">
+      <dmn:text>WahlfachInformatik(S526WWIN13I,S526ATWA13C)</dmn:text>
+    </dmn:literalExpression>
   </dmn:decision>
   <dmn:decision id="_7B4B09C0-8B64-4D38-AB1D-FC1A58F242D2" name="Decision-9">
     <dmn:extensionElements/>
@@ -712,7 +736,7 @@
   </dmn:inputData>
   <dmn:inputData id="_98BF1025-3F55-4272-8608-F315E84C6357" name="S926INEMSIP13C">
     <dmn:extensionElements/>
-    <dmn:variable id="_7C8B68AD-505F-40ED-A109-0CB506E95549" name="S926INEMSIP13C"/>
+    <dmn:variable id="_7C8B68AD-505F-40ED-A109-0CB506E95549" name="S926INEMSIP13C" typeRef="LVA"/>
   </dmn:inputData>
   <dmn:inputData id="_EB5AA6D7-29F2-4B30-9F6A-739074DFA0AE" name="S926INEMSOB17C">
     <dmn:extensionElements/>
@@ -736,11 +760,11 @@
   </dmn:inputData>
   <dmn:inputData id="_5A663AFC-C52F-4CAA-A3C3-9DCFE7F609B5" name="S926BEMABEM13C">
     <dmn:extensionElements/>
-    <dmn:variable id="_9640D24D-8709-40B0-8C4A-BBC9DF5D9D1C" name="S926BEMABEM13C"/>
+    <dmn:variable id="_9640D24D-8709-40B0-8C4A-BBC9DF5D9D1C" name="S926BEMABEM13C" typeRef="LVA"/>
   </dmn:inputData>
   <dmn:inputData id="_FE9FD25D-381F-4AEB-B4E2-076849D2223F" name="S526ATWA13C">
     <dmn:extensionElements/>
-    <dmn:variable id="_6ED5D028-AEDC-44C3-A279-B0742645238A" name="S526ATWA13C"/>
+    <dmn:variable id="_6ED5D028-AEDC-44C3-A279-B0742645238A" name="S526ATWA13C" typeRef="LVA"/>
   </dmn:inputData>
   <dmn:businessKnowledgeModel id="_2775EBC8-1393-4BBD-BFD9-4F9E5FBCF0C8" name="WahlfachInformatik">
     <dmn:extensionElements/>
@@ -852,6 +876,30 @@
           <kie:ComponentWidths dmnElementRef="_4662E7AB-4883-4203-A74E-B0D691FCD61B">
             <kie:width>50</kie:width>
             <kie:width>150</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_B86C1E52-4FDB-42A6-B168-5F617F72A5DB">
+            <kie:width>537</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_8FCEC12A-5EE1-4FB8-8234-E2A6D993BAE4">
+            <kie:width>565</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_784C45CF-9BC0-46C2-AFD8-52C7E230649F">
+            <kie:width>393</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_384C42CB-F356-4941-B789-1B9F51BE6244">
+            <kie:width>571</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_9B0D7E2B-3175-4A2E-9A34-C5F2D907938F">
+            <kie:width>1057</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_21987436-B0A4-4673-AF8D-C995276B40A0">
+            <kie:width>190</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_227D8559-2BAB-466A-8AAC-68FA4CCAE9D0">
+            <kie:width>190</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_749A5AFA-17AC-41CA-8AF6-E02956CEEEED">
+            <kie:width>190</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_9541115A-3685-43B7-BABB-53DC9B7BF08F">
             <kie:width>50</kie:width>

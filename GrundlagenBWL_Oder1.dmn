@@ -436,9 +436,9 @@
     <dmn:extensionElements/>
     <dmn:variable id="_934632F7-CBBD-40FC-87AD-8FD720C503D8" name="InputData-1"/>
   </dmn:inputData>
-  <dmn:decision id="_B7661539-A529-4FFF-82E5-BA650BCB2090" name="Proseminare">
+  <dmn:decision id="_B7661539-A529-4FFF-82E5-BA650BCB2090" name="Ausgewahlte Aspekte WIN">
     <dmn:extensionElements/>
-    <dmn:variable id="_52D9358C-D9D1-4F87-8635-D59D8F7069AA" name="Proseminare"/>
+    <dmn:variable id="_52D9358C-D9D1-4F87-8635-D59D8F7069AA" name="Ausgewahlte Aspekte WIN"/>
     <dmn:informationRequirement id="_D5173672-4131-45D2-9EBB-BDCA75FAFF77">
       <dmn:requiredInput href="#_1B1ED472-8F25-4134-8458-4178E478E483"/>
     </dmn:informationRequirement>
@@ -448,25 +448,56 @@
     <dmn:knowledgeRequirement id="_F2DCE752-B81C-4BCD-B91D-F913A5D842A4">
       <dmn:requiredKnowledge href="#_AE42820A-7871-4340-9EAE-AB3153CA2F8A"/>
     </dmn:knowledgeRequirement>
+    <dmn:literalExpression id="_5D315D7D-333E-4F7E-99CC-83A4C6ECDEF1">
+      <dmn:text>Proseminare(S526AAWI13I,S526AAWI13C)</dmn:text>
+    </dmn:literalExpression>
   </dmn:decision>
   <dmn:businessKnowledgeModel id="_AE42820A-7871-4340-9EAE-AB3153CA2F8A" name="Proseminare">
     <dmn:extensionElements/>
     <dmn:variable id="_1EEF9F57-0FE4-4698-BAE0-BF16AC3E10E7" name="Proseminare"/>
     <dmn:encapsulatedLogic id="_4662E7AB-4883-4203-A74E-B0D691FCD61B" kind="FEEL">
-      <dmn:formalParameter id="_74BF57DC-3822-4C7D-A87D-15A055AC4567" name="Input" typeRef="LVA"/>
-      <dmn:formalParameter id="_CB89068C-BD8F-4A3A-BC01-92825037E71D" name="PruefLvas" typeRef="LVA"/>
-      <dmn:literalExpression id="_0C118320-7C65-4BAA-B8D4-255609A8631F">
-        <dmn:text/>
-      </dmn:literalExpression>
+      <dmn:formalParameter id="_74BF57DC-3822-4C7D-A87D-15A055AC4567" name="InputLvas" typeRef="LVA"/>
+      <dmn:formalParameter id="_CB89068C-BD8F-4A3A-BC01-92825037E71D" name="CeusLvas" typeRef="LVA"/>
+      <dmn:context id="_34E273CF-0886-4E3E-BECC-D89644E4762D">
+        <dmn:contextEntry>
+          <dmn:variable id="_1CD3F6AC-AF32-4F27-A9C1-64F2319DF855" name="EingabeKlassen"/>
+          <dmn:literalExpression id="_94D631A6-C025-446C-9B7E-900E12036EDF">
+            <dmn:text>for x in InputLvas return x.Klasse</dmn:text>
+          </dmn:literalExpression>
+        </dmn:contextEntry>
+        <dmn:contextEntry>
+          <dmn:variable id="_CAFB4529-FD26-4FCA-9CEE-DE298655C7D1" name="PruefKlassen"/>
+          <dmn:literalExpression id="_53C51C6B-296F-4137-B28C-8BC4F7C2D4AD">
+            <dmn:text>for x in CeusLvas return x.Klasse</dmn:text>
+          </dmn:literalExpression>
+        </dmn:contextEntry>
+        <dmn:contextEntry>
+          <dmn:variable id="_3A17CB35-8F7E-4C02-8264-2496708A8275" name="Ects"/>
+          <dmn:literalExpression id="_05742DAF-55DD-464D-8DDE-AC504670D554">
+            <dmn:text>for x in InputLvas return x.Ects</dmn:text>
+          </dmn:literalExpression>
+        </dmn:contextEntry>
+        <dmn:contextEntry>
+          <dmn:variable id="_46004A6D-AA0A-4D58-A006-68BD1D6587C5" name="SumList"/>
+          <dmn:literalExpression id="_48FC9484-EA11-45B3-8D65-4FE58ECDBD15">
+            <dmn:text>union(EingabeKlassen, PruefKlassen)</dmn:text>
+          </dmn:literalExpression>
+        </dmn:contextEntry>
+        <dmn:contextEntry>
+          <dmn:literalExpression id="_E96F21AC-F209-4945-B23D-EAF89F2E877E">
+            <dmn:text>if count(SumList)=count(PruefKlassen) and sum(Ects)=6 then sum(Ects) else 0</dmn:text>
+          </dmn:literalExpression>
+        </dmn:contextEntry>
+      </dmn:context>
     </dmn:encapsulatedLogic>
   </dmn:businessKnowledgeModel>
-  <dmn:inputData id="_1B1ED472-8F25-4134-8458-4178E478E483" name="ProseminareInputLvas">
+  <dmn:inputData id="_1B1ED472-8F25-4134-8458-4178E478E483" name="S526AAWI13I">
     <dmn:extensionElements/>
-    <dmn:variable id="_8E8AEF4E-2038-4FF0-ABAB-9826E7D6BFD3" name="ProseminareInputLvas"/>
+    <dmn:variable id="_8E8AEF4E-2038-4FF0-ABAB-9826E7D6BFD3" name="S526AAWI13I" typeRef="LVA"/>
   </dmn:inputData>
-  <dmn:inputData id="_B2D4A845-331C-43C9-9149-8A90AECFEDFB" name="CheckProseminare">
+  <dmn:inputData id="_B2D4A845-331C-43C9-9149-8A90AECFEDFB" name="S526AAWI13C">
     <dmn:extensionElements/>
-    <dmn:variable id="_BF526207-928E-40BE-83A5-32603A5FF0B2" name="CheckProseminare"/>
+    <dmn:variable id="_BF526207-928E-40BE-83A5-32603A5FF0B2" name="S526AAWI13C" typeRef="LVA"/>
   </dmn:inputData>
   <dmn:decision id="_10C97496-7E5D-4EE9-A65B-1275D6B111C6" name="Grundlagen der Informatik">
     <dmn:extensionElements/>
@@ -570,9 +601,6 @@
     <dmn:informationRequirement id="_44FA784B-E7FA-4DCF-BCFB-DCA8DF204B7B">
       <dmn:requiredDecision href="#_99C1BECF-1703-4887-B1BD-DA71F780C89C"/>
     </dmn:informationRequirement>
-    <dmn:informationRequirement id="_9A5FDEE6-9397-49DA-814B-931A821AB6B0">
-      <dmn:requiredDecision href="#_B7661539-A529-4FFF-82E5-BA650BCB2090"/>
-    </dmn:informationRequirement>
     <dmn:informationRequirement id="_21465FDA-35DC-4C93-A398-179597EEB548">
       <dmn:requiredDecision href="#_10C97496-7E5D-4EE9-A65B-1275D6B111C6"/>
     </dmn:informationRequirement>
@@ -584,6 +612,9 @@
     </dmn:informationRequirement>
     <dmn:informationRequirement id="_22E6CF50-3DDE-4C4B-814F-B38B00214D40">
       <dmn:requiredDecision href="#_972F68E9-CFC7-445C-9A3C-99DD3E640545"/>
+    </dmn:informationRequirement>
+    <dmn:informationRequirement id="_F2B2E18C-A3CA-41D6-B7B4-9AFA7E7A9D77">
+      <dmn:requiredDecision href="#_B7661539-A529-4FFF-82E5-BA650BCB2090"/>
     </dmn:informationRequirement>
   </dmn:decision>
   <dmn:decision id="_972F68E9-CFC7-445C-9A3C-99DD3E640545" name="Freie Studienleistungen">
@@ -1008,12 +1039,32 @@
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_0C118320-7C65-4BAA-B8D4-255609A8631F">
-            <kie:width>150</kie:width>
+          <kie:ComponentWidths dmnElementRef="_5D315D7D-333E-4F7E-99CC-83A4C6ECDEF1">
+            <kie:width>190</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_34E273CF-0886-4E3E-BECC-D89644E4762D">
+            <kie:width>50</kie:width>
+            <kie:width>120</kie:width>
+            <kie:width>399</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_94D631A6-C025-446C-9B7E-900E12036EDF">
+            <kie:width>399</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_53C51C6B-296F-4137-B28C-8BC4F7C2D4AD">
+            <kie:width>399</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_05742DAF-55DD-464D-8DDE-AC504670D554">
+            <kie:width>399</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_48FC9484-EA11-45B3-8D65-4FE58ECDBD15">
+            <kie:width>399</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_E96F21AC-F209-4945-B23D-EAF89F2E877E">
+            <kie:width>399</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_4662E7AB-4883-4203-A74E-B0D691FCD61B">
             <kie:width>50</kie:width>
-            <kie:width>150</kie:width>
+            <kie:width>589</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_B86C1E52-4FDB-42A6-B168-5F617F72A5DB">
             <kie:width>537</kie:width>
@@ -1344,7 +1395,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="2756.2990654205605" y="903.3421052631579" width="100" height="50"/>
+        <dc:Bounds x="2752.5981308411215" y="891.3421052631579" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-drg-_10C97496-7E5D-4EE9-A65B-1275D6B111C6" dmnElementRef="_10C97496-7E5D-4EE9-A65B-1275D6B111C6" isCollapsed="false">
@@ -1864,7 +1915,7 @@
         <di:waypoint x="2714" y="704"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_E6D382A9-04E7-4156-BD54-46B91D1CED53-AUTO-TARGET" dmnElementRef="_E6D382A9-04E7-4156-BD54-46B91D1CED53">
-        <di:waypoint x="2806.2990654205605" y="928.3421052631579"/>
+        <di:waypoint x="2802.5981308411215" y="916.3421052631579"/>
         <di:waypoint x="2714" y="704"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_F2DCE752-B81C-4BCD-B91D-F913A5D842A4-AUTO-TARGET" dmnElementRef="_F2DCE752-B81C-4BCD-B91D-F913A5D842A4">
@@ -1955,10 +2006,6 @@
         <di:waypoint x="2103.3731801616286" y="438"/>
         <di:waypoint x="2411.9329964643275" y="151.6666115"/>
       </dmndi:DMNEdge>
-      <dmndi:DMNEdge id="dmnedge-drg-_9A5FDEE6-9397-49DA-814B-931A821AB6B0-AUTO-TARGET" dmnElementRef="_9A5FDEE6-9397-49DA-814B-931A821AB6B0">
-        <di:waypoint x="2714" y="679"/>
-        <di:waypoint x="2411.9329964643275" y="176.6666115"/>
-      </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_21465FDA-35DC-4C93-A398-179597EEB548-AUTO-TARGET" dmnElementRef="_21465FDA-35DC-4C93-A398-179597EEB548">
         <di:waypoint x="3146" y="668"/>
         <di:waypoint x="2411.9329964643275" y="176.6666115"/>
@@ -1969,11 +2016,16 @@
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_F37C6657-1627-4444-BCCE-13A1661E53FA-AUTO-TARGET" dmnElementRef="_F37C6657-1627-4444-BCCE-13A1661E53FA">
         <di:waypoint x="3108" y="1031"/>
+        <di:waypoint x="2915.39300158171" y="797.4999999999998"/>
         <di:waypoint x="2683.033946500292" y="505.1109031547161"/>
         <di:waypoint x="2411.9329964643275" y="176.6666115"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_22E6CF50-3DDE-4C4B-814F-B38B00214D40-AUTO-TARGET" dmnElementRef="_22E6CF50-3DDE-4C4B-814F-B38B00214D40">
         <di:waypoint x="519.6408211" y="744.0766099"/>
+        <di:waypoint x="2411.9329964643275" y="176.6666115"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_F2B2E18C-A3CA-41D6-B7B4-9AFA7E7A9D77-AUTO-TARGET" dmnElementRef="_F2B2E18C-A3CA-41D6-B7B4-9AFA7E7A9D77">
+        <di:waypoint x="2714" y="679"/>
         <di:waypoint x="2411.9329964643275" y="176.6666115"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_F5F9CD60-C841-436A-931C-A9D75717D637-AUTO-TARGET" dmnElementRef="_F5F9CD60-C841-436A-931C-A9D75717D637">

@@ -738,7 +738,7 @@
       <dmn:requiredKnowledge href="#_9DE2A26A-1EE0-4B7E-83DD-99CDDA57E3D0"/>
     </dmn:knowledgeRequirement>
     <dmn:literalExpression id="_BA49C1E5-6AE9-4106-8A78-2855150B56C9">
-      <dmn:text>WahlfachWiwi(S526WAWI20I,)</dmn:text>
+      <dmn:text>WahlfachWiwi(S526WAWI20I,S515FIST20C)</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
   <dmn:decision id="_F8E9BC91-30A9-47A8-9A7A-C24DA91FC038" name="Operations and Supply Chain Management">
@@ -754,7 +754,7 @@
       <dmn:requiredKnowledge href="#_9DE2A26A-1EE0-4B7E-83DD-99CDDA57E3D0"/>
     </dmn:knowledgeRequirement>
     <dmn:literalExpression id="_7DFB010B-B933-4322-A5D6-E2D7AB183463">
-      <dmn:text>WahlfachWiwi(S526WAWI20I,)</dmn:text>
+      <dmn:text>WahlfachWiwi(S526WAWI20I,S515OSCM20C)</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
   <dmn:decision id="_C3688607-A521-464F-8C37-7AFBF9195576" name="OVI Management">
@@ -770,7 +770,7 @@
       <dmn:requiredKnowledge href="#_9DE2A26A-1EE0-4B7E-83DD-99CDDA57E3D0"/>
     </dmn:knowledgeRequirement>
     <dmn:literalExpression id="_7F2B9E14-B653-40E3-BF7F-F726630E8A54">
-      <dmn:text>WahlfachWiwi(S526WAWI20I,)</dmn:text>
+      <dmn:text>WahlfachWiwi(S526WAWI20I,S515OVIM20C)</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
   <dmn:decision id="_F29A370B-4D05-42A4-BFBA-1607A1E6727D" name="Grundlagen der VWL">
@@ -786,7 +786,7 @@
       <dmn:requiredKnowledge href="#_9DE2A26A-1EE0-4B7E-83DD-99CDDA57E3D0"/>
     </dmn:knowledgeRequirement>
     <dmn:literalExpression id="_BDBA00A6-6220-47AE-87A7-B8D1BD5FE729">
-      <dmn:text>WahlfachWiwi(S526WAWI20I,)</dmn:text>
+      <dmn:text>WahlfachWiwi(S526WAWI20I,S572GVWL20C)</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
   <dmn:decision id="_2DC643D8-069C-499C-90FD-B5F9DC5A2A7F" name="WWIWIBacAusland">
@@ -802,7 +802,7 @@
       <dmn:requiredKnowledge href="#_9DE2A26A-1EE0-4B7E-83DD-99CDDA57E3D0"/>
     </dmn:knowledgeRequirement>
     <dmn:literalExpression id="_6F4EC53D-1C93-4EC3-91F2-E4EEF2008494">
-      <dmn:text>WahlfachWiwi(S526WAWI20I,)</dmn:text>
+      <dmn:text>WahlfachWiwi(S526WAWI20I,S526AWIA13C)</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
   <dmn:inputData id="_9230E43F-5959-4128-A157-5FDE387E9848" name="S526WWIN13I">
@@ -1040,19 +1040,19 @@
             <kie:width>190</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_BA49C1E5-6AE9-4106-8A78-2855150B56C9">
-            <kie:width>190</kie:width>
+            <kie:width>439</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_7DFB010B-B933-4322-A5D6-E2D7AB183463">
-            <kie:width>190</kie:width>
+            <kie:width>533</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_7F2B9E14-B653-40E3-BF7F-F726630E8A54">
-            <kie:width>190</kie:width>
+            <kie:width>398</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_BDBA00A6-6220-47AE-87A7-B8D1BD5FE729">
-            <kie:width>190</kie:width>
+            <kie:width>595</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_6F4EC53D-1C93-4EC3-91F2-E4EEF2008494">
-            <kie:width>190</kie:width>
+            <kie:width>521</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_9541115A-3685-43B7-BABB-53DC9B7BF08F">
             <kie:width>50</kie:width>
@@ -2081,32 +2081,28 @@
         <di:waypoint x="3589" y="1491.342105263158"/>
         <di:waypoint x="3332" y="1419"/>
       </dmndi:DMNEdge>
-      <dmndi:DMNEdge id="dmnedge-drg-_1A113E4A-1C95-42E0-BD09-B5955F115D40-AUTO-TARGET" dmnElementRef="_1A113E4A-1C95-42E0-BD09-B5955F115D40">
-        <di:waypoint x="3623" y="1267"/>
-        <di:waypoint x="3332" y="1369"/>
-      </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_76CA5089-9B26-45DF-AB95-C3729B41B286-AUTO-TARGET" dmnElementRef="_76CA5089-9B26-45DF-AB95-C3729B41B286">
         <di:waypoint x="3332" y="1563"/>
         <di:waypoint x="3332" y="1419"/>
       </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_1A113E4A-1C95-42E0-BD09-B5955F115D40-AUTO-TARGET" dmnElementRef="_1A113E4A-1C95-42E0-BD09-B5955F115D40">
+        <di:waypoint x="3623" y="1267"/>
+        <di:waypoint x="3332" y="1369"/>
+      </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_3635CFA3-D706-42A8-A4FC-4131A8B3CF30-AUTO-TARGET" dmnElementRef="_3635CFA3-D706-42A8-A4FC-4131A8B3CF30">
         <di:waypoint x="3589" y="1491.342105263158"/>
+        <di:waypoint x="3474" y="1419"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_91500FC4-21C1-45FA-A54D-F72490B705D2-AUTO-TARGET" dmnElementRef="_91500FC4-21C1-45FA-A54D-F72490B705D2">
+        <di:waypoint x="3488" y="1563"/>
         <di:waypoint x="3474" y="1419"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_67A1C8AE-3E05-467B-BDDC-F28B9BF129A2-AUTO-TARGET" dmnElementRef="_67A1C8AE-3E05-467B-BDDC-F28B9BF129A2">
         <di:waypoint x="3623" y="1267"/>
         <di:waypoint x="3474" y="1369"/>
       </dmndi:DMNEdge>
-      <dmndi:DMNEdge id="dmnedge-drg-_91500FC4-21C1-45FA-A54D-F72490B705D2-AUTO-TARGET" dmnElementRef="_91500FC4-21C1-45FA-A54D-F72490B705D2">
-        <di:waypoint x="3488" y="1563"/>
-        <di:waypoint x="3474" y="1419"/>
-      </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_9A4AB21C-419A-45D6-A0CB-47F2597A4462" dmnElementRef="_9A4AB21C-419A-45D6-A0CB-47F2597A4462">
         <di:waypoint x="3589" y="1491.342105263158"/>
-        <di:waypoint x="3624" y="1394"/>
-      </dmndi:DMNEdge>
-      <dmndi:DMNEdge id="dmnedge-drg-_D41BA206-10BC-4676-86CB-211C7AB12F8F" dmnElementRef="_D41BA206-10BC-4676-86CB-211C7AB12F8F">
-        <di:waypoint x="3623" y="1267"/>
         <di:waypoint x="3624" y="1394"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_9096E01D-7437-4F27-83A0-5361B71BA95F-AUTO-TARGET" dmnElementRef="_9096E01D-7437-4F27-83A0-5361B71BA95F">
@@ -2114,29 +2110,33 @@
         <di:waypoint x="3683.895" y="1490.9118581441926"/>
         <di:waypoint x="3624" y="1419"/>
       </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_D41BA206-10BC-4676-86CB-211C7AB12F8F" dmnElementRef="_D41BA206-10BC-4676-86CB-211C7AB12F8F">
+        <di:waypoint x="3623" y="1267"/>
+        <di:waypoint x="3624" y="1394"/>
+      </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_E395101C-BA07-44A7-8059-D28F40DD5598" dmnElementRef="_E395101C-BA07-44A7-8059-D28F40DD5598">
         <di:waypoint x="3589" y="1491.342105263158"/>
-        <di:waypoint x="3755" y="1394"/>
-      </dmndi:DMNEdge>
-      <dmndi:DMNEdge id="dmnedge-drg-_AE3C2269-24FA-451A-A921-2377B8E8B94A" dmnElementRef="_AE3C2269-24FA-451A-A921-2377B8E8B94A">
-        <di:waypoint x="3623" y="1267"/>
         <di:waypoint x="3755" y="1394"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_124EF5AB-4256-4B0E-8EC9-83FFC359816D" dmnElementRef="_124EF5AB-4256-4B0E-8EC9-83FFC359816D">
         <di:waypoint x="3786" y="1563"/>
         <di:waypoint x="3755" y="1394"/>
       </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_AE3C2269-24FA-451A-A921-2377B8E8B94A" dmnElementRef="_AE3C2269-24FA-451A-A921-2377B8E8B94A">
+        <di:waypoint x="3623" y="1267"/>
+        <di:waypoint x="3755" y="1394"/>
+      </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_5FC71AD5-6B8D-40B8-9441-A585FD79C49F-AUTO-TARGET" dmnElementRef="_5FC71AD5-6B8D-40B8-9441-A585FD79C49F">
         <di:waypoint x="3589" y="1491.342105263158"/>
+        <di:waypoint x="3895" y="1419"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_BB80FB2D-65DD-4CD0-9394-EBA1E20B489B-AUTO-TARGET" dmnElementRef="_BB80FB2D-65DD-4CD0-9394-EBA1E20B489B">
+        <di:waypoint x="3931" y="1561.265990909091"/>
         <di:waypoint x="3895" y="1419"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_A0DD2F38-4DBF-4240-B0AD-692D04A2CB5B-AUTO-TARGET" dmnElementRef="_A0DD2F38-4DBF-4240-B0AD-692D04A2CB5B">
         <di:waypoint x="3623" y="1267"/>
         <di:waypoint x="3895" y="1369"/>
-      </dmndi:DMNEdge>
-      <dmndi:DMNEdge id="dmnedge-drg-_BB80FB2D-65DD-4CD0-9394-EBA1E20B489B-AUTO-TARGET" dmnElementRef="_BB80FB2D-65DD-4CD0-9394-EBA1E20B489B">
-        <di:waypoint x="3931" y="1561.265990909091"/>
-        <di:waypoint x="3895" y="1419"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
     <dmndi:DMNDiagram id="_A57400E3-408E-42AA-BDC9-30547D7903F0" name="new-diagram">

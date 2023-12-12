@@ -96,7 +96,7 @@
         </dmn:contextEntry>
         <dmn:contextEntry>
           <dmn:literalExpression id="_65D65004-14C5-46BD-8F2D-795C3511EFD8">
-            <dmn:text>if (count(SumList)=count(Eingabeklassen)) then sum(Ects) else 0</dmn:text>
+            <dmn:text>if count(SumList)=count(Eingabeklassen) then sum(Ects) else 0</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
       </dmn:context>
@@ -1826,26 +1826,26 @@
           <kie:ComponentWidths dmnElementRef="_E5A7E211-25F1-46A4-88E9-9CFF76899633">
             <kie:width>50</kie:width>
             <kie:width>120</kie:width>
-            <kie:width>605</kie:width>
+            <kie:width>585</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_3E5108F1-5456-4BD8-B43C-5F5FD042CCEF">
-            <kie:width>605</kie:width>
+            <kie:width>585</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_1C794A69-0F99-4AF8-AB6C-7AC48520131E">
-            <kie:width>605</kie:width>
+            <kie:width>585</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_ACFBBF77-FB86-4503-9D82-D6B04F583897">
-            <kie:width>605</kie:width>
+            <kie:width>585</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_BAC796E3-289A-415B-AAE3-A0F5A5336D6E">
-            <kie:width>605</kie:width>
+            <kie:width>585</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_65D65004-14C5-46BD-8F2D-795C3511EFD8">
-            <kie:width>605</kie:width>
+            <kie:width>585</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_120C1EE4-5E69-44E5-9B64-BA5EAB4DDC86">
             <kie:width>50</kie:width>
-            <kie:width>795</kie:width>
+            <kie:width>775</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_DABCEC94-7EA6-474A-B746-9FA35D801C77">
             <kie:width>641</kie:width>

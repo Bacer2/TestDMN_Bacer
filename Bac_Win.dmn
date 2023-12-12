@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_63473A78-3268-4E43-8473-168067AF20FC" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_6B7FC7A2-06DF-4ACC-9985-6D17DA8E5C00" name="Untitled" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_63473A78-3268-4E43-8473-168067AF20FC">
+<dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_63473A78-3268-4E43-8473-168067AF20FC" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_6B7FC7A2-06DF-4ACC-9985-6D17DA8E5C00" name="Bac_Win" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_63473A78-3268-4E43-8473-168067AF20FC">
   <dmn:extensionElements/>
   <dmn:itemDefinition id="_3826777C-C487-4F90-ACFA-91C84E7A6A7E" name="LVA" isCollection="true">
     <dmn:itemComponent id="_1B25839E-A44C-4C8A-A188-5D281274FADF" name="Prufdatum" isCollection="false">
@@ -65,7 +65,7 @@
   </dmn:decision>
   <dmn:businessKnowledgeModel id="_7FD9643E-CEC3-42C3-8FE2-52706F49F2F2" name="GBWL">
     <dmn:extensionElements/>
-    <dmn:variable id="_1B83EB14-3F93-461D-827D-A4F519DB1781" name="GBWL" typeRef="boolean"/>
+    <dmn:variable id="_1B83EB14-3F93-461D-827D-A4F519DB1781" name="GBWL"/>
     <dmn:encapsulatedLogic id="_120C1EE4-5E69-44E5-9B64-BA5EAB4DDC86" kind="FEEL">
       <dmn:formalParameter id="_D68A4358-0B62-4A21-95F0-8415E2D91200" name="Input" typeRef="LVA"/>
       <dmn:formalParameter id="_9A246EA6-59E6-41B1-9CC9-193DE8391EE2" name="PruefLvas" typeRef="LVA"/>
@@ -85,7 +85,7 @@
         <dmn:contextEntry>
           <dmn:variable id="_B9BAA1BC-8010-456A-961D-CAD30DB7288D" name="SumList"/>
           <dmn:literalExpression id="_ACFBBF77-FB86-4503-9D82-D6B04F583897">
-            <dmn:text>union(Eingabeklassen,Pruefklassen)</dmn:text>
+            <dmn:text>union(Eingabeklassen,PruefKlassen)</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
         <dmn:contextEntry>
@@ -267,7 +267,7 @@
       <dmn:requiredInput href="#_1219E4AE-8047-4DD8-AF5E-D85E5B7556A0"/>
     </dmn:informationRequirement>
     <dmn:literalExpression id="_64983C2B-A374-4058-9D76-796835C9CF18">
-      <dmn:text>some x in InputLvas satisfies date(x.Prufdatum) &lt; date("2020-10-01")</dmn:text>
+      <dmn:text>some x in x725x526GBWL13I x914x526GBWL20I satisfies date(x.Prufdatum) &lt; date("2020-10-01")</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
   <dmn:inputData id="_E090A9C1-1FFB-4C6E-8FEC-233146D9F200" name="x725x526LUVE13C">
@@ -642,15 +642,15 @@
   </dmn:inputData>
   <dmn:inputData id="_8212E7D8-018D-4AD2-B616-D003CF18A326" name="x914x526GRIN13C">
     <dmn:extensionElements/>
-    <dmn:variable id="_16387549-A52E-4BAF-898C-F8959BD96189" name="x914x526GRIN13C"/>
+    <dmn:variable id="_16387549-A52E-4BAF-898C-F8959BD96189" name="x914x526GRIN13C" typeRef="LVA"/>
   </dmn:inputData>
   <dmn:inputData id="_9FF3A5C2-5CA1-4388-950E-4889F590DFB1" name="x914x526GMSM13I">
     <dmn:extensionElements/>
-    <dmn:variable id="_12D4695A-7E14-4999-BC1D-9F9D1E1D78C8" name="x914x526GMSM13I"/>
+    <dmn:variable id="_12D4695A-7E14-4999-BC1D-9F9D1E1D78C8" name="x914x526GMSM13I" typeRef="LVA"/>
   </dmn:inputData>
   <dmn:inputData id="_9E7D82B1-9A56-4853-912B-C73CF300A2D5" name="x914x526GMSM13C">
     <dmn:extensionElements/>
-    <dmn:variable id="_AD72763B-1DC0-4726-B681-98AA3BB76205" name="x914x526GMSM13C"/>
+    <dmn:variable id="_AD72763B-1DC0-4726-B681-98AA3BB76205" name="x914x526GMSM13C" typeRef="LVA"/>
   </dmn:inputData>
   <dmn:decision id="_F2B39AB9-56BF-43D0-AAB2-C883C4D713BA" name="Wahlfacher">
     <dmn:extensionElements/>
@@ -1392,6 +1392,9 @@
     <dmn:informationRequirement id="_F5F9CD60-C841-436A-931C-A9D75717D637">
       <dmn:requiredInput href="#_17D83698-AD21-4A0F-846A-2B60891EE3F0"/>
     </dmn:informationRequirement>
+    <dmn:literalExpression id="_334419B8-9AF7-46D4-B522-5F429EC89441">
+      <dmn:text>9</dmn:text>
+    </dmn:literalExpression>
   </dmn:decision>
   <dmn:inputData id="_17D83698-AD21-4A0F-846A-2B60891EE3F0" name="InputData-10">
     <dmn:extensionElements/>
@@ -1732,7 +1735,7 @@
         <dmn:contextEntry>
           <dmn:variable id="_39A7DF9E-612A-48C5-B873-DD8C27B66C28" name="SumList"/>
           <dmn:literalExpression id="_0A83007E-BBA5-4464-B1E8-E2A170BDCF21">
-            <dmn:text>union(EingabeKlassen, PruefKlassen</dmn:text>
+            <dmn:text>union(EingabeKlassen, PruefKlassen)</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
         <dmn:contextEntry>
@@ -1745,19 +1748,19 @@
   </dmn:businessKnowledgeModel>
   <dmn:inputData id="_4A377FEF-26B5-475D-A513-A0FEED7B0311" name="x1025x526GRIN13I">
     <dmn:extensionElements/>
-    <dmn:variable id="_8A109489-EBA7-4246-A1D7-43D9A4C636F0" name="x1025x526GRIN13I"/>
+    <dmn:variable id="_8A109489-EBA7-4246-A1D7-43D9A4C636F0" name="x1025x526GRIN13I" typeRef="LVA"/>
   </dmn:inputData>
   <dmn:inputData id="_B6D8BB11-A6AE-4591-B7A2-D01627A4B70E" name="x1025x526GRIN13C">
     <dmn:extensionElements/>
-    <dmn:variable id="_D102FDD0-FED0-42E8-8C7A-7F8962747269" name="x1025x526GRIN13C"/>
+    <dmn:variable id="_D102FDD0-FED0-42E8-8C7A-7F8962747269" name="x1025x526GRIN13C" typeRef="LVA"/>
   </dmn:inputData>
   <dmn:inputData id="_8FD9D300-2D41-4EDC-A9F1-4710B25DF225" name="x1025x526GMSM13I">
     <dmn:extensionElements/>
-    <dmn:variable id="_BC6D3EE7-5407-4253-AAF1-563CCF6370B9" name="x1025x526GMSM13I"/>
+    <dmn:variable id="_BC6D3EE7-5407-4253-AAF1-563CCF6370B9" name="x1025x526GMSM13I" typeRef="LVA"/>
   </dmn:inputData>
   <dmn:inputData id="_8858263A-B7A0-4D08-9948-B9DFDD29A990" name="x1025x526GMSM13C">
     <dmn:extensionElements/>
-    <dmn:variable id="_27C80123-F5E1-4A17-A4FD-7753EB7460EF" name="x1025x526GMSM13C"/>
+    <dmn:variable id="_27C80123-F5E1-4A17-A4FD-7753EB7460EF" name="x1025x526GMSM13C" typeRef="LVA"/>
   </dmn:inputData>
   <dmn:businessKnowledgeModel id="_FD74AEC3-D2BF-4E61-BF0A-73CAF51812CF" name="Pflichtfacher">
     <dmn:extensionElements/>
@@ -1792,7 +1795,7 @@
         </dmn:contextEntry>
         <dmn:contextEntry>
           <dmn:literalExpression id="_7E193582-14C6-4C93-BA41-A390E521CA0B">
-            <dmn:text>if (count(SumList)=count(PruefKlassen) then sum(Ects) else 0</dmn:text>
+            <dmn:text>if (count(SumList)=count(PruefKlassen)) then sum(Ects) else 0</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
       </dmn:context>
@@ -1817,23 +1820,23 @@
           <kie:ComponentWidths dmnElementRef="_E5A7E211-25F1-46A4-88E9-9CFF76899633">
             <kie:width>50</kie:width>
             <kie:width>120</kie:width>
-            <kie:width>512</kie:width>
+            <kie:width>492</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_3E5108F1-5456-4BD8-B43C-5F5FD042CCEF">
-            <kie:width>512</kie:width>
+            <kie:width>492</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_1C794A69-0F99-4AF8-AB6C-7AC48520131E">
-            <kie:width>512</kie:width>
+            <kie:width>492</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_ACFBBF77-FB86-4503-9D82-D6B04F583897">
-            <kie:width>512</kie:width>
+            <kie:width>492</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_65D65004-14C5-46BD-8F2D-795C3511EFD8">
-            <kie:width>512</kie:width>
+            <kie:width>492</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_120C1EE4-5E69-44E5-9B64-BA5EAB4DDC86">
             <kie:width>50</kie:width>
-            <kie:width>702</kie:width>
+            <kie:width>682</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_DABCEC94-7EA6-474A-B746-9FA35D801C77">
             <kie:width>641</kie:width>
@@ -1986,6 +1989,9 @@
             <kie:width>100</kie:width>
             <kie:width>406</kie:width>
           </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_334419B8-9AF7-46D4-B522-5F429EC89441">
+            <kie:width>190</kie:width>
+          </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_B86C1E52-4FDB-42A6-B168-5F617F72A5DB">
             <kie:width>537</kie:width>
           </kie:ComponentWidths>
@@ -2052,50 +2058,50 @@
           <kie:ComponentWidths dmnElementRef="_1A7C3417-6E10-4FB2-B35F-C2C9B2CBA23D">
             <kie:width>50</kie:width>
             <kie:width>120</kie:width>
-            <kie:width>483</kie:width>
+            <kie:width>463</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_3A08ACFE-1C7E-4D0C-9A71-D7A831D91B93">
-            <kie:width>483</kie:width>
+            <kie:width>463</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_26348527-79C0-4A33-9707-5A6B19CCC9BF">
-            <kie:width>483</kie:width>
+            <kie:width>463</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_E18E0F4A-8B83-4213-BB8E-8958BB3B2E2A">
-            <kie:width>483</kie:width>
+            <kie:width>463</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_0A83007E-BBA5-4464-B1E8-E2A170BDCF21">
-            <kie:width>483</kie:width>
+            <kie:width>463</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_DB75BB7D-E1F9-439B-96F5-0F1DB9F569EA">
-            <kie:width>483</kie:width>
+            <kie:width>463</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_BFE1FAE3-9A3D-42D2-A4B4-E9F563B30F64">
             <kie:width>50</kie:width>
-            <kie:width>673</kie:width>
+            <kie:width>653</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_FEB6B8BB-F486-4607-A8C2-4143C8505FDD">
             <kie:width>50</kie:width>
             <kie:width>120</kie:width>
-            <kie:width>329</kie:width>
+            <kie:width>557</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_BF5E3249-9562-4752-AC87-EA280602A6E0">
-            <kie:width>329</kie:width>
+            <kie:width>557</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_01DB042B-C2B4-4CFF-B967-4D91D113F72F">
-            <kie:width>329</kie:width>
+            <kie:width>557</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_7DF917F3-7277-4273-841F-D75E8C64519F">
-            <kie:width>329</kie:width>
+            <kie:width>557</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_A65CD310-BB5D-40C3-A681-EE264364EB4A">
-            <kie:width>329</kie:width>
+            <kie:width>557</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_7E193582-14C6-4C93-BA41-A390E521CA0B">
-            <kie:width>329</kie:width>
+            <kie:width>557</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_678C07A0-0FD8-4EE5-91E7-788C6A520626">
             <kie:width>50</kie:width>
-            <kie:width>519</kie:width>
+            <kie:width>747</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
@@ -2762,7 +2768,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="855.0693686177883" y="675.230475149999" width="100" height="50"/>
+        <dc:Bounds x="855.5981308411215" y="676.6842105263158" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-drg-_CB830CA4-080C-4824-955A-02FF321A5702-AUTO-TARGET" dmnElementRef="_CB830CA4-080C-4824-955A-02FF321A5702">
@@ -2900,7 +2906,7 @@
         <di:waypoint x="915" y="802"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_9504402F-C1F3-45A1-9398-DE22870E9570-AUTO-TARGET" dmnElementRef="_9504402F-C1F3-45A1-9398-DE22870E9570">
-        <di:waypoint x="905.0693686177883" y="700.230475149999"/>
+        <di:waypoint x="905.5981308411215" y="701.6842105263158"/>
         <di:waypoint x="915" y="752"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_D5173672-4131-45D2-9EBB-BDCA75FAFF77-AUTO-TARGET" dmnElementRef="_D5173672-4131-45D2-9EBB-BDCA75FAFF77">

@@ -1873,7 +1873,7 @@
     <dmn:informationRequirement id="_35559BB4-4882-4F74-B6B5-6B621F798297">
       <dmn:requiredDecision href="#_97B293B5-C036-4413-9B93-5A6520FE9872"/>
     </dmn:informationRequirement>
-    <dmn:decisionTable id="_9C276310-88FA-4910-A9C5-6C3FFA1BAB1D" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+    <dmn:decisionTable id="_9C276310-88FA-4910-A9C5-6C3FFA1BAB1D" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
       <dmn:input id="_8AE7E86E-759A-413A-8169-1EC975CBC9D3">
         <dmn:inputExpression id="_2440CB91-6539-4493-98FE-C195714937B3">
           <dmn:text>Fach1Mbestanden</dmn:text>
@@ -3150,7 +3150,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="2810.9050801447256" y="431" width="100" height="50"/>
+        <dc:Bounds x="2811" y="431" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-drg-_378A21E4-8636-4C8B-88AE-C7CCE76C4196" dmnElementRef="_378A21E4-8636-4C8B-88AE-C7CCE76C4196" isCollapsed="false">
@@ -3680,7 +3680,7 @@
         <di:waypoint x="2527" y="160"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_7CCF9039-5C54-45AF-84A2-115E8851DFC2-AUTO-TARGET" dmnElementRef="_7CCF9039-5C54-45AF-84A2-115E8851DFC2">
-        <di:waypoint x="2860.9050801447256" y="456"/>
+        <di:waypoint x="2861" y="456"/>
         <di:waypoint x="2527" y="160"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_60B56220-29CD-490D-B81C-665238718DE5-AUTO-TARGET" dmnElementRef="_60B56220-29CD-490D-B81C-665238718DE5">
@@ -3901,11 +3901,11 @@
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_F1E8624D-C9E0-4974-BFB2-D6531F3E7254-AUTO-TARGET" dmnElementRef="_F1E8624D-C9E0-4974-BFB2-D6531F3E7254">
         <di:waypoint x="2531" y="575"/>
-        <di:waypoint x="2860.9050801447256" y="481"/>
+        <di:waypoint x="2861" y="481"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_35559BB4-4882-4F74-B6B5-6B621F798297-AUTO-TARGET" dmnElementRef="_35559BB4-4882-4F74-B6B5-6B621F798297">
         <di:waypoint x="2965" y="650"/>
-        <di:waypoint x="2860.9050801447256" y="481"/>
+        <di:waypoint x="2861" y="481"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_63629EB3-8683-4402-BB78-887F9AA5E779-AUTO-TARGET" dmnElementRef="_63629EB3-8683-4402-BB78-887F9AA5E779">
         <di:waypoint x="1520.5981308411215" y="1938"/>

@@ -1794,7 +1794,7 @@
         <dmn:contextEntry>
           <dmn:variable id="_7424EDEC-D9A2-43B0-9229-5C2C532BA3AC" name="achived"/>
           <dmn:literalExpression id="_10EE7359-0AC9-47A9-A61C-2D891DCBB5A1">
-            <dmn:text>for x in PruefKlassen if list contains(EingabeKlassen) then x </dmn:text>
+            <dmn:text>PruefKlassen[item in EingabeKlassen]</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
         <dmn:contextEntry>

@@ -1794,7 +1794,7 @@
         <dmn:contextEntry>
           <dmn:variable id="_7424EDEC-D9A2-43B0-9229-5C2C532BA3AC" name="achived"/>
           <dmn:literalExpression id="_10EE7359-0AC9-47A9-A61C-2D891DCBB5A1">
-            <dmn:text>for x in PruefKlassen return (if list contains(EingabeKlassen) then x else null)</dmn:text>
+            <dmn:text>for x in PruefKlassen if list contains(EingabeKlassen) then x </dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
         <dmn:contextEntry>
@@ -2406,29 +2406,29 @@
           <kie:ComponentWidths dmnElementRef="_1A7C3417-6E10-4FB2-B35F-C2C9B2CBA23D">
             <kie:width>50</kie:width>
             <kie:width>120</kie:width>
-            <kie:width>403</kie:width>
+            <kie:width>383</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_3A08ACFE-1C7E-4D0C-9A71-D7A831D91B93">
-            <kie:width>403</kie:width>
+            <kie:width>383</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_26348527-79C0-4A33-9707-5A6B19CCC9BF">
-            <kie:width>403</kie:width>
+            <kie:width>383</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_E18E0F4A-8B83-4213-BB8E-8958BB3B2E2A">
-            <kie:width>403</kie:width>
+            <kie:width>383</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_0A83007E-BBA5-4464-B1E8-E2A170BDCF21">
-            <kie:width>403</kie:width>
+            <kie:width>383</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_10EE7359-0AC9-47A9-A61C-2D891DCBB5A1">
-            <kie:width>403</kie:width>
+            <kie:width>383</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_DB75BB7D-E1F9-439B-96F5-0F1DB9F569EA">
-            <kie:width>403</kie:width>
+            <kie:width>383</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_BFE1FAE3-9A3D-42D2-A4B4-E9F563B30F64">
             <kie:width>50</kie:width>
-            <kie:width>593</kie:width>
+            <kie:width>573</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_FEB6B8BB-F486-4607-A8C2-4143C8505FDD">
             <kie:width>50</kie:width>
@@ -3087,7 +3087,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="4304" y="1297.6842105263158" width="100" height="50"/>
+        <dc:Bounds x="4304" y="1298" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-drg-_4A377FEF-26B5-475D-A513-A0FEED7B0311" dmnElementRef="_4A377FEF-26B5-475D-A513-A0FEED7B0311" isCollapsed="false">
@@ -3843,7 +3843,7 @@
         <di:waypoint x="4063" y="1476"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_1A113E4A-1C95-42E0-BD09-B5955F115D40-AUTO-TARGET" dmnElementRef="_1A113E4A-1C95-42E0-BD09-B5955F115D40">
-        <di:waypoint x="4354" y="1322.6842105263158"/>
+        <di:waypoint x="4354" y="1323"/>
         <di:waypoint x="4063" y="1426"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_3635CFA3-D706-42A8-A4FC-4131A8B3CF30-AUTO-TARGET" dmnElementRef="_3635CFA3-D706-42A8-A4FC-4131A8B3CF30">
@@ -3855,7 +3855,7 @@
         <di:waypoint x="4205" y="1476"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_67A1C8AE-3E05-467B-BDDC-F28B9BF129A2-AUTO-TARGET" dmnElementRef="_67A1C8AE-3E05-467B-BDDC-F28B9BF129A2">
-        <di:waypoint x="4354" y="1322.6842105263158"/>
+        <di:waypoint x="4354" y="1323"/>
         <di:waypoint x="4205" y="1426"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_9A4AB21C-419A-45D6-A0CB-47F2597A4462" dmnElementRef="_9A4AB21C-419A-45D6-A0CB-47F2597A4462">
@@ -3868,7 +3868,7 @@
         <di:waypoint x="4355" y="1476"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_D41BA206-10BC-4676-86CB-211C7AB12F8F" dmnElementRef="_D41BA206-10BC-4676-86CB-211C7AB12F8F">
-        <di:waypoint x="4354" y="1322.6842105263158"/>
+        <di:waypoint x="4354" y="1323"/>
         <di:waypoint x="4355" y="1451"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_E395101C-BA07-44A7-8059-D28F40DD5598" dmnElementRef="_E395101C-BA07-44A7-8059-D28F40DD5598">
@@ -3880,7 +3880,7 @@
         <di:waypoint x="4486" y="1451"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_AE3C2269-24FA-451A-A921-2377B8E8B94A" dmnElementRef="_AE3C2269-24FA-451A-A921-2377B8E8B94A">
-        <di:waypoint x="4354" y="1322.6842105263158"/>
+        <di:waypoint x="4354" y="1323"/>
         <di:waypoint x="4486" y="1451"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_5FC71AD5-6B8D-40B8-9441-A585FD79C49F-AUTO-TARGET" dmnElementRef="_5FC71AD5-6B8D-40B8-9441-A585FD79C49F">
@@ -3892,7 +3892,7 @@
         <di:waypoint x="4626" y="1476"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_A0DD2F38-4DBF-4240-B0AD-692D04A2CB5B-AUTO-TARGET" dmnElementRef="_A0DD2F38-4DBF-4240-B0AD-692D04A2CB5B">
-        <di:waypoint x="4354" y="1322.6842105263158"/>
+        <di:waypoint x="4354" y="1323"/>
         <di:waypoint x="4626" y="1426"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_52457792-1271-4117-92A7-F9731260A4AF" dmnElementRef="_52457792-1271-4117-92A7-F9731260A4AF">

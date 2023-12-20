@@ -71,7 +71,7 @@
       <dmn:formalParameter id="_9A246EA6-59E6-41B1-9CC9-193DE8391EE2" name="PruefLvas" typeRef="LVA"/>
       <dmn:context id="_E5A7E211-25F1-46A4-88E9-9CFF76899633">
         <dmn:contextEntry>
-          <dmn:variable id="_F82C622D-8EA6-487C-B214-18542486E731" name="Eingabeklassen"/>
+          <dmn:variable id="_F82C622D-8EA6-487C-B214-18542486E731" name="EingabeKlassen"/>
           <dmn:literalExpression id="_3E5108F1-5456-4BD8-B43C-5F5FD042CCEF">
             <dmn:text>for x in Input return x.Klasse</dmn:text>
           </dmn:literalExpression>
@@ -85,7 +85,7 @@
         <dmn:contextEntry>
           <dmn:variable id="_B9BAA1BC-8010-456A-961D-CAD30DB7288D" name="SumList"/>
           <dmn:literalExpression id="_ACFBBF77-FB86-4503-9D82-D6B04F583897">
-            <dmn:text>union(Eingabeklassen,PruefKlassen)</dmn:text>
+            <dmn:text>union(EingabeKlassen,PruefKlassen)</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
         <dmn:contextEntry>
@@ -97,13 +97,13 @@
         <dmn:contextEntry>
           <dmn:variable id="_579127E1-7C14-4862-9E85-9E9C70337F0E" name="NotDone"/>
           <dmn:literalExpression id="_F5C45FF0-A8C4-43C3-9A9B-46666ABDBCDE">
-            <dmn:text>PruefLvas[not(item in Input)]</dmn:text>
+            <dmn:text>PruefKlassen[not(item in EingabeKlassen)]</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
         <dmn:contextEntry>
           <dmn:variable id="_D82B3E1E-18AC-4D3C-8367-B6CA9470C211" name="DoneEcts"/>
           <dmn:literalExpression id="_A2EC9E7F-72FB-4DA3-99EC-914D0755D724">
-            <dmn:text>if count(SumList)=count(Eingabeklassen) then sum(Ects) else 0</dmn:text>
+            <dmn:text>if count(SumList)=count(EingabeKlassen) then sum(Ects) else 0</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
         <dmn:contextEntry>
@@ -486,7 +486,7 @@
         <dmn:contextEntry>
           <dmn:variable id="_C5A76F8F-CF6B-4CD0-A7EE-EFC14F7D9337" name="NotDone"/>
           <dmn:literalExpression id="_0B960222-AAED-47B5-9313-58224EFA646E">
-            <dmn:text>CeusLvas[not(item in InputLvas)]</dmn:text>
+            <dmn:text>PruefKlassen[not(item in EingabeKlassen)]</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
         <dmn:contextEntry>
@@ -1755,7 +1755,7 @@
         <dmn:contextEntry>
           <dmn:variable id="_E1AFC41E-37F1-4201-940F-246827BD741A" name="NotDone"/>
           <dmn:literalExpression id="_EA347E6D-283C-44A1-BCE5-48BAE8EE7004">
-            <dmn:text>CeusLvas[not(item in InputLvas)]</dmn:text>
+            <dmn:text>PruefKlassen[not(item in EingabeKlassen)]</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
         <dmn:contextEntry>
@@ -2252,32 +2252,32 @@
           <kie:ComponentWidths dmnElementRef="_E5A7E211-25F1-46A4-88E9-9CFF76899633">
             <kie:width>50</kie:width>
             <kie:width>120</kie:width>
-            <kie:width>702</kie:width>
+            <kie:width>682</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_3E5108F1-5456-4BD8-B43C-5F5FD042CCEF">
-            <kie:width>702</kie:width>
+            <kie:width>682</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_1C794A69-0F99-4AF8-AB6C-7AC48520131E">
-            <kie:width>702</kie:width>
+            <kie:width>682</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_ACFBBF77-FB86-4503-9D82-D6B04F583897">
-            <kie:width>702</kie:width>
+            <kie:width>682</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_BAC796E3-289A-415B-AAE3-A0F5A5336D6E">
-            <kie:width>702</kie:width>
+            <kie:width>682</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_F5C45FF0-A8C4-43C3-9A9B-46666ABDBCDE">
-            <kie:width>702</kie:width>
+            <kie:width>682</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_A2EC9E7F-72FB-4DA3-99EC-914D0755D724">
-            <kie:width>702</kie:width>
+            <kie:width>682</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_65D65004-14C5-46BD-8F2D-795C3511EFD8">
-            <kie:width>702</kie:width>
+            <kie:width>682</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_120C1EE4-5E69-44E5-9B64-BA5EAB4DDC86">
             <kie:width>50</kie:width>
-            <kie:width>892</kie:width>
+            <kie:width>872</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_DABCEC94-7EA6-474A-B746-9FA35D801C77">
             <kie:width>641</kie:width>
@@ -2329,32 +2329,32 @@
           <kie:ComponentWidths dmnElementRef="_34E273CF-0886-4E3E-BECC-D89644E4762D">
             <kie:width>50</kie:width>
             <kie:width>120</kie:width>
-            <kie:width>359</kie:width>
+            <kie:width>339</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_94D631A6-C025-446C-9B7E-900E12036EDF">
-            <kie:width>359</kie:width>
+            <kie:width>339</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_53C51C6B-296F-4137-B28C-8BC4F7C2D4AD">
-            <kie:width>359</kie:width>
+            <kie:width>339</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_05742DAF-55DD-464D-8DDE-AC504670D554">
-            <kie:width>359</kie:width>
+            <kie:width>339</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_48FC9484-EA11-45B3-8D65-4FE58ECDBD15">
-            <kie:width>359</kie:width>
+            <kie:width>339</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_0B960222-AAED-47B5-9313-58224EFA646E">
-            <kie:width>359</kie:width>
+            <kie:width>339</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_AF551CF3-E698-4803-A570-FB2C76908FD6">
-            <kie:width>359</kie:width>
+            <kie:width>339</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_E96F21AC-F209-4945-B23D-EAF89F2E877E">
-            <kie:width>359</kie:width>
+            <kie:width>339</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_4662E7AB-4883-4203-A74E-B0D691FCD61B">
             <kie:width>50</kie:width>
-            <kie:width>549</kie:width>
+            <kie:width>529</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_AE7DB823-2E01-4326-A7D7-4E53B8FF47B9">
             <kie:width>50</kie:width>
@@ -2480,32 +2480,32 @@
           <kie:ComponentWidths dmnElementRef="_9541115A-3685-43B7-BABB-53DC9B7BF08F">
             <kie:width>50</kie:width>
             <kie:width>120</kie:width>
-            <kie:width>583</kie:width>
+            <kie:width>563</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_4DB76A02-D54C-4B11-AF80-ACBB3F19330C">
-            <kie:width>583</kie:width>
+            <kie:width>563</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_F94236A5-980F-4098-8E7B-90F113095392">
-            <kie:width>583</kie:width>
+            <kie:width>563</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_ACB02997-68D3-445A-8312-700162F8D840">
-            <kie:width>583</kie:width>
+            <kie:width>563</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_C89CE2B4-CD23-47BF-9CDD-5E1BBDBED971">
-            <kie:width>583</kie:width>
+            <kie:width>563</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_EA347E6D-283C-44A1-BCE5-48BAE8EE7004">
-            <kie:width>583</kie:width>
+            <kie:width>563</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_22CF8D5B-BB70-40BB-9F25-469AFA3A7D16">
-            <kie:width>583</kie:width>
+            <kie:width>563</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_1282D4BA-9F4B-4903-9854-477DF67D40EA">
-            <kie:width>583</kie:width>
+            <kie:width>563</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_E853FD8B-ED05-499F-B2BB-3404B8AB6036">
             <kie:width>50</kie:width>
-            <kie:width>773</kie:width>
+            <kie:width>753</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_1A7C3417-6E10-4FB2-B35F-C2C9B2CBA23D">
             <kie:width>50</kie:width>

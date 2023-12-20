@@ -1031,22 +1031,22 @@
       </dmn:input>
       <dmn:input id="_620C1EFE-B839-4FBB-82A5-EA3A9BD18BBF">
         <dmn:inputExpression id="_199A8F33-8F75-4B8C-84A6-99CC374BBB9B">
-          <dmn:text>Grundlagen der VWL</dmn:text>
+          <dmn:text>Grundlagen der VWL.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_C704ED2E-125D-443C-8A42-8CF826F8BB44">
         <dmn:inputExpression id="_9796698E-85ED-433C-8FF8-3EF32DCB7E3F">
-          <dmn:text>OVI Management</dmn:text>
+          <dmn:text>OVI Management.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_9C52CCCB-B50A-4D63-B65E-E247063244EC">
         <dmn:inputExpression id="_1AF6DE5F-4466-4488-BE9F-0F55DE84AF1D">
-          <dmn:text>Operations and Supply Chain Management</dmn:text>
+          <dmn:text>Operations and Supply Chain Management.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_E44F491D-35E5-4293-8D19-D94E5899B1AF">
         <dmn:inputExpression id="_3C6AF70A-8D48-4F89-8691-C83BF54E645F">
-          <dmn:text>WWIWIBacAusland</dmn:text>
+          <dmn:text>WWIWIBacAusland.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_40F2A0B9-00D3-4E1A-A550-3C31D8448369"/>
@@ -1792,14 +1792,26 @@
           </dmn:literalExpression>
         </dmn:contextEntry>
         <dmn:contextEntry>
-          <dmn:variable id="_7424EDEC-D9A2-43B0-9229-5C2C532BA3AC" name="achived"/>
+          <dmn:variable id="_7424EDEC-D9A2-43B0-9229-5C2C532BA3AC" name="notachived"/>
           <dmn:literalExpression id="_10EE7359-0AC9-47A9-A61C-2D891DCBB5A1">
             <dmn:text>PruefKlassen[not(item in EingabeKlassen)]</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
         <dmn:contextEntry>
-          <dmn:literalExpression id="_DB75BB7D-E1F9-439B-96F5-0F1DB9F569EA">
+          <dmn:variable id="_9D17AEC2-15F2-447D-A043-2837D6865FA1" name="DoneEcts"/>
+          <dmn:literalExpression id="_46B78346-FFAC-4E8D-BA38-BE650E7B08BF">
             <dmn:text>if count(SumList)=count(PruefKlassen) and sum(Ects)=6 then sum(Ects) else 0</dmn:text>
+          </dmn:literalExpression>
+        </dmn:contextEntry>
+        <dmn:contextEntry>
+          <dmn:variable id="_41E6738D-C3D5-4F64-8A01-BEFF9258A6BE" name="Output"/>
+          <dmn:literalExpression id="_CEF315C1-2112-4BB5-A1FE-D06878767D8E">
+            <dmn:text>{NotDone:notachived, Ects:DoneEcts}</dmn:text>
+          </dmn:literalExpression>
+        </dmn:contextEntry>
+        <dmn:contextEntry>
+          <dmn:literalExpression id="_DB75BB7D-E1F9-439B-96F5-0F1DB9F569EA">
+            <dmn:text>Output</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
       </dmn:context>
@@ -2315,7 +2327,16 @@
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_93EA4F4E-C935-4E04-A10D-41654562A034"/>
+          <kie:ComponentWidths dmnElementRef="_93EA4F4E-C935-4E04-A10D-41654562A034">
+            <kie:width>50</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+          </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_63019AEA-787C-4EB0-8F9D-FDCB4EA75C3E">
             <kie:width>50</kie:width>
             <kie:width>100</kie:width>
@@ -2421,6 +2442,12 @@
             <kie:width>363</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_10EE7359-0AC9-47A9-A61C-2D891DCBB5A1">
+            <kie:width>363</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_46B78346-FFAC-4E8D-BA38-BE650E7B08BF">
+            <kie:width>363</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_CEF315C1-2112-4BB5-A1FE-D06878767D8E">
             <kie:width>363</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_DB75BB7D-E1F9-439B-96F5-0F1DB9F569EA">
@@ -4031,7 +4058,16 @@
     <dmndi:DMNDiagram id="_E230DEB9-2B9A-45E1-A1E4-39242B29AB96" name="new-diagram">
       <di:extension>
         <kie:ComponentsWidthsExtension>
-          <kie:ComponentWidths dmnElementRef="_93EA4F4E-C935-4E04-A10D-41654562A034"/>
+          <kie:ComponentWidths dmnElementRef="_93EA4F4E-C935-4E04-A10D-41654562A034">
+            <kie:width>50</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+          </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
       <dmndi:DMNShape id="dmnshape-new-diagram-_FA1DCA39-E0D1-4611-9EA8-73EE03916425" dmnElementRef="_FA1DCA39-E0D1-4611-9EA8-73EE03916425" isCollapsed="false">

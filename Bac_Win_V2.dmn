@@ -350,7 +350,7 @@
       </dmn:input>
       <dmn:input id="_7C6A0312-52E8-4415-9485-6B586AA1A2D0">
         <dmn:inputExpression id="_65D41E9B-D3E0-4FD9-BCC9-1FF85DC4AC29">
-          <dmn:text>FinanzierunguRechungswesen</dmn:text>
+          <dmn:text>FinanzierunguRechungswesen.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_EBFE3368-B875-46F9-BAF6-53F5C18CE70B">

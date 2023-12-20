@@ -2404,16 +2404,7 @@
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_93EA4F4E-C935-4E04-A10D-41654562A034">
-            <kie:width>50</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
-          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_93EA4F4E-C935-4E04-A10D-41654562A034"/>
           <kie:ComponentWidths dmnElementRef="_63019AEA-787C-4EB0-8F9D-FDCB4EA75C3E">
             <kie:width>50</kie:width>
             <kie:width>100</kie:width>
@@ -2726,7 +2717,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="2963" y="784" width="100" height="50"/>
+        <dc:Bounds x="2962" y="784" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-drg-_D45964DA-54BF-49C7-87C6-0DD16FDB9561" dmnElementRef="_D45964DA-54BF-49C7-87C6-0DD16FDB9561" isCollapsed="false">
@@ -3609,16 +3600,16 @@
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_E0A6FFE7-C51B-45A1-AB90-8A950798CDB9-AUTO-TARGET" dmnElementRef="_E0A6FFE7-C51B-45A1-AB90-8A950798CDB9">
         <di:waypoint x="3011.5981308411215" y="1065"/>
-        <di:waypoint x="3013" y="834"/>
+        <di:waypoint x="3012" y="834"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_4866AE9B-7571-47BA-BC34-0201BBABE7A8-AUTO-TARGET" dmnElementRef="_4866AE9B-7571-47BA-BC34-0201BBABE7A8">
         <di:waypoint x="2381.5981308411215" y="1012.3421052631579"/>
-        <di:waypoint x="3013" y="834"/>
+        <di:waypoint x="3012" y="834"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_33AA7F68-4BBF-4A02-B7D5-7B917152FA2E" dmnElementRef="_33AA7F68-4BBF-4A02-B7D5-7B917152FA2E">
         <di:waypoint x="2403" y="915.6842105263158"/>
         <di:waypoint x="3013" y="854.7878420342819"/>
-        <di:waypoint x="3013" y="834"/>
+        <di:waypoint x="3012" y="834"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_FA90B8B2-7C31-4925-837E-0CA5184F31B4-AUTO-TARGET" dmnElementRef="_FA90B8B2-7C31-4925-837E-0CA5184F31B4">
         <di:waypoint x="3197.2990654205605" y="1065"/>
@@ -3638,7 +3629,7 @@
         <di:waypoint x="2962" y="674"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_A0272F58-C154-43AB-882C-04A4F95EF2B1-AUTO-TARGET" dmnElementRef="_A0272F58-C154-43AB-882C-04A4F95EF2B1">
-        <di:waypoint x="3013" y="809"/>
+        <di:waypoint x="3012" y="809"/>
         <di:waypoint x="2962" y="674"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_CE5E6523-3457-4834-B0F4-7E039032A701-AUTO-TARGET" dmnElementRef="_CE5E6523-3457-4834-B0F4-7E039032A701">
@@ -3775,6 +3766,8 @@
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_21465FDA-35DC-4C93-A398-179597EEB548-AUTO-TARGET" dmnElementRef="_21465FDA-35DC-4C93-A398-179597EEB548">
         <di:waypoint x="3876" y="725"/>
+        <di:waypoint x="3741.283707662477" y="671.8871275791544"/>
+        <di:waypoint x="3741.283707662477" y="662.9654646832644"/>
         <di:waypoint x="2527" y="160"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_2F220C53-D286-46B0-B338-E7B2A139EB7B-AUTO-TARGET" dmnElementRef="_2F220C53-D286-46B0-B338-E7B2A139EB7B">
@@ -4147,16 +4140,7 @@
     <dmndi:DMNDiagram id="_E230DEB9-2B9A-45E1-A1E4-39242B29AB96" name="new-diagram">
       <di:extension>
         <kie:ComponentsWidthsExtension>
-          <kie:ComponentWidths dmnElementRef="_93EA4F4E-C935-4E04-A10D-41654562A034">
-            <kie:width>50</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
-          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_93EA4F4E-C935-4E04-A10D-41654562A034"/>
         </kie:ComponentsWidthsExtension>
       </di:extension>
       <dmndi:DMNShape id="dmnshape-new-diagram-_FA1DCA39-E0D1-4611-9EA8-73EE03916425" dmnElementRef="_FA1DCA39-E0D1-4611-9EA8-73EE03916425" isCollapsed="false">

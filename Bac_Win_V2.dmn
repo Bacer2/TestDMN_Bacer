@@ -158,12 +158,12 @@
     <dmn:decisionTable id="_C383E943-A2EA-45B3-94BB-63A2BF2C5E27" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
       <dmn:input id="_83BB2977-650F-4BFF-AD04-20F42CDAA4C5">
         <dmn:inputExpression id="_9A6367BF-98D7-4FB0-828F-7ED49696315B">
-          <dmn:text>Leistungserstellung und Verwertung</dmn:text>
+          <dmn:text>Leistungserstellung und Verwertung.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_75C74394-7C31-4659-944B-033E39A57211">
         <dmn:inputExpression id="_B4955FB3-CEDC-4436-A5B5-EA8A902BAB04">
-          <dmn:text>Leistungserstellung und Verwertung alt</dmn:text>
+          <dmn:text>Leistungserstellung und Verwertung alt.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_0059474B-0372-42BA-88F0-EEDC025B540C"/>
@@ -340,7 +340,7 @@
     <dmn:decisionTable id="_C7B6EFAA-9E31-4DEB-B21B-4DF897FD5A7C" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
       <dmn:input id="_677BDB62-7C70-4D99-AC81-237D82AB6F28">
         <dmn:inputExpression id="_DA593A6A-6254-494B-90C3-DE6675B294DE">
-          <dmn:text>BWL Grundlagen u Techniken</dmn:text>
+          <dmn:text>BWL Grundlagen u Techniken.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_E8A4D066-5731-445B-8F0C-FBF2A5146286">
@@ -350,12 +350,12 @@
       </dmn:input>
       <dmn:input id="_7C6A0312-52E8-4415-9485-6B586AA1A2D0">
         <dmn:inputExpression id="_65D41E9B-D3E0-4FD9-BCC9-1FF85DC4AC29">
-          <dmn:text>FinanzierunguRechungswesen</dmn:text>
+          <dmn:text>FinanzierunguRechungswesen.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_EBFE3368-B875-46F9-BAF6-53F5C18CE70B">
         <dmn:inputExpression id="_C1561206-6852-410D-8412-55427C008867">
-          <dmn:text>Leistungerstellung_ok.Ects</dmn:text>
+          <dmn:text>Leistungerstellung_ok</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_5CA089C5-3355-446A-A508-8C38B6566AEF"/>
@@ -582,7 +582,7 @@
       </dmn:contextEntry>
       <dmn:contextEntry>
         <dmn:literalExpression id="_4DDC08AF-B8F9-4433-8555-25F7F17814B7">
-          <dmn:text>if OneCase=15 or OtherCase=15 then 15 else 0</dmn:text>
+          <dmn:text>if OneCase.Ects=15 or OtherCase.Ects=15 then 15 else 0</dmn:text>
         </dmn:literalExpression>
       </dmn:contextEntry>
     </dmn:context>
@@ -2329,32 +2329,32 @@
           <kie:ComponentWidths dmnElementRef="_34E273CF-0886-4E3E-BECC-D89644E4762D">
             <kie:width>50</kie:width>
             <kie:width>120</kie:width>
-            <kie:width>339</kie:width>
+            <kie:width>591</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_94D631A6-C025-446C-9B7E-900E12036EDF">
-            <kie:width>339</kie:width>
+            <kie:width>591</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_53C51C6B-296F-4137-B28C-8BC4F7C2D4AD">
-            <kie:width>339</kie:width>
+            <kie:width>591</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_05742DAF-55DD-464D-8DDE-AC504670D554">
-            <kie:width>339</kie:width>
+            <kie:width>591</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_48FC9484-EA11-45B3-8D65-4FE58ECDBD15">
-            <kie:width>339</kie:width>
+            <kie:width>591</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_0B960222-AAED-47B5-9313-58224EFA646E">
-            <kie:width>339</kie:width>
+            <kie:width>591</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_AF551CF3-E698-4803-A570-FB2C76908FD6">
-            <kie:width>339</kie:width>
+            <kie:width>591</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_E96F21AC-F209-4945-B23D-EAF89F2E877E">
-            <kie:width>339</kie:width>
+            <kie:width>591</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_4662E7AB-4883-4203-A74E-B0D691FCD61B">
             <kie:width>50</kie:width>
-            <kie:width>529</kie:width>
+            <kie:width>781</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_AE7DB823-2E01-4326-A7D7-4E53B8FF47B9">
             <kie:width>50</kie:width>

@@ -227,17 +227,17 @@
     <dmn:decisionTable id="_EBD3C2F9-76B5-480A-BE1D-CAE8D60423DA" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
       <dmn:input id="_9C7A9DD4-41A9-4D3F-B2AE-A1A86C47B946">
         <dmn:inputExpression id="_5F85E4ED-50AD-4E43-B0CD-882B6E0CE7D4">
-          <dmn:text>GrundlagenBWL</dmn:text>
+          <dmn:text>GrundlagenBWL.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_44D148D3-5BAF-40D6-9557-EF25D68B8694">
         <dmn:inputExpression id="_C928FDAE-ABDF-4A0F-86B8-134CC0964A59">
-          <dmn:text>Leistungerstellung_ok</dmn:text>
+          <dmn:text>Leistungerstellung_ok.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_47D9E0DB-ED2B-4609-B862-8EAEAF3CEFA8">
         <dmn:inputExpression id="_7E74A9E5-36B3-47B4-B0F4-40525144C7F4">
-          <dmn:text>Unternehmensrechnung</dmn:text>
+          <dmn:text>Unternehmensrechnung.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_7682FFD3-7760-42CA-B234-0D3F811D89BE"/>
@@ -355,7 +355,7 @@
       </dmn:input>
       <dmn:input id="_EBFE3368-B875-46F9-BAF6-53F5C18CE70B">
         <dmn:inputExpression id="_C1561206-6852-410D-8412-55427C008867">
-          <dmn:text>Leistungerstellung_ok</dmn:text>
+          <dmn:text>Leistungerstellung_ok.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_5CA089C5-3355-446A-A508-8C38B6566AEF"/>
@@ -729,7 +729,7 @@
       </dmn:input>
       <dmn:input id="_17CD86AC-8C3C-42BC-AC89-B6CE951E6650">
         <dmn:inputExpression id="_23D0D034-DFC9-4C92-BF55-BD95F2EBDFD1">
-          <dmn:text>Strategische IT Planung</dmn:text>
+          <dmn:text>Strategische IT Planung.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_81551865-CB2E-40E2-A8F5-FB1ED0F59BAF">

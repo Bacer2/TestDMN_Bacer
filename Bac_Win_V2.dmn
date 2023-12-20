@@ -3547,8 +3547,8 @@
         <di:waypoint x="2159" y="1100.342105263158"/>
         <di:waypoint x="2156" y="848"/>
       </dmndi:DMNEdge>
-      <dmndi:DMNEdge id="dmnedge-drg-_F6A33EF1-8389-492A-A269-D8269B3FDFDB-AUTO-TARGET" dmnElementRef="_F6A33EF1-8389-492A-A269-D8269B3FDFDB">
-        <di:waypoint x="2403" y="915.6842105263158"/>
+      <dmndi:DMNEdge id="dmnedge-drg-_F6A33EF1-8389-492A-A269-D8269B3FDFDB-AUTO-SOURCE-AUTO-TARGET" dmnElementRef="_F6A33EF1-8389-492A-A269-D8269B3FDFDB">
+        <di:waypoint x="2403" y="890.6842105263158"/>
         <di:waypoint x="2156" y="848"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_373F8B34-0821-4F03-B253-146D2FBD08E6-AUTO-TARGET" dmnElementRef="_373F8B34-0821-4F03-B253-146D2FBD08E6">

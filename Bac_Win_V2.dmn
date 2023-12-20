@@ -232,7 +232,7 @@
       </dmn:input>
       <dmn:input id="_44D148D3-5BAF-40D6-9557-EF25D68B8694">
         <dmn:inputExpression id="_C928FDAE-ABDF-4A0F-86B8-134CC0964A59">
-          <dmn:text>Leistungerstellung_ok.Ects</dmn:text>
+          <dmn:text>Leistungerstellung_ok</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_47D9E0DB-ED2B-4609-B862-8EAEAF3CEFA8">
@@ -544,7 +544,7 @@
       </dmn:contextEntry>
       <dmn:contextEntry>
         <dmn:literalExpression id="_B8BD3FE2-27F8-40CE-BEE9-7563B54DF1F0">
-          <dmn:text>if OneCase=18 or OtherCase=18 then 18 else 0</dmn:text>
+          <dmn:text>if OneCase.Ects=18 or OtherCase.Ects=18 then 18 else 0</dmn:text>
         </dmn:literalExpression>
       </dmn:contextEntry>
     </dmn:context>

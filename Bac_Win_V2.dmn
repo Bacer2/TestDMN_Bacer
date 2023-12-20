@@ -1865,8 +1865,20 @@
           </dmn:literalExpression>
         </dmn:contextEntry>
         <dmn:contextEntry>
-          <dmn:literalExpression id="_7E193582-14C6-4C93-BA41-A390E521CA0B">
+          <dmn:variable id="_F4082FDA-7BA0-4BA3-8F61-73F2F0C182F9" name="NotDone"/>
+          <dmn:literalExpression id="_80587B98-457A-4158-B0C7-B75D83458884">
+            <dmn:text>PruefKlassen[not(item in EingabeKlassen)]</dmn:text>
+          </dmn:literalExpression>
+        </dmn:contextEntry>
+        <dmn:contextEntry>
+          <dmn:variable id="_A91A68DD-CB62-47FD-B985-C2082EE93977" name="DoneEcts"/>
+          <dmn:literalExpression id="_7DECAA5F-252A-4F8D-8A1D-2EAB6997590E">
             <dmn:text>if count(PruefKlassen)=count(SumList) and count(EingabeKlassen)=count(PruefKlassen)  then sum(Ects) else 0</dmn:text>
+          </dmn:literalExpression>
+        </dmn:contextEntry>
+        <dmn:contextEntry>
+          <dmn:literalExpression id="_7E193582-14C6-4C93-BA41-A390E521CA0B">
+            <dmn:text>{NotDone:NotDone,Ects:DoneEcts}</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
       </dmn:context>
@@ -2460,26 +2472,32 @@
           <kie:ComponentWidths dmnElementRef="_FEB6B8BB-F486-4607-A8C2-4143C8505FDD">
             <kie:width>50</kie:width>
             <kie:width>120</kie:width>
-            <kie:width>784</kie:width>
+            <kie:width>764</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_BF5E3249-9562-4752-AC87-EA280602A6E0">
-            <kie:width>784</kie:width>
+            <kie:width>764</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_01DB042B-C2B4-4CFF-B967-4D91D113F72F">
-            <kie:width>784</kie:width>
+            <kie:width>764</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_7DF917F3-7277-4273-841F-D75E8C64519F">
-            <kie:width>784</kie:width>
+            <kie:width>764</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_A65CD310-BB5D-40C3-A681-EE264364EB4A">
-            <kie:width>784</kie:width>
+            <kie:width>764</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_80587B98-457A-4158-B0C7-B75D83458884">
+            <kie:width>764</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_7DECAA5F-252A-4F8D-8A1D-2EAB6997590E">
+            <kie:width>764</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_7E193582-14C6-4C93-BA41-A390E521CA0B">
-            <kie:width>784</kie:width>
+            <kie:width>764</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_678C07A0-0FD8-4EE5-91E7-788C6A520626">
             <kie:width>50</kie:width>
-            <kie:width>974</kie:width>
+            <kie:width>954</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_6B272DCE-9DFA-4BA1-9CC8-54FF7C04A45D">
             <kie:width>795</kie:width>

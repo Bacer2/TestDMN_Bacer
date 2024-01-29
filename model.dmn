@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_63449574-72DF-42D4-8A11-B80A538DEDC9" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_C518AA74-4781-4904-B8C2-F051160DD818" name="LVA-Test" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_63449574-72DF-42D4-8A11-B80A538DEDC9">
+  <dmn:description>iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</dmn:description>
   <dmn:extensionElements/>
   <dmn:itemDefinition id="_096FF3CB-C331-48F5-AFCD-C8F3BDB447FC" name="Return" isCollection="false">
     <dmn:itemComponent id="_79C5C30E-1014-4DF9-944D-7D78499A9715" name="Ects" isCollection="false">
@@ -153,12 +154,7 @@
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_C727A292-C90C-4D91-B3A1-E1D08E079781">
-            <kie:width>50</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
-          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_C727A292-C90C-4D91-B3A1-E1D08E079781"/>
         </kie:ComponentsWidthsExtension>
       </di:extension>
       <dmndi:DMNShape id="dmnshape-drg-_DFE55603-0AD4-4B0A-B573-FCD9986487E8" dmnElementRef="_DFE55603-0AD4-4B0A-B573-FCD9986487E8" isCollapsed="false">
@@ -213,12 +209,7 @@
     <dmndi:DMNDiagram id="_59E7015C-1BE4-4921-B7C7-733090896FC0" name="Test">
       <di:extension>
         <kie:ComponentsWidthsExtension>
-          <kie:ComponentWidths dmnElementRef="_C727A292-C90C-4D91-B3A1-E1D08E079781">
-            <kie:width>50</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
-          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_C727A292-C90C-4D91-B3A1-E1D08E079781"/>
         </kie:ComponentsWidthsExtension>
       </di:extension>
       <dmndi:DMNShape id="dmnshape-test-_B022A54A-71B2-46F5-853B-E3A06A99F13D" dmnElementRef="_B022A54A-71B2-46F5-853B-E3A06A99F13D" isCollapsed="false">

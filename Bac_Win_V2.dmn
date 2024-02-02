@@ -604,6 +604,7 @@
     <dmn:variable id="_AD72763B-1DC0-4726-B681-98AA3BB76205" name="x914x526GMSM13C" typeRef="LVA"/>
   </dmn:inputData>
   <dmn:decision id="_F2B39AB9-56BF-43D0-AAB2-C883C4D713BA" name="Wahlfacher">
+    <dmn:description>hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</dmn:description>
     <dmn:extensionElements/>
     <dmn:variable id="_28997A6C-C568-4BD6-9D09-AC4AC22D1760" name="Wahlfacher"/>
     <dmn:informationRequirement id="_3D889CD4-E36A-43D0-9EDE-7BD69DC4BD3E">
@@ -2915,7 +2916,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="573" y="331" width="100" height="50"/>
+        <dc:Bounds x="573" y="333" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-drg-_17D83698-AD21-4A0F-846A-2B60891EE3F0" dmnElementRef="_17D83698-AD21-4A0F-846A-2B60891EE3F0" isCollapsed="false">
@@ -3781,7 +3782,7 @@
         <di:waypoint x="2527" y="160"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_22E6CF50-3DDE-4C4B-814F-B38B00214D40-AUTO-TARGET" dmnElementRef="_22E6CF50-3DDE-4C4B-814F-B38B00214D40">
-        <di:waypoint x="623" y="356"/>
+        <di:waypoint x="623" y="358"/>
         <di:waypoint x="2527" y="160"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_F2B2E18C-A3CA-41D6-B7B4-9AFA7E7A9D77-AUTO-TARGET" dmnElementRef="_F2B2E18C-A3CA-41D6-B7B4-9AFA7E7A9D77">
@@ -3842,7 +3843,7 @@
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_F5F9CD60-C841-436A-931C-A9D75717D637-AUTO-TARGET" dmnElementRef="_F5F9CD60-C841-436A-931C-A9D75717D637">
         <di:waypoint x="609.5981308411215" y="541.6842105263158"/>
-        <di:waypoint x="623" y="381"/>
+        <di:waypoint x="623" y="383"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_03A9CBA2-5FBE-4D58-AEB8-C0E43A8B2C4C-AUTO-TARGET" dmnElementRef="_03A9CBA2-5FBE-4D58-AEB8-C0E43A8B2C4C">
         <di:waypoint x="2528" y="1641"/>

@@ -22,6 +22,7 @@
     </dmn:itemComponent>
   </dmn:itemDefinition>
   <dmn:decision id="_DFE55603-0AD4-4B0A-B573-FCD9986487E8" name="D1">
+    <dmn:description>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</dmn:description>
     <dmn:extensionElements/>
     <dmn:variable id="_555A09CD-3C3F-4329-800B-680A30663995" name="D1"/>
     <dmn:informationRequirement id="_8D2DC382-6AA8-404B-BA38-CD429E4E2F83">

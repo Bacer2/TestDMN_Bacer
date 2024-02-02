@@ -603,10 +603,10 @@
     <dmn:extensionElements/>
     <dmn:variable id="_AD72763B-1DC0-4726-B681-98AA3BB76205" name="x914x526GMSM13C" typeRef="LVA"/>
   </dmn:inputData>
-  <dmn:decision id="_F2B39AB9-56BF-43D0-AAB2-C883C4D713BA" name="Wahlfacher">
+  <dmn:decision id="_F2B39AB9-56BF-43D0-AAB2-C883C4D713BA" name="Wahlfacherhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
     <dmn:description>hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</dmn:description>
     <dmn:extensionElements/>
-    <dmn:variable id="_28997A6C-C568-4BD6-9D09-AC4AC22D1760" name="Wahlfacher"/>
+    <dmn:variable id="_28997A6C-C568-4BD6-9D09-AC4AC22D1760" name="Wahlfacherhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"/>
     <dmn:informationRequirement id="_3D889CD4-E36A-43D0-9EDE-7BD69DC4BD3E">
       <dmn:requiredDecision href="#_FA1DCA39-E0D1-4611-9EA8-73EE03916425"/>
     </dmn:informationRequirement>

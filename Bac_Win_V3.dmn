@@ -1478,9 +1478,9 @@
       <dmn:text>9</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
-  <dmn:inputData id="_17D83698-AD21-4A0F-846A-2B60891EE3F0" name="getAllFree">
+  <dmn:inputData id="_17D83698-AD21-4A0F-846A-2B60891EE3F0" name="getAllFreeI">
     <dmn:extensionElements/>
-    <dmn:variable id="_A09F5020-243F-4B69-B3C3-0F8457FDD3D8" name="getAllFree"/>
+    <dmn:variable id="_A09F5020-243F-4B69-B3C3-0F8457FDD3D8" name="getAllFreeI"/>
   </dmn:inputData>
   <dmn:decision id="_DE3EBCD2-3FF3-443C-A242-5A26CC599916" name="Strategische IT Planung">
     <dmn:extensionElements/>

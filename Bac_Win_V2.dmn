@@ -550,6 +550,7 @@
     </dmn:context>
   </dmn:decision>
   <dmn:decision id="_07BE43B1-8A32-45B2-8FBC-408D4F7FFE0D" name="Grundlagen der Mathematik">
+    <dmn:description>Wahl_2</dmn:description>
     <dmn:extensionElements/>
     <dmn:variable id="_0CD83334-3A33-48B0-AFD3-649EAD11099A" name="Grundlagen der Mathematik"/>
     <dmn:informationRequirement id="_368C17FE-B727-40D3-81FE-B9BF4CB7CDE5">
@@ -2833,7 +2834,7 @@
       <dmndi:DMNShape id="dmnshape-drg-_07BE43B1-8A32-45B2-8FBC-408D4F7FFE0D" dmnElementRef="_07BE43B1-8A32-45B2-8FBC-408D4F7FFE0D" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:StrokeColor red="204" green="15" blue="15"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
         <dc:Bounds x="4336" y="687" width="100" height="50"/>

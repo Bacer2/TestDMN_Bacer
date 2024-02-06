@@ -19,10 +19,10 @@
     <dmn:description>Pflicht_1</dmn:description>
     <dmn:extensionElements/>
     <dmn:variable id="_47BC2806-1ACF-43E0-89BE-3FB5D983D5C9" name="Grundlagen der Wirtschaftsinformatik"/>
-    <dmn:informationRequirement id="_2E1090E0-A020-47F3-A9FD-B64E16DE6168">
+    <dmn:informationRequirement id="_91A19A1E-9E54-4598-9509-A787D6974832">
       <dmn:requiredInput href="#_FE30291C-FED7-4812-B9E4-07E4C4756532"/>
     </dmn:informationRequirement>
-    <dmn:informationRequirement id="_BD558521-C13F-4ABA-9E88-61E0FBC24107">
+    <dmn:informationRequirement id="_B5CDC8F5-9AE3-43C8-B10B-A5997639307B">
       <dmn:requiredInput href="#_617921E5-CF95-41A2-B6D7-82323404D8CC"/>
     </dmn:informationRequirement>
     <dmn:knowledgeRequirement id="_3FFA3708-9291-4591-8C4A-56543220D7DD">
@@ -35,7 +35,7 @@
   <dmn:decision id="_D57E3341-2688-4AFF-82D3-99B426D52D77" name="Bachelor Geschafft">
     <dmn:extensionElements/>
     <dmn:variable id="_B0ABC429-5BA2-4F04-9231-9D812ECC8758" name="Bachelor Geschafft"/>
-    <dmn:informationRequirement id="_04607C8C-8145-477C-AFCC-D24D7E9ADB04">
+    <dmn:informationRequirement id="_0581FEDD-20AB-4549-B67C-DEF515DE1B9C">
       <dmn:requiredDecision href="#_3AAA9C6D-84B7-4EDF-8222-A22EA427C265"/>
     </dmn:informationRequirement>
     <dmn:decisionTable id="_69B80220-D55C-4CF7-A175-ECF84812B500" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
@@ -101,7 +101,7 @@
         <dmn:contextEntry>
           <dmn:variable id="_017D35FB-B4C3-4DF1-A33F-5C842B2A68F6" name="NotDone"/>
           <dmn:literalExpression id="_DF622778-4CF2-4D5F-B252-131DCE67F14E">
-            <dmn:text>PruefKlassen[not(item in EingabeKlassen)]</dmn:text>
+            <dmn:text>CeusKlassen[not(item in EingabeKlassen)]</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
         <dmn:contextEntry>
@@ -123,7 +123,7 @@
       <di:extension>
         <kie:ComponentsWidthsExtension>
           <kie:ComponentWidths dmnElementRef="_E61CAD6D-7CAC-4868-937B-FE585FFE038C">
-            <kie:width>190</kie:width>
+            <kie:width>545</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_69B80220-D55C-4CF7-A175-ECF84812B500">
             <kie:width>50</kie:width>
@@ -134,32 +134,32 @@
           <kie:ComponentWidths dmnElementRef="_20C57725-CE79-4DD4-A33F-A2D8FF5F5D7A">
             <kie:width>50</kie:width>
             <kie:width>120</kie:width>
-            <kie:width>775</kie:width>
+            <kie:width>980</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_5084096F-1E64-4F97-A147-2BC380DCBA5D">
-            <kie:width>775</kie:width>
+            <kie:width>980</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_0AAF385D-C98E-4DC5-BE53-66BDAD5F3393">
-            <kie:width>775</kie:width>
+            <kie:width>980</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_5325649D-4769-4DF0-B8DF-4A9F884F4376">
-            <kie:width>775</kie:width>
+            <kie:width>980</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_35AB6B06-0A3D-498A-A986-97964FCEE8EF">
-            <kie:width>775</kie:width>
+            <kie:width>980</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_DF622778-4CF2-4D5F-B252-131DCE67F14E">
-            <kie:width>775</kie:width>
+            <kie:width>980</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_9BAE2630-6ACA-48FA-9B6E-015350541B51">
-            <kie:width>775</kie:width>
+            <kie:width>980</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_8A815FB7-9D0E-4440-9125-5E0D79423BF6">
-            <kie:width>775</kie:width>
+            <kie:width>980</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_51506CC1-12E2-45B3-9899-7E9834251F62">
             <kie:width>50</kie:width>
-            <kie:width>965</kie:width>
+            <kie:width>1170</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
@@ -208,19 +208,19 @@
         <dc:Bounds x="228" y="103" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNEdge id="dmnedge-drg-_2E1090E0-A020-47F3-A9FD-B64E16DE6168" dmnElementRef="_2E1090E0-A020-47F3-A9FD-B64E16DE6168">
-        <di:waypoint x="500.29906542056074" y="415"/>
-        <di:waypoint x="482" y="237"/>
-      </dmndi:DMNEdge>
-      <dmndi:DMNEdge id="dmnedge-drg-_BD558521-C13F-4ABA-9E88-61E0FBC24107" dmnElementRef="_BD558521-C13F-4ABA-9E88-61E0FBC24107">
-        <di:waypoint x="351.5981308411215" y="410"/>
-        <di:waypoint x="482" y="237"/>
-      </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_3FFA3708-9291-4591-8C4A-56543220D7DD-AUTO-TARGET" dmnElementRef="_3FFA3708-9291-4591-8C4A-56543220D7DD">
         <di:waypoint x="278" y="128"/>
         <di:waypoint x="482" y="212"/>
       </dmndi:DMNEdge>
-      <dmndi:DMNEdge id="dmnedge-drg-_04607C8C-8145-477C-AFCC-D24D7E9ADB04-AUTO-TARGET" dmnElementRef="_04607C8C-8145-477C-AFCC-D24D7E9ADB04">
+      <dmndi:DMNEdge id="dmnedge-drg-_91A19A1E-9E54-4598-9509-A787D6974832-AUTO-TARGET" dmnElementRef="_91A19A1E-9E54-4598-9509-A787D6974832">
+        <di:waypoint x="500.29906542056074" y="415"/>
+        <di:waypoint x="482" y="262"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_B5CDC8F5-9AE3-43C8-B10B-A5997639307B-AUTO-TARGET" dmnElementRef="_B5CDC8F5-9AE3-43C8-B10B-A5997639307B">
+        <di:waypoint x="351.5981308411215" y="410"/>
+        <di:waypoint x="482" y="262"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_0581FEDD-20AB-4549-B67C-DEF515DE1B9C-AUTO-TARGET" dmnElementRef="_0581FEDD-20AB-4549-B67C-DEF515DE1B9C">
         <di:waypoint x="482" y="237"/>
         <di:waypoint x="648" y="103"/>
       </dmndi:DMNEdge>

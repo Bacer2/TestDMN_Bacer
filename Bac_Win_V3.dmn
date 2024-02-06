@@ -1471,16 +1471,27 @@
     <dmn:description>Frei_6</dmn:description>
     <dmn:extensionElements/>
     <dmn:variable id="_45A66F4D-0D2F-4FCA-9AF4-CC6AB224B481" name="Freie Studienleistungen"/>
-    <dmn:informationRequirement id="_F5F9CD60-C841-436A-931C-A9D75717D637">
+    <dmn:informationRequirement id="_EFA7ED92-E7C6-4B25-AB77-6C78164EADAC">
       <dmn:requiredInput href="#_17D83698-AD21-4A0F-846A-2B60891EE3F0"/>
     </dmn:informationRequirement>
-    <dmn:literalExpression id="_334419B8-9AF7-46D4-B522-5F429EC89441">
-      <dmn:text>9</dmn:text>
-    </dmn:literalExpression>
+    <dmn:context id="_334419B8-9AF7-46D4-B522-5F429EC89441">
+      <dmn:contextEntry>
+        <dmn:variable id="_13660459-3423-4301-BF23-6A64F45DE434" name="Ects"/>
+        <dmn:literalExpression id="_80ADD380-054F-4AA1-8398-9211999AFF88">
+          <dmn:text>for x in getAllFreeI return x.Ects</dmn:text>
+        </dmn:literalExpression>
+      </dmn:contextEntry>
+      <dmn:contextEntry>
+        <dmn:literalExpression id="_360C5B10-114D-42F0-A9E2-6D2C62397877">
+          <dmn:text>return sum(Ects)</dmn:text>
+        </dmn:literalExpression>
+      </dmn:contextEntry>
+    </dmn:context>
   </dmn:decision>
   <dmn:inputData id="_17D83698-AD21-4A0F-846A-2B60891EE3F0" name="getAllFreeI">
+    <dmn:description>ll</dmn:description>
     <dmn:extensionElements/>
-    <dmn:variable id="_A09F5020-243F-4B69-B3C3-0F8457FDD3D8" name="getAllFreeI"/>
+    <dmn:variable id="_A09F5020-243F-4B69-B3C3-0F8457FDD3D8" name="getAllFreeI" typeRef="LVA"/>
   </dmn:inputData>
   <dmn:decision id="_DE3EBCD2-3FF3-443C-A242-5A26CC599916" name="Strategische IT Planung">
     <dmn:extensionElements/>
@@ -2443,6 +2454,14 @@
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_334419B8-9AF7-46D4-B522-5F429EC89441">
+            <kie:width>50</kie:width>
+            <kie:width>120</kie:width>
+            <kie:width>190</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_80ADD380-054F-4AA1-8398-9211999AFF88">
+            <kie:width>190</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_360C5B10-114D-42F0-A9E2-6D2C62397877">
             <kie:width>190</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_B86C1E52-4FDB-42A6-B168-5F617F72A5DB">
@@ -2940,7 +2959,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="559.5981308411215" y="516.6842105263158" width="100" height="50"/>
+        <dc:Bounds x="559.2990654205607" y="516.6842105263158" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-drg-_DE3EBCD2-3FF3-443C-A242-5A26CC599916" dmnElementRef="_DE3EBCD2-3FF3-443C-A242-5A26CC599916" isCollapsed="false">
@@ -3856,8 +3875,8 @@
         <di:waypoint x="1338.1117351655903" y="1184.0434330356504"/>
         <di:waypoint x="2527" y="160"/>
       </dmndi:DMNEdge>
-      <dmndi:DMNEdge id="dmnedge-drg-_F5F9CD60-C841-436A-931C-A9D75717D637-AUTO-TARGET" dmnElementRef="_F5F9CD60-C841-436A-931C-A9D75717D637">
-        <di:waypoint x="609.5981308411215" y="541.6842105263158"/>
+      <dmndi:DMNEdge id="dmnedge-drg-_EFA7ED92-E7C6-4B25-AB77-6C78164EADAC-AUTO-TARGET" dmnElementRef="_EFA7ED92-E7C6-4B25-AB77-6C78164EADAC">
+        <di:waypoint x="609.2990654205607" y="541.6842105263158"/>
         <di:waypoint x="623" y="381"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_03A9CBA2-5FBE-4D58-AEB8-C0E43A8B2C4C-AUTO-TARGET" dmnElementRef="_03A9CBA2-5FBE-4D58-AEB8-C0E43A8B2C4C">

@@ -48,7 +48,7 @@
       <dmn:annotation name="annotation-1"/>
       <dmn:rule id="_B6EFD407-B875-42CB-85EE-A95CF5834B12">
         <dmn:inputEntry id="_71082A40-0ED6-40C3-9ED8-E5B0044842E9">
-          <dmn:text>6</dmn:text>
+          <dmn:text>24</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_027984C8-19D1-46F3-89D1-89EFB6425A98">
           <dmn:text>6</dmn:text>

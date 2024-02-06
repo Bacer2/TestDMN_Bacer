@@ -1228,9 +1228,6 @@
     <dmn:informationRequirement id="_2F220C53-D286-46B0-B338-E7B2A139EB7B">
       <dmn:requiredDecision href="#_07BE43B1-8A32-45B2-8FBC-408D4F7FFE0D"/>
     </dmn:informationRequirement>
-    <dmn:informationRequirement id="_F37C6657-1627-4444-BCCE-13A1661E53FA">
-      <dmn:requiredDecision href="#_F2B39AB9-56BF-43D0-AAB2-C883C4D713BA"/>
-    </dmn:informationRequirement>
     <dmn:informationRequirement id="_22E6CF50-3DDE-4C4B-814F-B38B00214D40">
       <dmn:requiredDecision href="#_972F68E9-CFC7-445C-9A3C-99DD3E640545"/>
     </dmn:informationRequirement>
@@ -1269,6 +1266,9 @@
     </dmn:informationRequirement>
     <dmn:informationRequirement id="_5ED55ABF-59F7-431F-84E6-7007D6AB8C6C">
       <dmn:requiredDecision href="#_B1196A7A-519E-4C43-96DF-B4D32C793CD4"/>
+    </dmn:informationRequirement>
+    <dmn:informationRequirement id="_CC4FA365-11FE-4965-B645-A20CA651E012">
+      <dmn:requiredDecision href="#_F2B39AB9-56BF-43D0-AAB2-C883C4D713BA"/>
     </dmn:informationRequirement>
     <dmn:decisionTable id="_63019AEA-787C-4EB0-8F9D-FDCB4EA75C3E" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
       <dmn:input id="_DF96DA9D-2903-4198-98E7-DC6F442021D1">
@@ -1483,7 +1483,7 @@
       </dmn:contextEntry>
       <dmn:contextEntry>
         <dmn:literalExpression id="_360C5B10-114D-42F0-A9E2-6D2C62397877">
-          <dmn:text>return sum(Ects)</dmn:text>
+          <dmn:text>sum(Ects)</dmn:text>
         </dmn:literalExpression>
       </dmn:contextEntry>
     </dmn:context>
@@ -2431,7 +2431,16 @@
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_93EA4F4E-C935-4E04-A10D-41654562A034"/>
+          <kie:ComponentWidths dmnElementRef="_93EA4F4E-C935-4E04-A10D-41654562A034">
+            <kie:width>50</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+          </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_63019AEA-787C-4EB0-8F9D-FDCB4EA75C3E">
             <kie:width>50</kie:width>
             <kie:width>100</kie:width>
@@ -3809,12 +3818,6 @@
         <di:waypoint x="4386" y="712"/>
         <di:waypoint x="2527" y="160"/>
       </dmndi:DMNEdge>
-      <dmndi:DMNEdge id="dmnedge-drg-_F37C6657-1627-4444-BCCE-13A1661E53FA-AUTO-TARGET" dmnElementRef="_F37C6657-1627-4444-BCCE-13A1661E53FA">
-        <di:waypoint x="3839" y="1089"/>
-        <di:waypoint x="3646.39300158171" y="853.4999999999998"/>
-        <di:waypoint x="3414.033946500292" y="561.1109031547161"/>
-        <di:waypoint x="2527" y="160"/>
-      </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_22E6CF50-3DDE-4C4B-814F-B38B00214D40-AUTO-TARGET" dmnElementRef="_22E6CF50-3DDE-4C4B-814F-B38B00214D40">
         <di:waypoint x="623" y="356"/>
         <di:waypoint x="2527" y="160"/>
@@ -3873,6 +3876,10 @@
         <di:waypoint x="1490.7685815" y="1366.0506871"/>
         <di:waypoint x="1492.7172985999998" y="1360.2045358"/>
         <di:waypoint x="1338.1117351655903" y="1184.0434330356504"/>
+        <di:waypoint x="2527" y="160"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_CC4FA365-11FE-4965-B645-A20CA651E012-AUTO-TARGET" dmnElementRef="_CC4FA365-11FE-4965-B645-A20CA651E012">
+        <di:waypoint x="3839" y="1089"/>
         <di:waypoint x="2527" y="160"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_EFA7ED92-E7C6-4B25-AB77-6C78164EADAC-AUTO-TARGET" dmnElementRef="_EFA7ED92-E7C6-4B25-AB77-6C78164EADAC">
@@ -4175,7 +4182,16 @@
     <dmndi:DMNDiagram id="_E230DEB9-2B9A-45E1-A1E4-39242B29AB96" name="new-diagram">
       <di:extension>
         <kie:ComponentsWidthsExtension>
-          <kie:ComponentWidths dmnElementRef="_93EA4F4E-C935-4E04-A10D-41654562A034"/>
+          <kie:ComponentWidths dmnElementRef="_93EA4F4E-C935-4E04-A10D-41654562A034">
+            <kie:width>50</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+          </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
       <dmndi:DMNShape id="dmnshape-new-diagram-_FA1DCA39-E0D1-4611-9EA8-73EE03916425" dmnElementRef="_FA1DCA39-E0D1-4611-9EA8-73EE03916425" isCollapsed="false">

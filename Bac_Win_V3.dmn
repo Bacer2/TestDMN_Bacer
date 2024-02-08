@@ -551,10 +551,10 @@
       </dmn:contextEntry>
     </dmn:context>
   </dmn:decision>
-  <dmn:decision id="_07BE43B1-8A32-45B2-8FBC-408D4F7FFE0D" name="Grundlagen der Mathematik, Statistik und formaler Methoden">
+  <dmn:decision id="_07BE43B1-8A32-45B2-8FBC-408D4F7FFE0D" name="Grundlagen der Mathematik Statistik und formaler Methoden">
     <dmn:description>Pflicht_1</dmn:description>
     <dmn:extensionElements/>
-    <dmn:variable id="_0CD83334-3A33-48B0-AFD3-649EAD11099A" name="Grundlagen der Mathematik, Statistik und formaler Methoden"/>
+    <dmn:variable id="_0CD83334-3A33-48B0-AFD3-649EAD11099A" name="Grundlagen der Mathematik Statistik und formaler Methoden"/>
     <dmn:informationRequirement id="_368C17FE-B727-40D3-81FE-B9BF4CB7CDE5">
       <dmn:requiredInput href="#_9E7D82B1-9A56-4853-912B-C73CF300A2D5"/>
     </dmn:informationRequirement>
@@ -1308,7 +1308,7 @@
       </dmn:input>
       <dmn:input id="_D9359E31-80B5-4298-A490-F6163CD13447">
         <dmn:inputExpression id="_9959426A-74E6-4820-9A57-819679DAAE9A">
-          <dmn:text>Grundlagen der Mathematik, Statistik und formaler Methoden.Ects</dmn:text>
+          <dmn:text>Grundlagen der Mathematik Statistik und formaler Methoden.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_F558E4C7-9810-421F-8401-4C2BA94F360F">

@@ -1283,7 +1283,7 @@
       </dmn:input>
       <dmn:input id="_35A057F8-FB34-4C47-B9B7-C7C4C4EA0B1E">
         <dmn:inputExpression id="_93480D56-66AB-4EDB-85E7-83A121481AF3">
-          <dmn:text>Data &amp;amp; Knowledge Engineering.Ects</dmn:text>
+          <dmn:text>Data amp; Knowledge Engineering.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_DC0BD3BB-11FF-4F5F-918F-2ADF9140A2AE">
@@ -2131,10 +2131,10 @@
       <dmn:text>Pflichtfacher(x914x526SENG13I,x914x526SENG13C)</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
-  <dmn:decision id="_931A22B1-53C6-4407-8D3E-9EC359644D2A" name="Data &amp;amp; Knowledge Engineering">
+  <dmn:decision id="_931A22B1-53C6-4407-8D3E-9EC359644D2A" name="Data amp; Knowledge Engineering">
     <dmn:description>Pflicht_1</dmn:description>
     <dmn:extensionElements/>
-    <dmn:variable id="_6FA43947-DBCB-4E0E-8F84-EB996D7AA49E" name="Data &amp;amp; Knowledge Engineering"/>
+    <dmn:variable id="_6FA43947-DBCB-4E0E-8F84-EB996D7AA49E" name="Data amp; Knowledge Engineering"/>
     <dmn:informationRequirement id="_631764D6-6993-4FF2-9249-ECFA03379E24">
       <dmn:requiredInput href="#_46BE31DA-14A4-44FF-9B96-57D64780548A"/>
     </dmn:informationRequirement>

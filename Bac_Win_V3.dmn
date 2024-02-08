@@ -426,10 +426,10 @@
     <dmn:extensionElements/>
     <dmn:variable id="_934632F7-CBBD-40FC-87AD-8FD720C503D8" name="x914x526GLWN11I x914x526GRRE13I x914x526FENG13I x914x526SGAI13I x914x526INEN13I x914x526SENG13I x914x526DAKE13I x914x526COEN13I x914x526ITPR13I x914x526SWIB13I" typeRef="LVA"/>
   </dmn:inputData>
-  <dmn:decision id="_B7661539-A529-4FFF-82E5-BA650BCB2090" name="Ausgewahlte Aspekte WIN">
+  <dmn:decision id="_B7661539-A529-4FFF-82E5-BA650BCB2090" name="Ausgewählte Aspekte der Wirtschaftsinformatik">
     <dmn:description>Pflicht_1</dmn:description>
     <dmn:extensionElements/>
-    <dmn:variable id="_52D9358C-D9D1-4F87-8635-D59D8F7069AA" name="Ausgewahlte Aspekte WIN"/>
+    <dmn:variable id="_52D9358C-D9D1-4F87-8635-D59D8F7069AA" name="Ausgewählte Aspekte der Wirtschaftsinformatik"/>
     <dmn:informationRequirement id="_D5173672-4131-45D2-9EBB-BDCA75FAFF77">
       <dmn:requiredInput href="#_1B1ED472-8F25-4134-8458-4178E478E483"/>
     </dmn:informationRequirement>
@@ -551,10 +551,10 @@
       </dmn:contextEntry>
     </dmn:context>
   </dmn:decision>
-  <dmn:decision id="_07BE43B1-8A32-45B2-8FBC-408D4F7FFE0D" name="Grundlagen der Mathematik">
+  <dmn:decision id="_07BE43B1-8A32-45B2-8FBC-408D4F7FFE0D" name="Grundlagen der Mathematik, Statistik und formaler Methoden">
     <dmn:description>Pflicht_1</dmn:description>
     <dmn:extensionElements/>
-    <dmn:variable id="_0CD83334-3A33-48B0-AFD3-649EAD11099A" name="Grundlagen der Mathematik"/>
+    <dmn:variable id="_0CD83334-3A33-48B0-AFD3-649EAD11099A" name="Grundlagen der Mathematik, Statistik und formaler Methoden"/>
     <dmn:informationRequirement id="_368C17FE-B727-40D3-81FE-B9BF4CB7CDE5">
       <dmn:requiredInput href="#_9E7D82B1-9A56-4853-912B-C73CF300A2D5"/>
     </dmn:informationRequirement>
@@ -616,55 +616,55 @@
     <dmn:informationRequirement id="_60F4579C-985E-4E08-9022-E2EEA9BF386C">
       <dmn:requiredDecision href="#_A29C39BE-F9F6-4423-919D-A5CD9F6DC910"/>
     </dmn:informationRequirement>
-    <dmn:decisionTable id="_F02FD599-3690-4789-AF97-4D8E5967721B" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
-      <dmn:input id="_BD19B382-ECAA-4412-8689-2A8BD8712D9C">
-        <dmn:inputExpression id="_35232907-AF60-4AAA-9D54-BB032A75AC31">
-          <dmn:text>Informatik</dmn:text>
+    <dmn:decisionTable id="_F02FD599-3690-4789-AF97-4D8E5967721B" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_43AC5906-C988-40A6-B617-416DAE7B52BC">
+        <dmn:inputExpression id="_BCE77F49-5A69-4E84-A87B-C299E1C36DC9">
+          <dmn:text>Wahlfach Wirtschaftsinformatik</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:input id="_BCBC9DE3-1C3F-4872-BA53-6A223A5360A5">
-        <dmn:inputExpression id="_3BDDBF37-C693-4953-B639-326449F1306F">
-          <dmn:text>Wirtschaftswissenschaften</dmn:text>
+      <dmn:input id="_FB77E5CE-E150-4F5A-A4A0-1774B4448D4B">
+        <dmn:inputExpression id="_429022BE-82C8-4F35-A225-70B211A3DFEF">
+          <dmn:text>Wahlfach Wirtschaftswissenschaften</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:output id="_07304CF7-22AD-4035-8493-39A7921FC98A"/>
+      <dmn:output id="_E9DE5B35-DBFB-4DFF-85A3-7C154D803EE1"/>
       <dmn:annotation name="annotation-1"/>
-      <dmn:rule id="_5C517E08-97A1-4C2F-9C1F-383DFEA55C6A">
-        <dmn:inputEntry id="_1DB12C8B-4282-495C-956D-319660ACB770">
+      <dmn:rule id="_F79F18AD-D4E1-4FBC-929B-8AA62B46A88A">
+        <dmn:inputEntry id="_D145EF01-33F9-4661-ABF3-8E302F033C6B">
           <dmn:text>0</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_EE76F14C-F915-4873-8FF5-A28978EEA4FE">
+        <dmn:inputEntry id="_80980645-ABD7-4A8E-82CD-BEB8F51EEB77">
           <dmn:text>6</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry id="_E43338DF-7BE8-4233-8F8F-FF598DC76A65">
+        <dmn:outputEntry id="_211DC6A3-200D-4336-8762-F6A909FF885D">
           <dmn:text>6</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
         </dmn:annotationEntry>
       </dmn:rule>
-      <dmn:rule id="_6B344483-3ED4-41FA-B5B9-D2C7708D27CF">
-        <dmn:inputEntry id="_723CA18A-6B8B-4833-BAF3-873B95168F8D">
+      <dmn:rule id="_A4F7866E-B4E5-46F6-810F-3E5A030BADCF">
+        <dmn:inputEntry id="_266E2B8A-84A1-404E-A0FC-81DC6D28D54C">
           <dmn:text>6</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_210F1371-1309-4575-BEF9-8BF0C633B0E9">
+        <dmn:inputEntry id="_C0AE967D-F829-488B-BB7C-D77CFF1EF071">
           <dmn:text>0</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry id="_C3542AFD-C2D1-4727-9CF5-E5FDF8F0889D">
+        <dmn:outputEntry id="_8819D492-F100-4B0F-BC5B-A776B2C266B4">
           <dmn:text>6</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
         </dmn:annotationEntry>
       </dmn:rule>
-      <dmn:rule id="_8EDEC021-7DAC-4AF9-8CB4-441F02D7E152">
-        <dmn:inputEntry id="_5EA209EB-2AA2-4FBB-B7AC-722DCBF07A53">
+      <dmn:rule id="_5A2D2514-E7E6-4B7D-BFFF-12589F5DACE7">
+        <dmn:inputEntry id="_06E5200A-9AE1-4349-858F-8AF85D589ADB">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_24581F70-3D17-4CB6-BA74-C9A0F5DD5B79">
+        <dmn:inputEntry id="_1C8189B2-4461-48DD-951C-44EF259F2082">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry id="_7F58B4ED-1471-4DAA-B13B-B64CAC8A277E">
+        <dmn:outputEntry id="_92BB1E33-E39A-4291-B336-68FE29444D1F">
           <dmn:text>0</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
@@ -673,9 +673,9 @@
       </dmn:rule>
     </dmn:decisionTable>
   </dmn:decision>
-  <dmn:decision id="_A29C39BE-F9F6-4423-919D-A5CD9F6DC910" name="Informatik">
+  <dmn:decision id="_A29C39BE-F9F6-4423-919D-A5CD9F6DC910" name="Wahlfach Wirtschaftsinformatik">
     <dmn:extensionElements/>
-    <dmn:variable id="_06F059B3-73D0-4C0F-9541-E04872B2D23D" name="Informatik"/>
+    <dmn:variable id="_06F059B3-73D0-4C0F-9541-E04872B2D23D" name="Wahlfach Wirtschaftsinformatik"/>
     <dmn:informationRequirement id="_235236BA-2167-4D52-AA26-385393FDB245">
       <dmn:requiredDecision href="#_9DD6A710-D93A-4EC4-9633-6D00A1608477"/>
     </dmn:informationRequirement>
@@ -1033,9 +1033,9 @@
       </dmn:rule>
     </dmn:decisionTable>
   </dmn:decision>
-  <dmn:decision id="_FA1DCA39-E0D1-4611-9EA8-73EE03916425" name="Wirtschaftswissenschaften">
+  <dmn:decision id="_FA1DCA39-E0D1-4611-9EA8-73EE03916425" name="Wahlfach Wirtschaftswissenschaften">
     <dmn:extensionElements/>
-    <dmn:variable id="_5C65552D-A944-4BA1-A594-A5F03BC5D0DD" name="Wirtschaftswissenschaften"/>
+    <dmn:variable id="_5C65552D-A944-4BA1-A594-A5F03BC5D0DD" name="Wahlfach Wirtschaftswissenschaften"/>
     <dmn:informationRequirement id="_AF057565-7E7F-4607-ACA1-420EF0B28FDD">
       <dmn:requiredDecision href="#_7B4B09C0-8B64-4D38-AB1D-FC1A58F242D2"/>
     </dmn:informationRequirement>
@@ -1270,196 +1270,196 @@
     <dmn:informationRequirement id="_CC4FA365-11FE-4965-B645-A20CA651E012">
       <dmn:requiredDecision href="#_F2B39AB9-56BF-43D0-AAB2-C883C4D713BA"/>
     </dmn:informationRequirement>
-    <dmn:decisionTable id="_63019AEA-787C-4EB0-8F9D-FDCB4EA75C3E" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
-      <dmn:input id="_DF96DA9D-2903-4198-98E7-DC6F442021D1">
-        <dmn:inputExpression id="_0948CF25-0F55-43DA-88A8-92495F2D86B7">
-          <dmn:text>Ausgewahlte Aspekte WIN</dmn:text>
+    <dmn:decisionTable id="_63019AEA-787C-4EB0-8F9D-FDCB4EA75C3E" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_36C11030-FFC6-4FB5-8E09-D9E73DB24BB9">
+        <dmn:inputExpression id="_F328AF98-CB46-4B14-B2C0-342AD93373D8">
+          <dmn:text>Ausgewählte Aspekte der Wirtschaftsinformatik.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:input id="_D43C435C-4C38-494E-8D06-008C4E4D16FA">
-        <dmn:inputExpression id="_05107740-4A6B-4B85-9883-AC7B836BAEA9">
-          <dmn:text>Communicatios Engineering</dmn:text>
+      <dmn:input id="_6EF516DC-2BDF-4405-91FE-5A6CEA090D92">
+        <dmn:inputExpression id="_799A66E7-1AFB-4FD3-86E3-6EEEFF95E451">
+          <dmn:text>Communications Engineering.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:input id="_8DAF0CAD-CA84-4416-B856-72BCA08174C8">
-        <dmn:inputExpression id="_1F28901F-F009-473E-8245-89EF3D977A65">
-          <dmn:text>Data Knowledge Engineering</dmn:text>
+      <dmn:input id="_35A057F8-FB34-4C47-B9B7-C7C4C4EA0B1E">
+        <dmn:inputExpression id="_93480D56-66AB-4EDB-85E7-83A121481AF3">
+          <dmn:text>Data &amp;amp; Knowledge Engineering.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:input id="_05841DFE-86B5-451F-846F-EC2514089575">
-        <dmn:inputExpression id="_A56E4C8D-ACB1-4C42-BB73-18C1BD9BCC96">
-          <dmn:text>Fachsprache Englisch</dmn:text>
+      <dmn:input id="_DC0BD3BB-11FF-4F5F-918F-2ADF9140A2AE">
+        <dmn:inputExpression id="_BCF7784E-24F6-4621-AC73-E6A030761539">
+          <dmn:text>Fachsprache Englisch.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:input id="_D0C43419-BA1B-4498-AE9A-5D3D353E2182">
-        <dmn:inputExpression id="_91178B75-BEDD-4ED3-A521-FE8F3FB55967">
+      <dmn:input id="_ED14070F-2222-4285-8F8F-B97269F39849">
+        <dmn:inputExpression id="_C26868AA-2BC3-4325-8670-90EF52F17ADC">
           <dmn:text>Freie Studienleistungen</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:input id="_E0018425-AFCD-43BD-B351-4F1C48816CDA">
-        <dmn:inputExpression id="_C692110D-5B95-41B1-B66B-E588AAA42140">
-          <dmn:text>Grundlagen Wirtschaftsinformatik</dmn:text>
+      <dmn:input id="_947D0E2E-25B7-4576-A2CF-4786B0EFFEEE">
+        <dmn:inputExpression id="_76459C0F-3FE7-4F74-8963-FA613D2ECB3E">
+          <dmn:text>Grundlagen der Betriebswirtschaftslehre.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:input id="_5F480686-DA66-4B61-930E-3A41DAB67E0E">
-        <dmn:inputExpression id="_992EB515-3EB5-438E-B709-6363756DC853">
-          <dmn:text>Grundlagen der BWL</dmn:text>
+      <dmn:input id="_097BD89E-7925-405E-BD6B-A31A913BB8BA">
+        <dmn:inputExpression id="_4BCC0152-2B52-485C-9C12-BED9BAF14C9E">
+          <dmn:text>Grundlagen der Informatik.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:input id="_F5D497DA-CFA7-4EAF-833A-365F26EB5A64">
-        <dmn:inputExpression id="_1D47BEC7-AFDA-4AA1-9943-78C8D787FEFF">
-          <dmn:text>Grundlagen der Informatik</dmn:text>
+      <dmn:input id="_D9359E31-80B5-4298-A490-F6163CD13447">
+        <dmn:inputExpression id="_9959426A-74E6-4820-9A57-819679DAAE9A">
+          <dmn:text>Grundlagen der Mathematik, Statistik und formaler Methoden.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:input id="_2AA03110-1B52-4B92-A968-EBBE13D5815E">
-        <dmn:inputExpression id="_D961D909-EB2F-43B9-9F45-C195357E8631">
-          <dmn:text>Grundlagen der Mathematik</dmn:text>
+      <dmn:input id="_F558E4C7-9810-421F-8401-4C2BA94F360F">
+        <dmn:inputExpression id="_607C0BFF-BB1F-48F8-BE99-9BAA5262A62A">
+          <dmn:text>Grundlagen der Wirtschaftsinformatik.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:input id="_66B2A4D4-27C7-4298-B0A4-9909F3282D91">
-        <dmn:inputExpression id="_8B9FE12C-A1CA-44A1-8D69-D2F23BB6A8AB">
-          <dmn:text>Grundlagen des Rechts</dmn:text>
+      <dmn:input id="_3B921286-51A1-4260-93F2-72B7085A4149">
+        <dmn:inputExpression id="_3C24160A-C14F-4AC9-AE7B-8B36BD5F16CA">
+          <dmn:text>Grundlagen des Rechts.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:input id="_1A542DFE-8E57-49CB-989E-C8C30E53D2EE">
-        <dmn:inputExpression id="_850EFCC8-6D22-4A7E-87C9-402BF8193291">
-          <dmn:text>Information Engineering</dmn:text>
+      <dmn:input id="_EFB98F64-6850-4D7D-8720-8452609CBAD1">
+        <dmn:inputExpression id="_85717F20-1225-4B16-97FA-9387C6BDCD1E">
+          <dmn:text>IT-Projekt.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:input id="_278CE42E-8C20-41E2-B565-4ED31020DC20">
-        <dmn:inputExpression id="_C57DCF7F-A881-4188-99D5-9AD386B447EE">
-          <dmn:text>It Projekt</dmn:text>
+      <dmn:input id="_25EB5E6C-8664-4AB0-A655-6F6E76BB0616">
+        <dmn:inputExpression id="_30CBE9D1-1C76-4C2B-8451-B386E50D2E4C">
+          <dmn:text>Information Engineering.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:input id="_7A835B9F-25F8-44AA-B73E-2991B21DB019">
-        <dmn:inputExpression id="_ABAF0B0F-8403-455C-9432-594D83CA1B96">
-          <dmn:text>Software Engineering</dmn:text>
+      <dmn:input id="_B5832987-A404-45B0-93FA-5B40C9402A1C">
+        <dmn:inputExpression id="_ADCAFDC0-ABD7-44DE-8DA3-1FF052EED49A">
+          <dmn:text>Software Engineering.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:input id="_5D5F0D51-8361-4057-9AB0-C1F85B1C79BC">
-        <dmn:inputExpression id="_ED80E1D5-CC8F-4D2A-9A45-2B95119D553B">
-          <dmn:text>Soziale und Gender</dmn:text>
+      <dmn:input id="_3B1116B1-2CD1-4AF2-9153-8C74487D6049">
+        <dmn:inputExpression id="_60C5AB8D-295A-4419-B257-A815ECB77C50">
+          <dmn:text>Soziale und geschlechterspezifische Aspekte der IT.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:input id="_69A57C1D-705C-45B2-A928-FA257B1786F5">
-        <dmn:inputExpression id="_33D06071-686F-47B5-A3C5-6C34185BECE2">
-          <dmn:text>Spezialisierungsfach</dmn:text>
+      <dmn:input id="_F570BDC2-5A2E-43A4-B04D-B080F5DF8880">
+        <dmn:inputExpression id="_9DBFDD33-80CC-45AD-BB84-68AE65707A78">
+          <dmn:text>Spezialisierungsfach Wirtschaftsinformatik (mit Bachelorarbeit).Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:input id="_966F912B-ACB9-48E8-8BA4-888E0296A237">
-        <dmn:inputExpression id="_A7503F32-79D4-4D07-ABC2-0C4CF0AC94CA">
+      <dmn:input id="_8EA9216A-4F7E-482B-9D4A-4F74D053122C">
+        <dmn:inputExpression id="_68112FDD-6C3B-4B18-9157-6A05A4AB7F10">
           <dmn:text>Wahlfacher</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:output id="_68CB6644-26B7-4C04-A38B-5189293B6A0D"/>
+      <dmn:output id="_888DE055-4F37-4B96-B843-8D994A00C620"/>
       <dmn:annotation name="annotation-1"/>
-      <dmn:rule id="_7ED8FD0D-AF20-4836-8FC4-CA923FA46D97">
-        <dmn:inputEntry id="_BCAB5D76-ED63-4411-91BD-CFE63408680B">
+      <dmn:rule id="_8120E095-E6EE-47D9-AB0D-2FAFE2FDD187">
+        <dmn:inputEntry id="_DCA728B4-D49A-403C-9AF5-2119AF1BF0BC">
           <dmn:text>6</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_FFF857B3-F330-4D30-9617-A4C38DF0EC52">
+        <dmn:inputEntry id="_AE573933-25B2-42C8-B7BA-50DE29FFE1CD">
           <dmn:text>12</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_B6E5B0AE-964B-4CA6-A464-1C4BBE1A89A8">
+        <dmn:inputEntry id="_E0A630E6-CD03-4763-A6E0-975FDBA36E4F">
           <dmn:text>12</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_2B32FD8B-032A-4D2B-9D40-D0E5D4FB75BC">
+        <dmn:inputEntry id="_4823B6EE-6F3E-4D06-A8DA-09BE1755C336">
           <dmn:text>6</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_9AE88978-C256-44F6-85C9-F88A38CAC71F">
+        <dmn:inputEntry id="_D824641D-7470-4F1F-B758-A852AC7EB6A9">
           <dmn:text>9</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_CC9BC1A1-6688-41F8-A890-B5FF1A804B5A">
-          <dmn:text>24</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_A4460DCE-20C2-463C-B729-4F8D0F0821E7">
+        <dmn:inputEntry id="_32F90AEA-F89A-4F91-8700-332351F09B69">
           <dmn:text>18</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_3F5B8F03-97B2-4DD1-9AAF-0143A1486397">
+        <dmn:inputEntry id="_34442E79-5D2F-42D2-83C8-4DF373ADB16E">
           <dmn:text>18</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_6F0E4FAF-34BA-4B1F-8DC2-CA5E1F144216">
+        <dmn:inputEntry id="_FCF60597-E845-4EEA-B806-0FA73D515728">
           <dmn:text>15</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_05230738-F0B6-4125-884F-110CA87F8A71">
+        <dmn:inputEntry id="_0B6267C3-4932-468D-93E9-8D5B0166A67A">
+          <dmn:text>24</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_B0DD1814-432A-4977-87DD-426C4925A928">
           <dmn:text>6</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_C93F83F7-374E-46CB-AEE4-DC2CF4F24421">
+        <dmn:inputEntry id="_D7AC1E86-EB87-4534-A763-32E18319FED1">
+          <dmn:text>6</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_5A81D1E9-BD82-4B52-A3C9-91FB42DF7DAC">
           <dmn:text>12</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_C4790021-E009-4F0F-A924-9119E98F203E">
-          <dmn:text>6</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_6EE1E838-2672-40CC-A037-BA779EE7C0AE">
+        <dmn:inputEntry id="_E8FB3282-D53A-46EB-8E33-071016C190B7">
           <dmn:text>12</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_95F081F2-E31F-41AE-BB81-27F5C966C98A">
+        <dmn:inputEntry id="_9491A74B-41BD-45F4-97E4-E31507A2BCD4">
           <dmn:text>6</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_3B8B0842-5A9B-44D6-AADD-EE44B711A996">
+        <dmn:inputEntry id="_691E34AE-BF25-48A2-927F-E481EAFFAF79">
           <dmn:text>12</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_BBD7E715-8701-4A56-8A8E-893079B1EDE2">
+        <dmn:inputEntry id="_5F17E568-768E-4437-A77E-E53A50A452D3">
           <dmn:text>6</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry id="_EBE342BC-84BE-432E-BDBC-1AF0683B14F4">
+        <dmn:outputEntry id="_B6FFC699-63EA-4037-A642-A2A36A8E464A">
           <dmn:text>180</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
         </dmn:annotationEntry>
       </dmn:rule>
-      <dmn:rule id="_4BB98DA4-A426-4727-8EB5-EBF4E9025FF4">
-        <dmn:inputEntry id="_6372CE14-E1B0-450C-8059-8CC7B99C75FB">
+      <dmn:rule id="_65477EA0-F81C-4650-8A61-E9858B303730">
+        <dmn:inputEntry id="_4D3823F4-4A21-4144-BB0E-637B1F9A5646">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_7130F53C-9466-4974-9072-4495E5BCD814">
+        <dmn:inputEntry id="_9FEC5588-18F6-428C-B06E-61C4B87BAE6C">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_AF5447FF-CB06-4611-86BD-F517D2FD5155">
+        <dmn:inputEntry id="_8D8C3BFC-E05B-43DC-B7DD-7ADC9408C240">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_EA58E514-AA22-4607-AB42-D0ECDAF64147">
+        <dmn:inputEntry id="_9ECF337C-704D-4D59-BB9C-2F5DEC228092">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_4BA519FB-74B2-45C9-AE60-F3138A812C76">
+        <dmn:inputEntry id="_54FA2FB7-FD92-483C-A997-4227EA896353">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_0BB14CAB-C328-4EDC-BDEF-5A26C82A4CCF">
+        <dmn:inputEntry id="_CD02EE15-FF82-4FD4-A79E-4ED6917241E2">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_15F9C088-9026-4129-B906-A321FCA66389">
+        <dmn:inputEntry id="_9EDE047C-8615-4C5B-AA3C-6223AFEB6159">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_214C91C0-F751-4AF6-9B8A-7572905939BE">
+        <dmn:inputEntry id="_6D472D2E-A9D0-44AB-821A-940DE3ECEDD4">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_BB671FD5-3BAB-47E1-B114-5674816C3CFC">
+        <dmn:inputEntry id="_A611AE85-7B9C-4420-A7A4-4266FA5845EE">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_E368CAB8-07FF-4AD0-AD86-6192EC0553FF">
+        <dmn:inputEntry id="_0BF6ED1F-B45D-4BAE-A2D0-413BE1C236EC">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_4E0246CE-B401-4405-8996-44843482DAAA">
+        <dmn:inputEntry id="_BCD3875E-486E-416F-97A0-E6170D47248C">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_8C429307-33E3-4DEB-9BF4-9A1A5443C23B">
+        <dmn:inputEntry id="_EC95096E-063F-4BA4-98FC-77B9F8944058">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_7503F80B-9685-418F-8D0E-BEF3DF1A79BC">
+        <dmn:inputEntry id="_B3E0C6D5-2083-4920-90EA-69F7185934A3">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_02BBBD00-2C68-4EED-978F-28EED8917D93">
+        <dmn:inputEntry id="_34D7C17C-831E-4CB0-8F0E-26CBB619EA44">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_00844A66-DCDA-436A-85C5-1C0674DAD219">
+        <dmn:inputEntry id="_65F35BE4-1546-4356-BB20-A7C8CA4FB518">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_9419DC98-7BF8-43FA-A1CA-C6FA87123072">
+        <dmn:inputEntry id="_5B9B6997-05FC-4FCD-AE6D-6D1BE5109BF7">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry id="_254959DB-23E8-46F2-BF54-286F758F63D6">
-          <dmn:text>0</dmn:text>
+        <dmn:outputEntry id="_BCB7C1F7-0C32-4A05-88DC-6BC7A7C00155">
+          <dmn:text/>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -1946,10 +1946,10 @@
       <dmn:text>some x in x725x526GBWL13I x914x526GBWL20I satisfies date(x.Prufdatum) &lt; date("2020-10-01")</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
-  <dmn:decision id="_8C77B2D9-2776-46A6-9345-5617CD576A29" name="Grundlagen der BWL">
+  <dmn:decision id="_8C77B2D9-2776-46A6-9345-5617CD576A29" name="Grundlagen der Betriebswirtschaftslehre">
     <dmn:description>Pflicht_1</dmn:description>
     <dmn:extensionElements/>
-    <dmn:variable id="_33F09DCF-2CEB-488A-BEDB-E109AF27AEE4" name="Grundlagen der BWL"/>
+    <dmn:variable id="_33F09DCF-2CEB-488A-BEDB-E109AF27AEE4" name="Grundlagen der Betriebswirtschaftslehre"/>
     <dmn:informationRequirement id="_F1E8624D-C9E0-4974-BFB2-D6531F3E7254">
       <dmn:requiredDecision href="#_066C69EE-361B-475B-822E-C8336589CBCC"/>
     </dmn:informationRequirement>
@@ -2029,10 +2029,10 @@
     <dmn:extensionElements/>
     <dmn:variable id="_BCF160F7-4B25-4345-9F61-564516B846C3" name="x914x526GRRE13C" typeRef="LVA"/>
   </dmn:inputData>
-  <dmn:decision id="_298C8EEC-BFEA-4A50-832B-4D022720FF78" name="Grundlagen Wirtschaftsinformatik">
+  <dmn:decision id="_298C8EEC-BFEA-4A50-832B-4D022720FF78" name="Grundlagen der Wirtschaftsinformatik">
     <dmn:description>Pflicht_1</dmn:description>
     <dmn:extensionElements/>
-    <dmn:variable id="_07B5D5FD-A5CF-4DBC-8C03-C65FEFF96095" name="Grundlagen Wirtschaftsinformatik"/>
+    <dmn:variable id="_07B5D5FD-A5CF-4DBC-8C03-C65FEFF96095" name="Grundlagen der Wirtschaftsinformatik"/>
     <dmn:informationRequirement id="_63629EB3-8683-4402-BB78-887F9AA5E779">
       <dmn:requiredInput href="#_378A21E4-8636-4C8B-88AE-C7CCE76C4196"/>
     </dmn:informationRequirement>
@@ -2080,10 +2080,10 @@
       <dmn:text>Pflichtfacher(x914x526FENG13I,x914x526FENG13C)</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
-  <dmn:decision id="_30E50D15-143C-4D91-9798-14764E7A8697" name="Soziale und Gender">
+  <dmn:decision id="_30E50D15-143C-4D91-9798-14764E7A8697" name="Soziale und geschlechterspezifische Aspekte der IT">
     <dmn:description>Pflicht_1</dmn:description>
     <dmn:extensionElements/>
-    <dmn:variable id="_145654F1-C481-48D6-87D1-3584A4B9C5B7" name="Soziale und Gender"/>
+    <dmn:variable id="_145654F1-C481-48D6-87D1-3584A4B9C5B7" name="Soziale und geschlechterspezifische Aspekte der IT"/>
     <dmn:informationRequirement id="_61434675-6D9A-4818-9684-A451DB0E2242">
       <dmn:requiredInput href="#_DDFF2CC5-0724-455A-9E56-8C569AC8FC0F"/>
     </dmn:informationRequirement>
@@ -2131,10 +2131,10 @@
       <dmn:text>Pflichtfacher(x914x526SENG13I,x914x526SENG13C)</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
-  <dmn:decision id="_931A22B1-53C6-4407-8D3E-9EC359644D2A" name="Data Knowledge Engineering">
+  <dmn:decision id="_931A22B1-53C6-4407-8D3E-9EC359644D2A" name="Data &amp;amp; Knowledge Engineering">
     <dmn:description>Pflicht_1</dmn:description>
     <dmn:extensionElements/>
-    <dmn:variable id="_6FA43947-DBCB-4E0E-8F84-EB996D7AA49E" name="Data Knowledge Engineering"/>
+    <dmn:variable id="_6FA43947-DBCB-4E0E-8F84-EB996D7AA49E" name="Data &amp;amp; Knowledge Engineering"/>
     <dmn:informationRequirement id="_631764D6-6993-4FF2-9249-ECFA03379E24">
       <dmn:requiredInput href="#_46BE31DA-14A4-44FF-9B96-57D64780548A"/>
     </dmn:informationRequirement>
@@ -2148,10 +2148,10 @@
       <dmn:text>Pflichtfacher(x914x526DAKE13I,x914x526DAKE13C)</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
-  <dmn:decision id="_7CDB4D43-E64A-463F-9718-3DB589AD4721" name="Communicatios Engineering">
+  <dmn:decision id="_7CDB4D43-E64A-463F-9718-3DB589AD4721" name="Communications Engineering">
     <dmn:description>Pflicht_1</dmn:description>
     <dmn:extensionElements/>
-    <dmn:variable id="_B9D63C80-FF0D-417E-BE12-3B2668AAFAAE" name="Communicatios Engineering"/>
+    <dmn:variable id="_B9D63C80-FF0D-417E-BE12-3B2668AAFAAE" name="Communications Engineering"/>
     <dmn:informationRequirement id="_574F5705-663F-4458-9AB8-C74DFC9F9B0B">
       <dmn:requiredInput href="#_D899D9E5-9D3A-43EE-B985-849F15F95D25"/>
     </dmn:informationRequirement>
@@ -2213,10 +2213,10 @@
     <dmn:extensionElements/>
     <dmn:variable id="_E34827A2-AF3C-4A5A-8D8F-ADD47B4D5302" name="x914x526COEN13C" typeRef="LVA"/>
   </dmn:inputData>
-  <dmn:decision id="_56CD16C7-ABA5-475C-8920-68A2B43FA64C" name="It Projekt">
+  <dmn:decision id="_56CD16C7-ABA5-475C-8920-68A2B43FA64C" name="IT-Projekt">
     <dmn:description>Pflicht_1</dmn:description>
     <dmn:extensionElements/>
-    <dmn:variable id="_2133300B-9138-421B-923F-0F1772374A84" name="It Projekt"/>
+    <dmn:variable id="_2133300B-9138-421B-923F-0F1772374A84" name="IT-Projekt"/>
     <dmn:informationRequirement id="_DA9B0B8F-D9E5-45F4-85A0-57A448C0445B">
       <dmn:requiredInput href="#_E0A48614-663A-4B2E-9A12-FED3460420B5"/>
     </dmn:informationRequirement>
@@ -2230,10 +2230,10 @@
       <dmn:text>Pflichtfacher(x914x526ITPR13I,x914x526ITPR13C)</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
-  <dmn:decision id="_20FE65BB-8F1E-43A5-9BB7-C68F661CB1D8" name="Spezialisierungsfach">
+  <dmn:decision id="_20FE65BB-8F1E-43A5-9BB7-C68F661CB1D8" name="Spezialisierungsfach Wirtschaftsinformatik (mit Bachelorarbeit)">
     <dmn:description>Pflicht_1</dmn:description>
     <dmn:extensionElements/>
-    <dmn:variable id="_1F131F7E-A712-4207-92B3-4E02033E1203" name="Spezialisierungsfach"/>
+    <dmn:variable id="_1F131F7E-A712-4207-92B3-4E02033E1203" name="Spezialisierungsfach Wirtschaftsinformatik (mit Bachelorarbeit)"/>
     <dmn:informationRequirement id="_FD280EC6-04C6-489B-9061-25244EFD6A1D">
       <dmn:requiredInput href="#_BE3688FA-0151-4D48-9480-0B85E0848C14"/>
     </dmn:informationRequirement>
@@ -2413,8 +2413,8 @@
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_F02FD599-3690-4789-AF97-4D8E5967721B">
             <kie:width>50</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
+            <kie:width>196</kie:width>
+            <kie:width>271</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
@@ -2434,20 +2434,20 @@
           <kie:ComponentWidths dmnElementRef="_93EA4F4E-C935-4E04-A10D-41654562A034"/>
           <kie:ComponentWidths dmnElementRef="_63019AEA-787C-4EB0-8F9D-FDCB4EA75C3E">
             <kie:width>50</kie:width>
+            <kie:width>391</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
-            <kie:width>262</kie:width>
-            <kie:width>188</kie:width>
-            <kie:width>137</kie:width>
-            <kie:width>141</kie:width>
-            <kie:width>166</kie:width>
-            <kie:width>185</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
-            <kie:width>166</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>134</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>

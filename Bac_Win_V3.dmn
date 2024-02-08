@@ -1343,7 +1343,7 @@
       </dmn:input>
       <dmn:input id="_F570BDC2-5A2E-43A4-B04D-B080F5DF8880">
         <dmn:inputExpression id="_9DBFDD33-80CC-45AD-BB84-68AE65707A78">
-          <dmn:text>Spezialisierungsfach Wirtschaftsinformatik (mit Bachelorarbeit).Ects</dmn:text>
+          <dmn:text>Spezialisierungsfach Wirtschaftsinformatik mit Bachelorarbeit.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_8EA9216A-4F7E-482B-9D4A-4F74D053122C">
@@ -2230,10 +2230,10 @@
       <dmn:text>Pflichtfacher(x914x526ITPR13I,x914x526ITPR13C)</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
-  <dmn:decision id="_20FE65BB-8F1E-43A5-9BB7-C68F661CB1D8" name="Spezialisierungsfach Wirtschaftsinformatik (mit Bachelorarbeit)">
+  <dmn:decision id="_20FE65BB-8F1E-43A5-9BB7-C68F661CB1D8" name="Spezialisierungsfach Wirtschaftsinformatik mit Bachelorarbeit">
     <dmn:description>Pflicht_1</dmn:description>
     <dmn:extensionElements/>
-    <dmn:variable id="_1F131F7E-A712-4207-92B3-4E02033E1203" name="Spezialisierungsfach Wirtschaftsinformatik (mit Bachelorarbeit)"/>
+    <dmn:variable id="_1F131F7E-A712-4207-92B3-4E02033E1203" name="Spezialisierungsfach Wirtschaftsinformatik mit Bachelorarbeit"/>
     <dmn:informationRequirement id="_FD280EC6-04C6-489B-9061-25244EFD6A1D">
       <dmn:requiredInput href="#_BE3688FA-0151-4D48-9480-0B85E0848C14"/>
     </dmn:informationRequirement>

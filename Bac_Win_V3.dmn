@@ -616,7 +616,7 @@
     <dmn:informationRequirement id="_60F4579C-985E-4E08-9022-E2EEA9BF386C">
       <dmn:requiredDecision href="#_A29C39BE-F9F6-4423-919D-A5CD9F6DC910"/>
     </dmn:informationRequirement>
-    <dmn:decisionTable id="_F02FD599-3690-4789-AF97-4D8E5967721B" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+    <dmn:decisionTable id="_F02FD599-3690-4789-AF97-4D8E5967721B" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
       <dmn:input id="_43AC5906-C988-40A6-B617-416DAE7B52BC">
         <dmn:inputExpression id="_BCE77F49-5A69-4E84-A87B-C299E1C36DC9">
           <dmn:text>Wahlfach Wirtschaftsinformatik</dmn:text>

@@ -1470,7 +1470,7 @@
     </dmn:decisionTable>
   </dmn:decision>
   <dmn:decision id="_972F68E9-CFC7-445C-9A3C-99DD3E640545" name="Freie Studienleistungen">
-    <dmn:description>Frei_6</dmn:description>
+    <dmn:description>Frei_3 526FREI13</dmn:description>
     <dmn:extensionElements/>
     <dmn:variable id="_45A66F4D-0D2F-4FCA-9AF4-CC6AB224B481" name="Freie Studienleistungen"/>
     <dmn:informationRequirement id="_EFA7ED92-E7C6-4B25-AB77-6C78164EADAC">

@@ -703,32 +703,32 @@
     <dmn:decisionTable id="_871ECC7C-0379-4FB0-9296-1D7DF3CD901E" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
       <dmn:input id="_9CAC985C-C8C8-4280-B22D-266309180C61">
         <dmn:inputExpression id="_EDF0C85B-7E22-4720-8D83-849C70A15152">
-          <dmn:text>Business Engineering und Management</dmn:text>
+          <dmn:text>Business Engineering und Management.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_F76D3C80-B4AE-4052-B4B3-7DA3F357B942">
         <dmn:inputExpression id="_6EE7EAAC-85E6-4FE2-8933-07D4B7E64AF1">
-          <dmn:text>Data Mining</dmn:text>
+          <dmn:text>Data Mining.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_EDEA2974-5E10-4596-80DE-69102FD27BB7">
         <dmn:inputExpression id="_F9FF3531-DF84-4A27-9153-A3E2F5F4A3A8">
-          <dmn:text>Data Warehousing</dmn:text>
+          <dmn:text>Data Warehousing.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_AC910019-B030-4037-9EE6-B4A7C16892C6">
         <dmn:inputExpression id="_3CF998E5-D6CE-4CE6-83E8-A471967E802C">
-          <dmn:text>Semantic Artifficial Intelligence</dmn:text>
+          <dmn:text>Semantic Artifficial Intelligence.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_678B27B2-C79A-407B-8864-A045E03B1D67">
         <dmn:inputExpression id="_2D0C6DB6-F73B-402F-8AA8-0EE34E8A19E5">
-          <dmn:text>Service Engineering</dmn:text>
+          <dmn:text>Service Engineering.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_1A5C1BB4-B343-41C7-8CDF-A06AB72BF707">
         <dmn:inputExpression id="_D44108EB-9028-4530-97CB-E9CE469C0DDB">
-          <dmn:text>Software Business</dmn:text>
+          <dmn:text>Software Business.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_17CD86AC-8C3C-42BC-AC89-B6CE951E6650">
@@ -738,7 +738,7 @@
       </dmn:input>
       <dmn:input id="_81551865-CB2E-40E2-A8F5-FB1ED0F59BAF">
         <dmn:inputExpression id="_9CFCD521-33F5-4B17-90B2-39BBA6C286BC">
-          <dmn:text>WIBacAusland</dmn:text>
+          <dmn:text>WIBacAusland.Ects</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_9D344C19-86A4-4A21-8D85-6E986641BB28"/>
@@ -2420,18 +2420,27 @@
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_871ECC7C-0379-4FB0-9296-1D7DF3CD901E">
             <kie:width>50</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
+            <kie:width>302</kie:width>
+            <kie:width>199</kie:width>
+            <kie:width>210</kie:width>
+            <kie:width>260</kie:width>
+            <kie:width>253</kie:width>
+            <kie:width>265</kie:width>
+            <kie:width>304</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_93EA4F4E-C935-4E04-A10D-41654562A034"/>
+          <kie:ComponentWidths dmnElementRef="_93EA4F4E-C935-4E04-A10D-41654562A034">
+            <kie:width>50</kie:width>
+            <kie:width>270</kie:width>
+            <kie:width>186</kie:width>
+            <kie:width>200</kie:width>
+            <kie:width>361</kie:width>
+            <kie:width>160</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+          </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_63019AEA-787C-4EB0-8F9D-FDCB4EA75C3E">
             <kie:width>50</kie:width>
             <kie:width>391</kie:width>
@@ -4173,7 +4182,16 @@
     <dmndi:DMNDiagram id="_E230DEB9-2B9A-45E1-A1E4-39242B29AB96" name="new-diagram">
       <di:extension>
         <kie:ComponentsWidthsExtension>
-          <kie:ComponentWidths dmnElementRef="_93EA4F4E-C935-4E04-A10D-41654562A034"/>
+          <kie:ComponentWidths dmnElementRef="_93EA4F4E-C935-4E04-A10D-41654562A034">
+            <kie:width>50</kie:width>
+            <kie:width>270</kie:width>
+            <kie:width>186</kie:width>
+            <kie:width>200</kie:width>
+            <kie:width>361</kie:width>
+            <kie:width>160</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+          </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
       <dmndi:DMNShape xmlns:p250="https://kiegroup.org/dmn/_63473A78-3268-4E43-8473-168067AF20FC" id="dmnshape-new-diagram-_FA1DCA39-E0D1-4611-9EA8-73EE03916425" dmnElementRef="p250:_FA1DCA39-E0D1-4611-9EA8-73EE03916425" isCollapsed="false">

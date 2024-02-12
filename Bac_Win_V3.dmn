@@ -1275,7 +1275,7 @@
     <dmn:decisionTable id="_63019AEA-787C-4EB0-8F9D-FDCB4EA75C3E" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
       <dmn:input id="_36C11030-FFC6-4FB5-8E09-D9E73DB24BB9">
         <dmn:inputExpression id="_F328AF98-CB46-4B14-B2C0-342AD93373D8">
-          <dmn:text>Ausgewählte Aspekte der Wirtschaftsinformatik.Ects</dmn:text>
+          <dmn:text>Ausgewählte Aspekte der Wirtschaftsinformatik</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_6EF516DC-2BDF-4405-91FE-5A6CEA090D92">
@@ -1300,17 +1300,17 @@
       </dmn:input>
       <dmn:input id="_947D0E2E-25B7-4576-A2CF-4786B0EFFEEE">
         <dmn:inputExpression id="_76459C0F-3FE7-4F74-8963-FA613D2ECB3E">
-          <dmn:text>Grundlagen der Betriebswirtschaftslehre.Ects</dmn:text>
+          <dmn:text>Grundlagen der Betriebswirtschaftslehre</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_097BD89E-7925-405E-BD6B-A31A913BB8BA">
         <dmn:inputExpression id="_4BCC0152-2B52-485C-9C12-BED9BAF14C9E">
-          <dmn:text>Grundlagen der Informatik.Ects</dmn:text>
+          <dmn:text>Grundlagen der Informatik</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_D9359E31-80B5-4298-A490-F6163CD13447">
         <dmn:inputExpression id="_9959426A-74E6-4820-9A57-819679DAAE9A">
-          <dmn:text>Grundlagen der Mathematik Statistik und formaler Methoden.Ects</dmn:text>
+          <dmn:text>Grundlagen der Mathematik Statistik und formaler Methoden</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_F558E4C7-9810-421F-8401-4C2BA94F360F">
@@ -2452,7 +2452,7 @@
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
+            <kie:width>410</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>

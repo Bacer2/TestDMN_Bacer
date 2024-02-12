@@ -1272,7 +1272,7 @@
     <dmn:informationRequirement id="_CC4FA365-11FE-4965-B645-A20CA651E012">
       <dmn:requiredDecision href="#_F2B39AB9-56BF-43D0-AAB2-C883C4D713BA"/>
     </dmn:informationRequirement>
-    <dmn:decisionTable id="_63019AEA-787C-4EB0-8F9D-FDCB4EA75C3E" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+    <dmn:decisionTable id="_63019AEA-787C-4EB0-8F9D-FDCB4EA75C3E" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
       <dmn:input id="_36C11030-FFC6-4FB5-8E09-D9E73DB24BB9">
         <dmn:inputExpression id="_F328AF98-CB46-4B14-B2C0-342AD93373D8">
           <dmn:text>Ausgewählte Aspekte der Wirtschaftsinformatik.Ects</dmn:text>
@@ -1485,7 +1485,7 @@
       </dmn:contextEntry>
       <dmn:contextEntry>
         <dmn:literalExpression id="_360C5B10-114D-42F0-A9E2-6D2C62397877">
-          <dmn:text>sum(Ects)</dmn:text>
+          <dmn:text>if Ects&gt;0 then sum(Ects) else 0</dmn:text>
         </dmn:literalExpression>
       </dmn:contextEntry>
     </dmn:context>
@@ -2467,13 +2467,13 @@
           <kie:ComponentWidths dmnElementRef="_334419B8-9AF7-46D4-B522-5F429EC89441">
             <kie:width>50</kie:width>
             <kie:width>120</kie:width>
-            <kie:width>190</kie:width>
+            <kie:width>511</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_80ADD380-054F-4AA1-8398-9211999AFF88">
-            <kie:width>190</kie:width>
+            <kie:width>511</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_360C5B10-114D-42F0-A9E2-6D2C62397877">
-            <kie:width>190</kie:width>
+            <kie:width>511</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_B86C1E52-4FDB-42A6-B168-5F617F72A5DB">
             <kie:width>537</kie:width>

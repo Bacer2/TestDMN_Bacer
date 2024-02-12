@@ -1485,7 +1485,7 @@
       </dmn:contextEntry>
       <dmn:contextEntry>
         <dmn:literalExpression id="_360C5B10-114D-42F0-A9E2-6D2C62397877">
-          <dmn:text>if Ects&gt;0 then sum(Ects) else 0</dmn:text>
+          <dmn:text>if sum(Ects) &gt; 0 then sum(Ects) else 0</dmn:text>
         </dmn:literalExpression>
       </dmn:contextEntry>
     </dmn:context>
